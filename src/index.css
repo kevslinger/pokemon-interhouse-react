@@ -5,6 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: white;
+}
+
+#root {
+  width: 600px;
+  height: 400px;
+  background: black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+  color: white;
+  font-size: 14px;
+}
+
+.textbox {
+  border: 3px solid #d4e4ff;
+  width: 590px;
+  height: 90px;
 }
 
 code {
