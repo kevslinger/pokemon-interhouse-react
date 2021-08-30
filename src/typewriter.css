@@ -1,3 +1,87 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+/* This is the box that holds the "New Game" Button and defines the gameboy space */
+.opening-scene {
+    width: 600px;
+    height: 400px;
+    background-color: #d1d1d1;
+    border: 1px solid black;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'Pokemon Solid', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* Start game button which triggers the opening scene transition */
+.new-game {
+    width: 590px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* ReactCSSTransitionGroup for the opening scene to fade away */
+.opening-scene-transition-leave {
+    opacity: 1;
+}
+.opening-scene-transition-leave-active {
+    opacity: 0;
+    background-color: black;
+    transition: all 1500ms ease-in;
+}
+
+/* This is the part where Professor Squash comes in and introduces
+   the players to the game
+ */
+.main-scene {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+/* ReactCSSTransitionGroup elements for the main scene */
+.main-scene-transition-enter {
+    opacity: 0.04;
+}
+.main-scene-transition-enter.main-scene-transition-enter-active {
+    opacity: 2;
+    transition: opacity 2s ease-in;
+}
+
+.main-scene-transition-leave {
+    opacity: 1;
+}
+
+.main-scene-transition-leave.main-scene-transition-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+.footer-text-transition-enter {
+    opacity: 0.04;
+}
+.footer-text-transition-enter.footer-text-transition-enter-active {
+    opacity: 2;
+    transition: opacity 400ms;
+}
+.footer-text-transition-leave {
+    opacity: 1;
+}
+.footer-text-transition-leave.footer-text-transition-leave-active {
+    opacity: 0;
+    transition: opacity 1ms;
+}
+
+
+/* Typewriter CSS elements */
 .react-typewriter-pointer {
     background-color: white;
     display: inline;

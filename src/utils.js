@@ -19,25 +19,3 @@ export class Delay {
         return { isCanceled: true };
     }
 }
-
-export const contentInView = (element) => {
-    const scroll = window.scrollY || window.pageYOffset;
-    const elementPositionProps = element.getBoundingClientRect();
-    const elementTopPosition = elementPositionProps.top + scroll;
-
-    const viewport = {
-        top: scroll,
-        bottom: scroll + window.innerHeight,
-    };
-
-    const elementPosition = {
-        top: elementTopPosition,
-        bottom: elementTopPosition + elementPositionProps.height,
-    };
-    return (
-        (elementPosition.bottom >= viewport.top &&
-            elementPosition.bottom <= viewport.bottom) ||
-        (elementPosition.top <= viewport.bottom &&
-            elementPosition.top >= viewport.top)
-    );
-};

@@ -1,11 +1,12 @@
 import React from 'react';
-import { Delay, contentInView } from './utils';
+import { Delay } from './utils';
 import './typewriter.css';
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 const DEFAULT_TYPESPEED = 30;
 const WHITE = "white";
 const BLACK = "black";
-const CLICK_TO_CONTINUE = "(click anywhere in the text box to continue)";
+const CLICK_TO_CONTINUE = "(click anywhere to continue)";
 
 class Typewriter extends React.Component {
     state = {
@@ -24,26 +25,37 @@ class Typewriter extends React.Component {
             'hat, you do not have a representative yet? Well, could you perhaps choose one, and tell me about it **before October 4th** so we can get this journey started?',
             'We at Team Ravenclaw are so happy that you are willing to join us in this adventure! It is sure to be a blast.'
         ],
-        footer: '',
+        footer: CLICK_TO_CONTINUE,//'',
         // CurrentLine is the state attribute which we'll update as we read off each line
         currentLine: 0,
-        // TODO: I forget why we have this animate thing
-        animate: false,
         // doneTyping is an attribute we use to handle clicks.
         // The user will click inside the text box to advance to the next line of text.
         // If the text has not yet finished
         doneTyping: false,
+        // Typespeed is the number of milliseconds between printing each letter
         typeSpeed: DEFAULT_TYPESPEED,
+        // When cursorcolor is black, it will be hidden. we make it white later on after the text has been printed.
         cursorColor: BLACK,
-        footerDelay: new Delay(3000),
+        // showOpening and showMain are two flags we use to transition from the
+        // intro screen with new game button, and the professor screen.
         showOpening: true,
         showMain: false
     }
-
+    // keeps a reference of the typewriter
     myRef = React.createRef();
 
+    /*
+    Whenever the user clicks on the game while the text is printing, we want to make the text print faster
+    (mimic the real game)
+    If the text is done printing, then we want to go to the next line.
+     */
     handleClick = async () => {
-        this.setState({footer: ''});
+        // The footer will always read "(click anywhere to continue)" and we want it to be
+        // after a <br> so we have to reset it awkwardly.
+        //this.setState({footer: ''});
+
+        // If all the text has been printed already and we received a click, then reset to defaults for typing speed,
+        // remove the blinking cursor, and run the typewriter on the next line.
         if (this.state.doneTyping) {
             this.setState({
                 doneTyping: false,
@@ -51,26 +63,24 @@ class Typewriter extends React.Component {
                 cursorColor: BLACK
             });
             await this.runAnimation(++this.state.currentLine);
-
+            // After the typing has finished, set doneTyping to true and reveal the cursor.
             this.setState(
                 {doneTyping: true,
                     cursorColor: WHITE
             });
         }
-        else {
+        // If we receive a click but the typing hasn't finished, speed up the typing (1ms between letters)
+        // TODO:
+        /*else {
             this.setState({typeSpeed: 1});
-        }
-    };
-
-    multiTextDisplay = async () => {
-        const openingDelay = new Delay(5000);
-        await openingDelay.getPromise();
-        await this.runAnimation(0);
+        }*/
     };
 
     runAnimation = async (idx) => {
+        // runAnimation's idx increases each time we call it, which indexes the lines state attribute.
         const textArr = this.state.lines[idx];
         if (textArr) {
+            // text starts at nothing and we add one character to it each time at a speed of typeSpeedDelay (in ms).
             let text = '';
             let typeSpeedDelay = new Delay(this.state.typeSpeed || 1);
             this.setState({typeSpeedDelay});
@@ -78,46 +88,66 @@ class Typewriter extends React.Component {
                 await typeSpeedDelay.getPromise();
                 text += textArr[char];
                 this.setState({text});
+                // I do this to interact with the clicking mechanic to change this.state.typespeed dynamically.
+                // TODO: it may not be worth it.
                 typeSpeedDelay = new Delay(this.state.typeSpeed || 1);
                 this.setState({typeSpeedDelay});
             }
         }
+        // After we're done printing everything, set doneTyping flag to true, revert type speed to default,
+        // and change the cursor color to be visible (white)
         this.setState({
             doneTyping: true,
             typeSpeed: DEFAULT_TYPESPEED,
             cursorColor: WHITE
         });
-        await this.state.footerDelay.getPromise();
-        if (this.state.doneTyping) {
-            this.setState({footer: CLICK_TO_CONTINUE});
-        }
     };
 
-    componentDidMount() {
-        this.multiTextDisplay();
-        //this.runAnimation(0);
-        this.setState({ scrollAreaIsSet: false });
-    }
+    startOpener = async () => {
+        // This is the opening function.
+        // We give a 2s delay for the fade in to finish, and then start the typewriter.
+        const openingDelay = new Delay(2000);
+        await openingDelay.getPromise();
+        await this.runAnimation(0);
+    };
 
-    startGame() {
-        this.setState({showOpening: false, showMain: true});
+    startGame = async() => {
+        // This is the function that gets called when the new game button is pressed.
+        // we set showopening to false to start the fade to black transition.
+        this.setState({showOpening: false});
+        // then we wait 3 seconds for the transition to finish, then start the fade in transition.
+        let transitionDelay = new Delay(3000);
+        await transitionDelay.getPromise();
+        this.setState({showMain: true});
+        await this.startOpener();
     }
 
     render() {
         return (
-            <div className={"my-bigass-app"}>
-                {this.state.showOpening && (
+            <div className={"app-root"}>
+                <ReactCSSTransitionGroup
+                                         transitionName = "opening-scene-transition"
+                                         transitionEnter = {false}
+                                         transitionLeaveTimeout = {2000}>
+                {this.state.showOpening ?
                     <div className={"opening-scene"}>
+                        <h2>PoTTaMoN</h2>
                         <button className={"new-game"}
                                 onClick={this.startGame.bind(this)}>
                             New Game
                         </button>
                     </div>
-                )}
-                {this.state.showMain && (
-                    <div className={"main-scene"}>
+                    : null}
+                </ReactCSSTransitionGroup>
+
+                <ReactCSSTransitionGroup component="div"
+                                         transitionName = "main-scene-transition"
+                                         transitionEnterTimeout = {1500}
+                                         transitionLeaveTimeout = {300}>
+                {this.state.showMain ?
+                    <div className={"main-scene"} onClick={this.handleClick}>
                         <img className="center" src="avatar.png" alt="Professor Squash"/>
-                        <div ref={this.myRef} className={'textbox typewriter-text-wrap'} onClick={this.handleClick}>
+                        <div ref={this.myRef} className={'textbox typewriter-text-wrap'}>
                             <h1 className='react-typewriter-text'>
                                 {this.state.text}
                                 <div
@@ -126,15 +156,22 @@ class Typewriter extends React.Component {
                                 ></div>
                             </h1>
                             <br/>
-                            <h1 className={'footer-text'}>
-                                {this.state.footer}
-                            </h1>
+                            <ReactCSSTransitionGroup transitionName = "footer-text-transition"
+                                                     transitionEnterTimeout = {1500}
+                                                     transitionLeaveTimeout = {1}>
+                                {this.state.doneTyping && this.state.currentLine < this.state.lines.length - 1 ?
+                                    <h1 className={'footer-text'}>
+                                    {this.state.footer}
+                                    </h1>
+                                    :null}
+                            </ReactCSSTransitionGroup>
                         </div>
                     </div>
-                )}
+                    : null}
+                </ReactCSSTransitionGroup>
             </div>
         );
     }
-};
+}
 
 export default Typewriter;
