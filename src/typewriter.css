@@ -70,7 +70,7 @@ h2 {
 }
 .footer-text-transition-enter.footer-text-transition-enter-active {
     opacity: 2;
-    transition: opacity 400ms;
+    transition: opacity 500ms;
 }
 .footer-text-transition-leave {
     opacity: 1;

@@ -23,7 +23,6 @@ class Typewriter extends React.Component {
             'Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak with your team representative, and hear their research from them!',
             'What\'s that? You don\'t have a representative yet? Well, could you perhaps choose one, and tell me about it before October 4th so we can get this journey started?',
             'Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let\'s go!',
-            'We at Team Ravenclaw are so happy that you are willing to join us in this adventure! It is sure to be a blast.'
         ],
         footer: CLICK_TO_CONTINUE,//'',
         // CurrentLine is the state attribute which we'll update as we read off each line
@@ -103,14 +102,6 @@ class Typewriter extends React.Component {
         });
     };
 
-    startOpener = async () => {
-        // This is the opening function.
-        // We give a 2s delay for the fade in to finish, and then start the typewriter.
-        const openingDelay = new Delay(2000);
-        await openingDelay.getPromise();
-        await this.runAnimation(0);
-    };
-
     startGame = async() => {
         // This is the function that gets called when the new game button is pressed.
         // we set showopening to false to start the fade to black transition.
@@ -119,7 +110,10 @@ class Typewriter extends React.Component {
         let transitionDelay = new Delay(3000);
         await transitionDelay.getPromise();
         this.setState({showMain: true});
-        await this.startOpener();
+        //await this.startOpener();
+        const openingDelay = new Delay(2000);
+        await openingDelay.getPromise();
+        await this.runAnimation(0);
     }
 
     render() {
@@ -157,9 +151,9 @@ class Typewriter extends React.Component {
                             </h1>
                             <br/>
                             <ReactCSSTransitionGroup transitionName = "footer-text-transition"
-                                                     transitionEnterTimeout = {1500}
-                                                     transitionLeaveTimeout = {1}>
-                                {this.state.doneTyping && this.state.currentLine < this.state.lines.length - 1 ?
+                                                     transitionEnterTimeout = {500}
+                                                     transitionLeave = {false}>
+                                {this.state.doneTyping && this.state.currentLine < 3 ?
                                     <h1 className={'footer-text'}>
                                     {this.state.footer}
                                     </h1>
