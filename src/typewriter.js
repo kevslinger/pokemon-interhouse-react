@@ -16,13 +16,13 @@ class Typewriter extends React.Component {
         lines: [
             'Hello there! Welcome to the world of Pottamon! My name is Squash, but people call me the Pottamon Professor.\n\n',
             'As you know, our world is inhabited by magical little creatures called Pottamon. Some people keep them as pets, others use them for battles.',
-            'Team Ravenclaw studies the Pottamon, to learn more about them and their natural habitat!',
-            'Do you want to help me out? Great! Your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let\'s go!',
-            'Recently, Team Ravenclaw and I have been focussing our studies on the different element types Pottamon can have. ' +
-            'We believe the secret in discovering more about these adorable creatures and their powers lies in their connection to the different elements that make up this world! ' +
+            'Team Ravenclaw studies Pottamon to learn more about them and their natural habitat!',
+            'Recently, Team Ravenclaw and I have been focusing our studies on the different element types Pottamon can have. ' +
+            'We believe the secret in discovering more about these adorable creatures and their powers lies in their connection to the different elements that make up this world!',
             'What? No, not Hydrogen and Helium, then Lithium, Beryllium, but the Pottamon elements. Rock, Water and Electric, for example.',
-            'Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak with your team representative, and hear their research from them! W' +
-            'hat, you do not have a representative yet? Well, could you perhaps choose one, and tell me about it **before October 4th** so we can get this journey started?',
+            'Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak with your team representative, and hear their research from them!',
+            'What\'s that? You don\'t have a representative yet? Well, could you perhaps choose one, and tell me about it before October 4th so we can get this journey started?',
+            'Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let\'s go!',
             'We at Team Ravenclaw are so happy that you are willing to join us in this adventure! It is sure to be a blast.'
         ],
         footer: CLICK_TO_CONTINUE,//'',
