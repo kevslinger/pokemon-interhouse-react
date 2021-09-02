@@ -150,7 +150,6 @@ class Part0 extends React.Component {
                                     style={{ backgroundColor: this.state.cursorColor }}
                                 ></div>
                             </h1>
-                            <br/>
                             <ReactCSSTransitionGroup transitionName = "footer-text-transition"
                                                      transitionEnterTimeout = {500}
                                                      transitionLeave = {false}>
