@@ -1,0 +1,28 @@
+/* Continue game button which triggers the opening scene transition */
+.continue-game {
+    width: 590px;
+    height: 93px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: left;
+    font-family: Pokemon-Emerald, sans-serif;
+    font-size: 30px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column1 {
+    text-align: left;
+}
+.column2, .column4 {
+    text-align: right;
+}
+.column3 {
+    text-align: left;
+    padding-left: 75px;
+}

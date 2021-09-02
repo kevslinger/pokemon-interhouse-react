@@ -8,13 +8,22 @@
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 50px;
     font-family: 'Pokemon Solid', sans-serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     text-align: center;
+}
+
+p {
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+button {
+    font-size: 20px;
 }
 
 /* Start game button which triggers the opening scene transition */
@@ -25,7 +34,11 @@ h2 {
     margin-left: 5px;
     border: 1px solid black;
     background-color: white;
+    text-align: left;
+    font-family: Pokemon-Emerald, sans-serif;
+    font-size: 30px;
 }
+
 
 /* ReactCSSTransitionGroup for the opening scene to fade away */
 .opening-scene-transition-leave {
@@ -70,7 +83,7 @@ h2 {
 }
 .footer-text-transition-enter.footer-text-transition-enter-active {
     opacity: 2;
-    transition: opacity 500ms;
+    transition: opacity 1ms;
 }
 .footer-text-transition-leave {
     opacity: 1;
@@ -81,7 +94,7 @@ h2 {
 }
 
 
-/* Typewriter CSS elements */
+/* Part0 CSS elements */
 .react-typewriter-pointer {
     background-color: white;
     display: inline;
