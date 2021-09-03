@@ -40,8 +40,9 @@ body {
 /* Part0 text */
 h1 {
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   font-family: Pokemon-Emerald, sans-serif;
+  padding-bottom: -1px;
 }
 
 code {

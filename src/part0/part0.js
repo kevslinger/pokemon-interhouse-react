@@ -20,7 +20,7 @@ class Part0 extends React.Component {
                 'Recently, Team Ravenclaw and I have been focusing our studies on the different element types Pottamon can have. ' +
                 'We believe the secret in these adorable creatures and their powers lies in their connection to the different elements that make up this world!',
                 'What? No, not Hydrogen and Helium, then Lithium, Beryllium, but the Pottamon elements. Rock, Water and Electric, for example.',
-                'Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak with your team representative, and hear their research from them!',
+                'Oh, you already knew this? And you’re already part of a team? That’s marvelous! I’d love to speak with your team representative, and hear their research from them!',
                 'What\'s that? You don\'t have a representative yet? Well, could you perhaps choose one, and tell me about it before October 4th so we can get this journey started?',
                 'Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let\'s go!',
             ],
@@ -51,24 +51,25 @@ class Part0 extends React.Component {
     If the text is done printing, then we want to go to the next line.
      */
     handleClick = async () => {
-        // The footer will always read "(click anywhere to continue)" and we want it to be
-        // after a <br> so we have to reset it awkwardly.
-        //this.setState({footer: ''});
-
         // If all the text has been printed already and we received a click, then reset to defaults for typing speed,
         // remove the blinking cursor, and run the typewriter on the next line.
         if (this.state.doneTyping) {
-            this.setState({
-                doneTyping: false,
-                typeSpeed: DEFAULT_TYPESPEED,
-                cursorColor: BLACK
-            });
-            await this.runAnimation(++this.state.currentLine);
-            // After the typing has finished, set doneTyping to true and reveal the cursor.
-            this.setState(
-                {doneTyping: true,
-                    cursorColor: WHITE
-            });
+            if (this.state.currentLine >= this.state.curScript.length - 1){
+                window.location.href = 'https://www.reddit.com';
+            } else {
+                this.setState({
+                    doneTyping: false,
+                    typeSpeed: DEFAULT_TYPESPEED,
+                    cursorColor: BLACK
+                });
+                await this.runAnimation(++this.state.currentLine);
+                // After the typing has finished, set doneTyping to true and reveal the cursor.
+                this.setState(
+                    {
+                        doneTyping: true,
+                        cursorColor: WHITE
+                    });
+            }
         }
         // If we receive a click but the typing hasn't finished, speed up the typing (1ms between letters)
         // TODO:
