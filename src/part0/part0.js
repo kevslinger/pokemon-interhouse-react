@@ -100,7 +100,7 @@ class Part0 extends React.Component {
                 this.setState({typeSpeedDelay: typeSpeedDelay});
             }
             // TODO: make a callback function which each level can inherit
-            this.runAnimationCallback(idx);
+            await this.runAnimationCallback(idx);
         }
         // After we're done printing everything, set doneTyping flag to true, revert type speed to default,
         // and change the cursor color to be visible (white)
@@ -167,25 +167,25 @@ class Part0 extends React.Component {
                                         <img className={"professor"} src={"avatar2.png"}
                                              alt={"Professor Squash"}/>
                                         <span className={"confetti"}>
-                                    <Confetti active={this.state.showPokemon}
-                                              config={
-                                                  {
-                                                      angle: "270",
-                                                      spread: "360",
-                                                      startVelocity: "10",
-                                                      elementCount: 270,
-                                                      duration: 675,
-                                                      height: "2px",
-                                                      width: "1px",
-                                                      colors: ["#FFFFFF"]
-                                                  }
-                                              }
-                                    />
-                            </span>
+                                            <Confetti active={this.state.showPokemon}
+                                                      config={
+                                                          {
+                                                              angle: "270",
+                                                              spread: "360",
+                                                              startVelocity: "10",
+                                                              elementCount: 270,
+                                                              duration: 675,
+                                                              height: "2px",
+                                                              width: "1px",
+                                                              colors: ["#FFFFFF"]
+                                                          }
+                                                      }
+                                            />
+                                        </span>
                                         {this.state.showPokemon ?
                                             <span className={"pottamon-holder"}>
-                                    <img className={"pottamon"} src={"wyverni.png"} alt={"Wyverni"}/>
-                                </span>
+                                                <img className={"pottamon"} src={"wyverni.png"} alt={"Wyverni"}/>
+                                            </span>
                                             : null}
                                         <span className={"spotlight"}/>
                                     </div>

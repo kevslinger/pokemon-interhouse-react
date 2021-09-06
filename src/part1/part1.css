@@ -1,14 +1,53 @@
 /* Continue game button which triggers the opening scene transition */
 .continue-game {
-    width: 590px;
-    height: 93px;
-    margin-top: 5px;
-    margin-left: 5px;
     border: 1px solid black;
     background-color: white;
     text-align: left;
     font-family: Pokemon-Emerald, sans-serif;
-    font-size: 25px;
+
+}
+@media (min-width: 960px) {
+    .continue-game {
+        width: 590px;
+        height: 93px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 959px) {
+    .continue-game {
+        width: 518px;
+        height: 82px;
+        margin-top: 4px;
+        margin-left: 4px;
+        font-size: 22px;
+    }
+}
+@media (max-width: 414px) {
+    .continue-game {
+        width: 295px;
+        height: 47px;
+        margin-top: 3px;
+        margin-left: 3px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 960px) {
+    .continue {
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 959px) {
+    .continue {
+        padding-bottom: 9px;
+    }
+}
+@media (max-width: 414px) {
+    .continue {
+        padding-bottom: 5px;
+    }
 }
 
 .column {
@@ -24,5 +63,35 @@
 }
 .column3 {
     text-align: left;
-    padding-left: 75px;
+}
+@media (min-width: 960px) {
+    .column3 {
+        padding-left: 75px;
+    }
+}
+@media (max-width: 959px) {
+    .column3 {
+        padding-left: 66px;
+    }
+}
+@media (max-width: 414px) {
+    .column3 {
+        padding-left: 39px;
+    }
+}
+
+@media (min-width: 960px) {
+    #top-row {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 959px) {
+    #top-row {
+        padding-top: 9px;
+    }
+}
+@media (max-width: 414px) {
+    #top-row {
+        padding-top: 5px;
+    }
 }

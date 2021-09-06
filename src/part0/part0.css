@@ -1,20 +1,51 @@
 /* This is the background which is a 600x400 black screen which stays constant */
 .app-root {
-    width: 600px;
-    height: 400px;
-    background: black;
+    background-color: black;
+}
+@media (min-width: 960px) {
+    .app-root {
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 959px) {
+    .app-root {
+        width: 525px;
+        height: 350px;
+    }
+}
+@media (max-width: 414px) {
+    .app-root {
+        width: 300px;
+        height: 200px;
+    }
 }
 
 /* This is the box that holds the "New Game" Button and defines the gameboy space */
 .opening-scene {
-    width: 600px;
-    height: 400px;
     background-color: #d1d1d1;
     border: 1px solid black;
 }
+@media (min-width: 960px) {
+    .opening-scene {
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 959px) {
+    .opening-scene {
+        width: 525px;
+        height: 350px;
+    }
+}
+@media (max-width: 415px) {
+    .opening-scene {
+        width: 300px;
+        height: 200px;
+    }
+}
 /* Style for the title where we say PoTTaMoN */
 .pottamon-title {
-    font-size: 50px;
     font-family: 'Pokemon Solid', sans-serif;
     color: black;
     display: block;
@@ -23,24 +54,53 @@
     width: 50%;
     text-align: center;
 }
-
-/* TODO: What is this used for lol? */
-p {
-    padding-bottom: 0px;
-    margin-top: 0px;
+@media (min-width: 960px) {
+    .pottamon-title {
+        font-size: 50px;
+    }
 }
+@media (max-width: 959px) {
+    .pottamon-title {
+        font-size: 44px;
+    }
+}
+@media (max-width: 414px) {
+    .pottamon-title {
+        font-size: 25px;
+    }
+}
+
 
 /* Start game button which triggers the opening scene transition */
 .new-game {
-    width: 590px;
-    height: 50px;
-    margin-top: 5px;
-    margin-left: 5px;
     border: 1px solid black;
     background-color: white;
     text-align: left;
     font-family: Pokemon-Emerald, sans-serif;
-    font-size: 25px;
+}
+@media (min-width: 960px) {
+    .new-game {
+        width: 590px;
+        height: 50px;
+        margin: 5px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 959px) {
+    .new-game {
+        width: 518px;
+        height: 44px;
+        margin: 4px;
+        font-size: 22px;
+    }
+}
+@media (max-width: 414px) {
+    .new-game {
+        width: 295px;
+        height: 25px;
+        margin: 3px;
+        font-size: 13px;
+    }
 }
 
 /* ReactCSSTransitionGroup for the opening scene to fade away */
@@ -58,10 +118,26 @@ p {
     the players to the game
  */
 .main-scene {
-    width: 600px;
-    height: 400px;
     background-color: black;
     border: 1px solid black;
+}
+@media (min-width: 960px) {
+    .main-scene {
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 959px) {
+    .main-scene {
+        width: 525px;
+        height: 350px;
+    }
+}
+@media (max-width: 414px) {
+    .main-scene {
+        width: 300px;
+        height: 200px;
+    }
 }
 
 /* ReactCSSTransitionGroup elements for the main scene */
@@ -81,8 +157,20 @@ p {
 }
 
 /* Footer-text is the (click to continue) part that gets appended to the bottom of the typewriter */
-#footer-text {
-    padding-top: 10px;
+@media (min-width: 960px) {
+    #footer-text {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 959px) {
+    #footer-text {
+        padding-top: 9px;
+    }
+}
+@media (max-width: 414px) {
+    #footer-text {
+        padding-top: 5px;
+    }
 }
 /* Animation effects for the footer */
 .footer-text-transition-enter {
@@ -104,54 +192,165 @@ p {
 
 /* I think we need to use this holder to be able to position the professor the way we want to */
 /* TODO: Can we get away with just using a span the same way we do for the pottamon? */
-.img-holder {
-    width: 600px;
-    height: 300px;
+@media (min-width: 960px) {
+    .img-holder {
+        width: 600px;
+        height: 300px;
+    }
 }
+@media (max-width: 959px) {
+    .img-holder {
+        width: 525px;
+        height: 263px;
+    }
+}
+@media (max-width: 414px) {
+    .img-holder {
+        width: 300px;
+        height: 150px;
+    }
+}
+
 /* style for the prof squash image */
 .professor {
     position: fixed;
-    top: 80px;
-    left: 250px;
-    width: 200px;
-    height: 200px;
     z-index: 1;
+}
+@media (min-width: 960px) {
+    .professor {
+        top: 80px;
+        left: 250px;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 959px) {
+    .professor {
+        top: 70px;
+        left: 219px;
+        width: 175px;
+        height: 175px;
+    }
+}
+@media (max-width: 414px) {
+    .professor {
+        top: 40px;
+        left: 125px;
+        width: 100px;
+        height: 100px;
+    }
 }
 /* A little flare for when the pottamon pops in */
 .confetti {
     position: fixed;
-    top: 150px;
-    left: 250px;
     z-index: 2;
+}
+@media (min-width: 960px) {
+    .confetti {
+        top: 150px;
+        left: 250px;
+    }
+}
+@media (max-width: 959px) {
+    .confetti {
+        top: 132px;
+        left: 219px;
+    }
+}
+@media (max-width: 414px) {
+    .confetti {
+        top: 75px;
+        left: 125px;
+    }
 }
 /* style for the pottamon image */
 .pottamon {
     position: fixed;
-    top: 115px;
-    left: 150px;
-    width: 150px;
-    height: 175px;
     z-index: 1;
+}
+@media (min-width: 960px) {
+    .pottamon {
+        top: 115px;
+        left: 150px;
+        width: 150px;
+        height: 175px;
+    }
+}
+@media (max-width: 959px) {
+    .pottamon {
+        top: 101px;
+        left: 132px;
+        width: 132px;
+        height: 154px;
+    }
+}
+@media (max-width: 414px) {
+    .pottamon {
+        top: 57px;
+        left: 75px;
+        width: 75px;
+        height: 88px;
+    }
 }
 /* Spotlight the professor will stand in */
 .spotlight {
     position: fixed;
-    top: 250px;
-    left: 125px;
-    height: 25px;
-    width: 325px;
     border-radius: 50%;
     display: inline-block;
     z-index: 0;
     background-color: #ffe99c;
 }
+@media (min-width: 960px) {
+    .spotlight {
+        top: 250px;
+        left: 125px;
+        height: 25px;
+        width: 325px;
+    }
+}
+@media (max-width: 959px) {
+    .spotlight {
+        top: 219px;
+        left: 110px;
+        height: 22px;
+        width: 285px;
+    }
+}
+@media (max-width: 414px) {
+    .spotlight {
+        top: 125px;
+        left: 63px;
+        height: 13px;
+        width: 162px;
+    }
+}
 /* The textbox surrounding the typewriter text */
 .textbox {
-    border: 3px solid #d4e4ff;
-    padding: 2px;
-    width: 580px;
-    height: 90px;
     margin: auto;
+}
+@media (min-width: 960px) {
+    .textbox {
+        border: 3px solid #d4e4ff;
+        padding: 2px;
+        width: 580px;
+        height: 90px;
+    }
+}
+@media (max-width: 959px) {
+    .textbox {
+        border: 2px solid #d4e4ff;
+        padding: 1px;
+        width: 509px;
+        height: 79px;
+    }
+}
+@media (max-width: 414px) {
+    .textbox {
+        border: 2px solid #d4e4ff;
+        padding: 1px;
+        width: 290px;
+        height: 45px;
+    }
 }
 
 /* Part0 typewriter elements*/
@@ -163,11 +362,25 @@ p {
 
 .react-typewriter-text {
     color: white;
-    font-size: 22px;
     font-family: Pokemon-Emerald, sans-serif;
     padding: 0;
     margin: 0;
     text-align: left;
+}
+@media (min-width: 960px) {
+    .react-typewriter-text {
+        font-size: 22px;
+    }
+}
+@media (max-width: 959px) {
+    .react-typewriter-text {
+        font-size: 19px;
+    }
+}
+@media (max-width: 414px) {
+    .react-typewriter-text {
+        font-size: 11px;
+    }
 }
 
 .add-cursor-animate {
