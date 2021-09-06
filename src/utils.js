@@ -19,3 +19,7 @@ export class Delay {
         return { isCanceled: true };
     }
 }
+
+export const arrEquals = (a, b) =>
+    a.length === b.length &&
+    a.every((v, i) => v === b[i]);

@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 @font-face {
   font-family: Pokemon-Emerald;
   src: url("Pokemon_Pixel_Font_Regular/pokemon_pixel_font.eot");
@@ -15,34 +16,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: white;
-}
-/* Base */
-#root {
-  width: 600px;
-  height: 400px;
-  background: black;
-}
-/* Awkward name for the image of the professor */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-/* The textbox surrounding the typewriter text */
-.textbox {
-  border: 3px solid #d4e4ff;
-  padding: 2px;
-  width: 580px;
-  height: 90px;
-  margin: auto;
-}
-/* Part0 text */
-h1 {
-  color: white;
-  font-size: 22px;
-  font-family: Pokemon-Emerald, sans-serif;
-  padding-bottom: -1px;
 }
 
 code {

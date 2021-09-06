@@ -1,4 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+/* This is the background which is a 600x400 black screen which stays constant */
+.app-root {
+    width: 600px;
+    height: 400px;
+    background: black;
+}
+
 /* This is the box that holds the "New Game" Button and defines the gameboy space */
 .opening-scene {
     width: 600px;
@@ -6,10 +12,11 @@
     background-color: #d1d1d1;
     border: 1px solid black;
 }
-
-h2 {
+/* Style for the title where we say PoTTaMoN */
+.pottamon-title {
     font-size: 50px;
     font-family: 'Pokemon Solid', sans-serif;
+    color: black;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -17,13 +24,10 @@ h2 {
     text-align: center;
 }
 
+/* TODO: What is this used for lol? */
 p {
     padding-bottom: 0px;
     margin-top: 0px;
-}
-
-button {
-    font-size: 20px;
 }
 
 /* Start game button which triggers the opening scene transition */
@@ -39,7 +43,6 @@ button {
     font-size: 25px;
 }
 
-
 /* ReactCSSTransitionGroup for the opening scene to fade away */
 .opening-scene-transition-leave {
     opacity: 1;
@@ -50,8 +53,9 @@ button {
     transition: all 1500ms ease-in;
 }
 
-/* This is the part where Professor Squash comes in and introduces
-   the players to the game
+/*
+    This is the part where Professor Squash comes in and introduces
+    the players to the game
  */
 .main-scene {
     width: 600px;
@@ -68,16 +72,19 @@ button {
     opacity: 2;
     transition: opacity 2s ease-in;
 }
-
 .main-scene-transition-leave {
     opacity: 1;
 }
-
 .main-scene-transition-leave.main-scene-transition-exit-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }
 
+/* Footer-text is the (click to continue) part that gets appended to the bottom of the typewriter */
+#footer-text {
+    padding-top: 10px;
+}
+/* Animation effects for the footer */
 .footer-text-transition-enter {
     opacity: 0.04;
 }
@@ -94,7 +101,60 @@ button {
 }
 
 
-/* Part0 CSS elements */
+
+/* I think we need to use this holder to be able to position the professor the way we want to */
+/* TODO: Can we get away with just using a span the same way we do for the pottamon? */
+.img-holder {
+    width: 600px;
+    height: 300px;
+}
+/* style for the prof squash image */
+.professor {
+    position: fixed;
+    top: 80px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+/* A little flare for when the pottamon pops in */
+.confetti {
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    z-index: 2;
+}
+/* style for the pottamon image */
+.pottamon {
+    position: fixed;
+    top: 115px;
+    left: 150px;
+    width: 150px;
+    height: 175px;
+    z-index: 1;
+}
+/* Spotlight the professor will stand in */
+.spotlight {
+    position: fixed;
+    top: 250px;
+    left: 125px;
+    height: 25px;
+    width: 325px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 0;
+    background-color: #ffe99c;
+}
+/* The textbox surrounding the typewriter text */
+.textbox {
+    border: 3px solid #d4e4ff;
+    padding: 2px;
+    width: 580px;
+    height: 90px;
+    margin: auto;
+}
+
+/* Part0 typewriter elements*/
 .react-typewriter-pointer {
     background-color: white;
     display: inline;
@@ -102,6 +162,9 @@ button {
 }
 
 .react-typewriter-text {
+    color: white;
+    font-size: 22px;
+    font-family: Pokemon-Emerald, sans-serif;
     padding: 0;
     margin: 0;
     text-align: left;

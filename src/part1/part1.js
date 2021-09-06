@@ -2,8 +2,10 @@ import React from 'react';
 import '../part1/part1.css';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Part0 from "../part0/part0";
-import {Delay} from "../utils";
+import {Delay, arrEquals} from "../utils";
 import {HOUSECOLORS} from "../constants";
+import {Redirect} from "react-router-dom";
+import Confetti from "react-dom-confetti";
 
 class Part1 extends Part0 {
     constructor(props) {
@@ -33,16 +35,24 @@ class Part1 extends Part0 {
         await this.runAnimation(0);
     }
 
+    runAnimationCallback = async(currentLevel) => {
+        if (arrEquals(this.state.curScript, this.state.part0Script) && currentLevel === 1){
+            this.setState({showPokemon: true});
+        }
+    }
+
     render() {
         return (
             <div className={"app-root"}>
+                {this.state.shouldRedirect ? <Redirect to={"/"}/> :
+                    <div>
                 <ReactCSSTransitionGroup
                     transitionName = "opening-scene-transition"
                     transitionEnter = {false}
                     transitionLeaveTimeout = {2000}>
                     {this.state.showOpening ?
                         <div className={"opening-scene"}>
-                            <h2>PoTTa&#8202;MoN</h2>
+                            <h1 className={"pottamon-title"}>PoTTa&#8202;MoN</h1>
                             <button className={"continue-game"}
                                     onClick={this.continueGame.bind(this)}>
                                 <div className={"column"}>
@@ -76,13 +86,37 @@ class Part1 extends Part0 {
 
                 <ReactCSSTransitionGroup component="div"
                                          transitionName = "main-scene-transition"
-                                         transitionEnterTimeout = {1500}
-                                         transitionLeaveTimeout = {300}>
+                                         transitionEnterTimeout = {1}
+                                         transitionLeaveTimeout = {1}>
                     {this.state.showMain ?
                         <div className={"main-scene"} onClick={this.handleClick}>
-                            <img className="center" src="avatar.png" alt="Professor Squash"/>
-                            <div ref={this.myRef} className={'textbox typewriter-text-wrap'}>
-                                <h1 className='react-typewriter-text'>
+                            <div className={"img-holder"}>
+                                <img className={"professor"} src={"avatar2.png"} alt="Professor Squash"/>
+                                <span className={"confetti"}>
+                                    <Confetti active={this.state.showPokemon}
+                                              config={
+                                                  {
+                                                      angle: "270",
+                                                      spread: "360",
+                                                      startVelocity: "10",
+                                                      elementCount: 270,
+                                                      duration: 675,
+                                                      height: "2px",
+                                                      width: "1px",
+                                                      colors: ["#FFFFFF"]
+                                                  }
+                                              }
+                                    />
+                                </span>
+                                {this.state.showPokemon ?
+                                    <span className={"pottamon-holder"}>
+                                        <img className={"pottamon"} src={"wyverni.png"} alt={"Wyverni"}/>
+                                    </span>
+                                    : null }
+                                <span className={"spotlight"}/>
+                            </div>
+                                <div ref={this.myRef} className={'textbox typewriter-text-wrap'}>
+                                <h1 className={'react-typewriter-text'}>
                                     {this.state.text}
                                     <div
                                         className='react-typewriter-pointer add-cursor-animate'
@@ -93,7 +127,7 @@ class Part1 extends Part0 {
                                                          transitionEnterTimeout = {500}
                                                          transitionLeave = {false}>
                                     {this.state.doneTyping && this.state.currentLine < 3 ?
-                                        <h1 className={'footer-text'}>
+                                        <h1 className={'react-typewriter-text'} id={'footer-text'}>
                                             {this.state.footer}
                                         </h1>
                                         :null}
@@ -102,6 +136,8 @@ class Part1 extends Part0 {
                         </div>
                         : null}
                 </ReactCSSTransitionGroup>
+            </div>
+                }
             </div>
         );
     }
