@@ -42,6 +42,11 @@ class Homepage extends React.Component {
                 If you defeat them, you'll earn a Pottamon badge. So the goal for this month is for your team to earn all 8 possible badges!
             </p>
             <figure className={"pottamon-figure float-right"}>
+                <img style={{"width": "100%", "height": "100%"}} src={"infernawks.png"} alt={"Infernawks"}/>
+                <figcaption>Infernawks. Flying/Fire. Phoenix Pottamon. <br/><i>Making their nests near and around volcanos, baby Infernawks dip their tails in lava to gain power.</i></figcaption>
+            </figure>
+            <p className={"intro-p-text"}/>
+            <figure className={"pottamon-figure float-left"}>
                 <img style={{"width": "100%", "height": "100%"}} src={"wyverni2.png"} alt={"Wyverni"}/>
                 <figcaption>Wyverni. Dragon/Water. Water Serpent Pottamon. <br/><i>The Wyverni mainly presides near the bottom of dark lakes. Rarely coming up to breathe, it is a prized possession of any Pottamon fisher.</i></figcaption>
             </figure>
