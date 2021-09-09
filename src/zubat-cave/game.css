@@ -16,3 +16,20 @@
     width: 5%;
     z-index: 2;
 }
+
+.zubat-game-registration-form {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    text-align: center;
+    background-color: #d1d1d1;
+    opacity: 0.5;
+}
+
+.zubat-game-form-label {
+    position: relative;
+    top: 33%;
+}

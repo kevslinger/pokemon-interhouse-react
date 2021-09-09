@@ -23,3 +23,7 @@ export class Delay {
 export const arrEquals = (a, b) =>
     a.length === b.length &&
     a.every((v, i) => v === b[i]);
+
+export const capitalize = (word) =>
+    word[0].toUpperCase() + word.slice(1).toLowerCase();
+
