@@ -35,6 +35,7 @@ class CaveWorld {
                 if (this.y + 1 <= this.size) {
                     this.y += 1;
                 // TODO: Hardcoded
+                // Let the user get through the top of the goal.
                 } else if (this.x === 9) {
                     this.y += 1;
             }
