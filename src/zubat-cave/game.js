@@ -124,6 +124,10 @@ class ZubatMaze extends React.Component {
             <div style={{"width": "600px"}}>
                 {!this.state.gameLive ?
                     <form className={"zubat-game-registration-form"} onSubmit={this.beginGame}>
+                        <h1>Welcome to the Poison Gym Challenge!</h1>
+                        <p>Oh no! You're lost in the Dark Cave with no escape rope! Navigate to the exit with the arrow keys
+                            or WASD. Try to avoid as many Zubats as you can along the way, good luck!</p>
+                        <br/>
                         <label className={"zubat-game-form-label"}>{this.state.formUsernameLabel}</label>
                         <br/>
                         <input className={"zubat-game-form-label"} type={"text"} onChange={this.handleUsernameFormChange.bind(this)}/>
@@ -150,7 +154,7 @@ class ZubatMaze extends React.Component {
                                  style={{"left": `${item.x * this.state.percentSize - this.state.percentSize}%`,
                                          "top": `${100 - item.y * this.state.percentSize}%`,
                                          }}
-                                 src={"zubat.png"}
+                                 src={"snapebat.png"}
                                  alt={"zubat"}/>
                         ))
                     }
@@ -177,8 +181,7 @@ class ZubatMaze extends React.Component {
                 </div>
                 <div className={"Zubat-rules"}>
                     <h1>Welcome to the Poison Gym Challenge!</h1>
-                    <p>Oh no! You're lost in the Dark Cave with no escape rope! Navigate to the exit with the arrow keys
-                    or WASD. Try to avoid as many Zubats as you can along the way, good luck!</p>
+                    <p>Use the arrow keys or WASD to move. Navigate through the Dark Cave and try to avoid as many zubats as you can!</p>
                 </div>
             </div>
         );

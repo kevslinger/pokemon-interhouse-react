@@ -19,7 +19,7 @@ function App() {
             <Route exact path={"/slytherinpart1"}>
                 <Part1 house={"Slytherin"} time={"7:34:20"} badges={"3"} pottadex={"32"}/>
             </Route>
-            <Route exact path={"/zubat"} component={ZubatMaze}/>
+            <Route exact path={"/snapebat"} component={ZubatMaze}/>
 
         </Switch>
     );
