@@ -8,17 +8,13 @@ class Homepage extends React.Component {
         return (
           <div>
               <Navbar/>
-              <div style={{"position": "relative"}} className={"container"}>
-                <h1 style={{"color": "black",
-                    "fontFamily": "Pokemon Solid, sans-serif",
-                    "fontSize": "64px",
-                    "textAlign": "center",
-                    "gridArea": "header"}}>PoTTaMoN</h1>
-                  <figure className={"pottamon-figure"} style={{"gridArea": "professor"}}>
-                      <img className={"pottamon-image"} src={"avatar2.png"} alt={"Professor Squash"}/>
-                    <figcaption>Hi, I'm Professor Squash!</figcaption>
+              <div style={{"position": "relative"}} className={"home-container"}>
+                <h1 className={"home-pottamon-title"}>PoTTaMoN</h1>
+                  <figure className={"home-pottamon-figure"} style={{"gridArea": "professor"}}>
+                      <img className={"home-pottamon-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
+                    <figcaption className={"home-pottamon-caption"}>Hi, I'm Professor Squash!</figcaption>
                 </figure>
-                  <p className={"intro-p-text"} style={{"gridArea": "text"}}>
+                  <p className={"home-intro-p-text"} style={{"gridArea": "text"}}>
                     Welcome to the world of Pottamon! My name's Squash, and I'm a Pottamon Professor for Team Ravenclaw.
                     <br/><br/>
                     In an effort to accelerate our Pottamon research, Team Ravenclaw is hosting a challenge for our neighboring research teams to compete in.
@@ -35,32 +31,32 @@ class Homepage extends React.Component {
                       Your job is to meet the gym leader, learn about their Pottamon, and challenge them to a gym battle!
                       If you defeat them, you'll earn a Pottamon badge. So the goal for this month is for your team to earn all 8 possible badges!
                 </p>
-                <figure className={"pottamon-figure"} style={{"gridArea": "pottamon1"}}>
-                    <img className={"pottamon-image"} src={"mlappogriff.png"} alt={"Mlappogriff"}/>
-                    <figcaption>Mlappogriff. Flying/Water. The Mlap Pottamon.<br/><i>Sightings of the Mlappogriff have been known to cause spontaneous cult formation.</i></figcaption>
+                <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon1"}}>
+                    <img className={"home-pottamon-image"} src={"mlappogriff.png"} alt={"Mlappogriff"}/>
+                    <figcaption className={"home-pottamon-caption"}>Mlappogriff. Flying/Water. The Mlap Pottamon.<br/><i>Sightings of the Mlappogriff have been known to cause spontaneous cult formation.</i></figcaption>
                 </figure>
-                <figure className={"pottamon-figure"} style={{"gridArea": "pottamon2"}}>
-                    <img className={"pottamon-image"} src={"fledgetrail.png"} alt={"Fledgetrail"}/>
-                    <figcaption>Fledgetrail. Dark/Flying. Undead Horse Pottamon. <br/><i>The Fledgetrail is one of the rarer Pottamon in the Clawla region.
+                <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon2"}}>
+                    <img className={"home-pottamon-image"} src={"fledgetrail.png"} alt={"Fledgetrail"}/>
+                    <figcaption className={"home-pottamon-caption"}>Fledgetrail. Dark/Flying. Undead Horse Pottamon. <br/><i>The Fledgetrail is one of the rarer Pottamon in the Clawla region.
                         Legend says only researchers who have seen death are able to spot it.</i></figcaption>
                 </figure>
-                <figure className={"pottamon-figure"} style={{"gridArea": "pottamon3"}}>
-                    <img className={"pottamon-image"} src={"infernawks.png"} alt={"Infernawks"}/>
-                    <figcaption>Infernawks. Flying/Fire. Phoenix Pottamon. <br/><i>Making their nests near and around volcanos, baby Infernawks dip their tails in lava to gain power.</i></figcaption>
+                <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon3"}}>
+                    <img className={"home-pottamon-image"} src={"infernawks.png"} alt={"Infernawks"}/>
+                    <figcaption className={"home-pottamon-caption"}>Infernawks. Flying/Fire. Phoenix Pottamon. <br/><i>Making their nests near and around volcanos, baby Infernawks dip their tails in lava to gain power.</i></figcaption>
                 </figure>
-                <figure className={"pottamon-figure"} style={{"gridArea": "pottamon4"}}>
-                    <img className={"pottamon-image"} src={"wyverni.png"} alt={"Wyverni"}/>
-                    <figcaption>Wyverni. Dragon/Water. Water Serpent Pottamon.<br/><i>The Wyverni mainly presides near the bottom of dark lakes. Rarely coming up to breathe, it is a prized possession of any Pottamon fisher.</i></figcaption>
+                <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon4"}}>
+                    <img className={"home-pottamon-image"} src={"wyverni.png"} alt={"Wyverni"}/>
+                    <figcaption className={"home-pottamon-caption"}>Wyverni. Dragon/Water. Water Serpent Pottamon.<br/><i>The Wyverni mainly presides near the bottom of dark lakes. Rarely coming up to breathe, it is a prized possession of any Pottamon fisher.</i></figcaption>
                 </figure>
-                <figure className={"pottamon-figure"} style={{"gridArea": "pottamon5"}}>
-                    <img className={"pottamon-image"} src={"wydraig.png"} alt={"Wydraig"}/>
-                    <figcaption>Wydraig. Poison/Dragon. idk Squash probably has something for me here.</figcaption>
+                <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon5"}}>
+                    <img className={"home-pottamon-image"} src={"wydraig.png"} alt={"Wydraig"}/>
+                    <figcaption className={"home-pottamon-caption"}>Wydraig. Poison/Dragon. idk Squash probably has something for me here.</figcaption>
                 </figure>
-                <figure className={"pottamon-figure"} style={{"gridArea": "pottamon6"}}>
-                    <img className={"pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
-                    <figcaption>Aileroink. Ground/Normal???</figcaption>
+                <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon6"}}>
+                    <img className={"home-pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
+                    <figcaption className={"home-pottamon-caption"}>Aileroink. Ground/Normal???</figcaption>
                 </figure>
-                <p style={{"gridArea": "footer", "fontSize": "14px"}}>Proudly created by Ravenclaw House.</p>
+                <p className={"home-footer"}>Proudly created by Ravenclaw House.</p>
               </div>
           </div>
         );

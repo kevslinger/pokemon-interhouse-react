@@ -16,7 +16,7 @@ class Part0 extends React.Component {
             // Script for part 0
             part0Script: [
                 'Hello there! Welcome to the world of Pottamon! My name is Squash, but people call me the Pottamon Professor.\n\n',
-                'As you know, our world is inhabited by magical little creatures called Pottamon. This one I have here is a Wyverni!',
+                'As you know, our world is inhabited by magical little creatures called Pottamon. This one I have here is an Aileroink!',
                 'Some people keep them as pets, others use them for battles. Team Ravenclaw studies Pottamon to learn more about them and their natural habitat!',
                 'Recently, Team Ravenclaw and I have been focusing our studies on the different element types Pottamon can have. ' +
                 'We believe the secret in these adorable creatures and their powers lies in their connection to the different elements that make up this world!',
@@ -139,17 +139,17 @@ class Part0 extends React.Component {
 
     render() {
         return (
-            <div ref={this.myRef} className={"app-root"}>
+            <div ref={this.myRef} className={"anime-app-root"}>
                 {this.state.shouldRedirect ? <Redirect to="/"/> :
                     <div>
                         <ReactCSSTransitionGroup
-                            transitionName={"opening-scene-transition"}
+                            transitionName={"anime-opening-scene-transition"}
                             transitionEnter={false}
                             transitionLeaveTimeout={2000}>
                             {this.state.showOpening ?
-                                <div className={"opening-scene"}>
-                                    <h1 className={"pottamon-title"}>PoTTa&#8202;MoN</h1>
-                                    <button className={"new-game"}
+                                <div className={"anime-opening-scene"}>
+                                    <h1 className={"anime-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                                    <button className={"anime-new-game"}
                                             onClick={this.startGame.bind(this)}>
                                         NEW GAME
                                     </button>
@@ -158,15 +158,15 @@ class Part0 extends React.Component {
                         </ReactCSSTransitionGroup>
 
                         <ReactCSSTransitionGroup component={"div"}
-                                                 transitionName={"main-scene-transition"}
+                                                 transitionName={"anime-main-scene-transition"}
                                                  transitionEnterTimeout={1}
                                                  transitionLeaveTimeout={1}>
                             {this.state.showMain ?
-                                <div className={"main-scene"} onClick={this.handleClick}>
-                                    <div className={"img-holder"}>
-                                        <img className={"professor"} src={"avatar2.png"}
+                                <div className={"anime-main-scene"} onClick={this.handleClick}>
+                                    <div className={"anime-img-holder"}>
+                                        <img className={"anime-professor"} src={"professor_squash.png"}
                                              alt={"Professor Squash"}/>
-                                        <span className={"confetti"}>
+                                        <span className={"anime-confetti"}>
                                             <Confetti active={this.state.showPokemon}
                                                       config={
                                                           {
@@ -183,25 +183,25 @@ class Part0 extends React.Component {
                                             />
                                         </span>
                                         {this.state.showPokemon ?
-                                            <span className={"pottamon-holder"}>
-                                                <img className={"pottamon"} src={"wyverni.png"} alt={"Wyverni"}/>
+                                            <span className={"anime-pottamon-holder"}>
+                                                <img className={"anime-pottamon"} src={"aileroink.png"} alt={"Aileroink"}/>
                                             </span>
                                             : null}
-                                        <span className={"spotlight"}/>
+                                        <span className={"anime-spotlight"}/>
                                     </div>
-                                    <div className={'textbox typewriter-text-wrap'}>
-                                        <h1 className={'react-typewriter-text'}>
+                                    <div className={'anime-textbox typewriter-text-wrap'}>
+                                        <h1 className={'anime-react-typewriter-text'}>
                                             {this.state.text}
                                             <div
-                                                className={'react-typewriter-pointer add-cursor-animate'}
+                                                className={'anime-react-typewriter-pointer anime-add-cursor-animate'}
                                                 style={{backgroundColor: this.state.cursorColor}}
                                             ></div>
                                         </h1>
-                                        <ReactCSSTransitionGroup transitionName={"footer-text-transition"}
+                                        <ReactCSSTransitionGroup transitionName={"anime-footer-text-transition"}
                                                                  transitionEnterTimeout={500}
                                                                  transitionLeave={false}>
                                             {this.state.doneTyping && this.state.currentLine < 3 ?
-                                                <h1 className={'react-typewriter-text'} id={'footer-text'}>
+                                                <h1 className={'anime-react-typewriter-text'} id={'anime-footer-text'}>
                                                     {this.state.footer}
                                                 </h1>
                                                 : null}

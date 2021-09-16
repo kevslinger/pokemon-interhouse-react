@@ -1,28 +1,62 @@
-.intro-p-text {
-    font-size: 24px;
-    font-family: serif;
+.home-pottamon-title {
+    color: black;
+    font-family: Pokemon Solid, sans-serif;
+    text-align: center;
+    grid-area: header;
+}
+@media (min-width: 960px) {
+    .home-pottamon-title {
+        font-size: 64px;
+    }
+}
+@media (max-width: 959px) {
+    .home-pottamon-title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 414px) {
+    .home-pottamon-title {
+        font-size: 32px;
+    }
 }
 
-.pottamon-figure {
+.home-intro-p-text {
+    font-family: serif;
+}
+@media (min-width: 960px) {
+    .home-intro-p-text {
+        font-size: 24px;
+    }
+}
+@media (max-width: 959px) {
+    .home-intro-p-text {
+        font-size: 18px;
+    }
+}
+@media (max-width: 414px) {
+    .home-intro-p-text {
+        font-size: 12px;
+    }
+}
+
+.home-pottamon-figure {
     text-align: center;
     margin: 0;
 }
-.pottamon-image {
+.home-pottamon-image {
     width: 100%;
     height: 100%;
 }
 
-figcaption {
+.home-pottamon-caption {
     display: block;
     padding: 5px;
 }
 
-.container {
+.home-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 240px 480px 240px;
     margin: auto;
-    width: 960px;
     grid-template-rows: auto;
     grid-template-areas:
     "header   header   header"
@@ -35,5 +69,42 @@ figcaption {
     "pottamon6 text ........."
     "......... .... footer";
     background-position: center;
-    background-color: #d4e4ff;
+    background-color: #d9d7de;
+}
+@media (min-width: 960px) {
+    .home-container {
+        grid-template-columns: 240px 480px 240px;
+        width: 960px;
+    }
+}
+@media (max-width: 959px) {
+    .home-container {
+        grid-template-columns: 160px 320px 160px;
+        width: 640px;
+    }
+}
+@media (max-width: 414px) {
+    .home-container {
+        grid-template-columns: 90px 180px 90px;
+        width: 360px;
+    }
+}
+
+.home-footer {
+    grid-area: footer;
+}
+@media (min-width: 960px) {
+    .home-footer {
+        font-size: 14px;
+    }
+}
+@media (max-width: 959px) {
+    .home-footer {
+        font-size: 9px;
+    }
+}
+@media (max-width: 414px) {
+    .home-footer {
+        font-size: 7px;
+    }
 }
