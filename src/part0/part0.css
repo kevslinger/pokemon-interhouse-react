@@ -1,51 +1,51 @@
 /* This is the background which is a 600x400 black screen which stays constant */
-.app-root {
+.anime-app-root {
     background-color: black;
 }
 @media (min-width: 960px) {
-    .app-root {
+    .anime-app-root {
         width: 600px;
         height: 400px;
     }
 }
 @media (max-width: 959px) {
-    .app-root {
+    .anime-app-root {
         width: 525px;
         height: 350px;
     }
 }
 @media (max-width: 414px) {
-    .app-root {
+    .anime-app-root {
         width: 300px;
         height: 200px;
     }
 }
 
 /* This is the box that holds the "New Game" Button and defines the gameboy space */
-.opening-scene {
+.anime-opening-scene {
     background-color: #d1d1d1;
     border: 1px solid black;
 }
 @media (min-width: 960px) {
-    .opening-scene {
+    .anime-opening-scene {
         width: 600px;
         height: 400px;
     }
 }
 @media (max-width: 959px) {
-    .opening-scene {
+    .anime-opening-scene {
         width: 525px;
         height: 350px;
     }
 }
 @media (max-width: 415px) {
-    .opening-scene {
+    .anime-opening-scene {
         width: 300px;
         height: 200px;
     }
 }
 /* Style for the title where we say PoTTaMoN */
-.pottamon-title {
+.anime-pottamon-title {
     font-family: 'Pokemon Solid', sans-serif;
     color: black;
     display: block;
@@ -60,26 +60,26 @@
     }
 }
 @media (max-width: 959px) {
-    .pottamon-title {
+    .anime-pottamon-title {
         font-size: 44px;
     }
 }
 @media (max-width: 414px) {
-    .pottamon-title {
+    .anime-pottamon-title {
         font-size: 25px;
     }
 }
 
 
 /* Start game button which triggers the opening scene transition */
-.new-game {
+.anime-new-game {
     border: 1px solid black;
     background-color: white;
     text-align: left;
     font-family: Pokemon-Emerald, sans-serif;
 }
 @media (min-width: 960px) {
-    .new-game {
+    .anime-new-game {
         width: 590px;
         height: 50px;
         margin: 5px;
@@ -87,7 +87,7 @@
     }
 }
 @media (max-width: 959px) {
-    .new-game {
+    .anime-new-game {
         width: 518px;
         height: 44px;
         margin: 4px;
@@ -95,7 +95,7 @@
     }
 }
 @media (max-width: 414px) {
-    .new-game {
+    .anime-new-game {
         width: 295px;
         height: 25px;
         margin: 3px;
@@ -104,10 +104,10 @@
 }
 
 /* ReactCSSTransitionGroup for the opening scene to fade away */
-.opening-scene-transition-leave {
+.anime-opening-scene-transition-leave {
     opacity: 1;
 }
-.opening-scene-transition-leave-active {
+.anime-opening-scene-transition-leave-active {
     opacity: 0;
     background-color: black;
     transition: all 1500ms ease-in;
@@ -117,73 +117,73 @@
     This is the part where Professor Squash comes in and introduces
     the players to the game
  */
-.main-scene {
+.anime-main-scene {
     background-color: black;
     border: 1px solid black;
 }
 @media (min-width: 960px) {
-    .main-scene {
+    .anime-main-scene {
         width: 600px;
         height: 400px;
     }
 }
 @media (max-width: 959px) {
-    .main-scene {
+    .anime-main-scene {
         width: 525px;
         height: 350px;
     }
 }
 @media (max-width: 414px) {
-    .main-scene {
+    .anime-main-scene {
         width: 300px;
         height: 200px;
     }
 }
 
 /* ReactCSSTransitionGroup elements for the main scene */
-.main-scene-transition-enter {
+.anime-main-scene-transition-enter {
     opacity: 0.04;
 }
-.main-scene-transition-enter.main-scene-transition-enter-active {
+.anime-main-scene-transition-enter.main-scene-transition-enter-active {
     opacity: 2;
     transition: opacity 2s ease-in;
 }
-.main-scene-transition-leave {
+.anime-main-scene-transition-leave {
     opacity: 1;
 }
-.main-scene-transition-leave.main-scene-transition-exit-active {
+.anime-main-scene-transition-leave.main-scene-transition-exit-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }
 
 /* Footer-text is the (click to continue) part that gets appended to the bottom of the typewriter */
 @media (min-width: 960px) {
-    #footer-text {
+    #anime-footer-text {
         padding-top: 10px;
     }
 }
 @media (max-width: 959px) {
-    #footer-text {
+    #anime-footer-text {
         padding-top: 9px;
     }
 }
 @media (max-width: 414px) {
-    #footer-text {
+    #anime-footer-text {
         padding-top: 5px;
     }
 }
 /* Animation effects for the footer */
-.footer-text-transition-enter {
+.anime-footer-text-transition-enter {
     opacity: 0.04;
 }
-.footer-text-transition-enter.footer-text-transition-enter-active {
+.anime-footer-text-transition-enter.footer-text-transition-enter-active {
     opacity: 2;
     transition: opacity 1ms;
 }
-.footer-text-transition-leave {
+.anime-footer-text-transition-leave {
     opacity: 1;
 }
-.footer-text-transition-leave.footer-text-transition-leave-active {
+.anime-footer-text-transition-leave.footer-text-transition-leave-active {
     opacity: 0;
     transition: opacity 1ms;
 }
@@ -193,91 +193,91 @@
 /* I think we need to use this holder to be able to position the professor the way we want to */
 /* TODO: Can we get away with just using a span the same way we do for the pottamon? */
 @media (min-width: 960px) {
-    .img-holder {
+    .anime-img-holder {
         width: 600px;
         height: 300px;
     }
 }
 @media (max-width: 959px) {
-    .img-holder {
+    .anime-img-holder {
         width: 525px;
         height: 263px;
     }
 }
 @media (max-width: 414px) {
-    .img-holder {
+    .anime-img-holder {
         width: 300px;
         height: 150px;
     }
 }
 
 /* style for the prof squash image */
-.professor {
+.anime-professor {
     position: fixed;
     z-index: 1;
 }
 @media (min-width: 960px) {
-    .professor {
-        top: 80px;
-        left: 250px;
-        width: 200px;
-        height: 200px;
+    .anime-professor {
+        top: 50px;
+        left: 260px;
+        width: 165px;
+        height: 250px;
     }
 }
 @media (max-width: 959px) {
-    .professor {
-        top: 70px;
-        left: 219px;
-        width: 175px;
+    .anime-professor {
+        top: 80px;
+        left: 250px;
+        width: 110px;
         height: 175px;
     }
 }
 @media (max-width: 414px) {
-    .professor {
-        top: 40px;
-        left: 125px;
-        width: 100px;
+    .anime-professor {
+        top: 45px;
+        left: 145px;
+        width: 63px;
         height: 100px;
     }
 }
 /* A little flare for when the pottamon pops in */
-.confetti {
+.anime-confetti {
     position: fixed;
     z-index: 2;
 }
 @media (min-width: 960px) {
-    .confetti {
+    .anime-confetti {
         top: 150px;
         left: 250px;
     }
 }
 @media (max-width: 959px) {
-    .confetti {
+    .anime-confetti {
         top: 132px;
         left: 219px;
     }
 }
 @media (max-width: 414px) {
-    .confetti {
+    .anime-confetti {
         top: 75px;
         left: 125px;
     }
 }
 /* style for the pottamon image */
-.pottamon {
+.anime-pottamon {
     position: fixed;
     z-index: 1;
 }
 @media (min-width: 960px) {
-    .pottamon {
-        top: 115px;
-        left: 150px;
-        width: 150px;
-        height: 175px;
+    .anime-pottamon {
+        top: 140px;
+        left: 175px;
+        width: 130px;
+        height: 150px;
     }
 }
 @media (max-width: 959px) {
-    .pottamon {
+    .anime-pottamon {
         top: 101px;
         left: 132px;
         width: 132px;
@@ -285,7 +285,7 @@
     }
 }
 @media (max-width: 414px) {
-    .pottamon {
+    .anime-pottamon {
         top: 57px;
         left: 75px;
         width: 75px;
@@ -293,7 +293,7 @@
     }
 }
 /* Spotlight the professor will stand in */
-.spotlight {
+.anime-spotlight {
     position: fixed;
     border-radius: 50%;
     display: inline-block;
@@ -301,7 +301,7 @@
     background-color: #ffe99c;
 }
 @media (min-width: 960px) {
-    .spotlight {
+    .anime-spotlight {
         top: 250px;
         left: 125px;
         height: 25px;
@@ -309,7 +309,7 @@
     }
 }
 @media (max-width: 959px) {
-    .spotlight {
+    .anime-spotlight {
         top: 219px;
         left: 110px;
         height: 22px;
@@ -317,7 +317,7 @@
     }
 }
 @media (max-width: 414px) {
-    .spotlight {
+    .anime-spotlight {
         top: 125px;
         left: 63px;
         height: 13px;
@@ -325,11 +325,11 @@
     }
 }
 /* The textbox surrounding the typewriter text */
-.textbox {
+.anime-textbox {
     margin: auto;
 }
 @media (min-width: 960px) {
-    .textbox {
+    .anime-textbox {
         border: 3px solid #d4e4ff;
         padding: 2px;
         width: 580px;
@@ -337,7 +337,7 @@
     }
 }
 @media (max-width: 959px) {
-    .textbox {
+    .anime-textbox {
         border: 2px solid #d4e4ff;
         padding: 1px;
         width: 509px;
@@ -345,7 +345,7 @@
     }
 }
 @media (max-width: 414px) {
-    .textbox {
+    .anime-textbox {
         border: 2px solid #d4e4ff;
         padding: 1px;
         width: 290px;
@@ -354,13 +354,13 @@
 }
 
 /* Part0 typewriter elements*/
-.react-typewriter-pointer {
+.anime-react-typewriter-pointer {
     background-color: white;
     display: inline;
     padding: 0 1px;
 }
 
-.react-typewriter-text {
+.anime-react-typewriter-text {
     color: white;
     font-family: Pokemon-Emerald, sans-serif;
     padding: 0;
@@ -368,22 +368,22 @@
     text-align: left;
 }
 @media (min-width: 960px) {
-    .react-typewriter-text {
+    .anime-react-typewriter-text {
         font-size: 22px;
     }
 }
 @media (max-width: 959px) {
-    .react-typewriter-text {
+    .anime-react-typewriter-text {
         font-size: 19px;
     }
 }
 @media (max-width: 414px) {
-    .react-typewriter-text {
+    .anime-react-typewriter-text {
         font-size: 11px;
     }
 }
 
-.add-cursor-animate {
+.anime-add-cursor-animate {
     animation: blink 1s step-end infinite;
 }
 
@@ -396,6 +396,6 @@
     }
 }
 
-.hide-typing-cursor {
+.anime-hide-typing-cursor {
     padding: 0;
 }

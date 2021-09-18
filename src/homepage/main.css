@@ -1,28 +1,37 @@
-.intro-p-text {
-    font-size: 24px;
-    font-family: serif;
+.home-pottamon-title {
+    color: black;
+    font-family: Pokemon Solid, sans-serif;
+    text-align: center;
+    grid-area: header;
 }
 
-.pottamon-figure {
+.home-pottamon-title {
+    font-size: 6vw;
+}
+
+.home-intro-p-text {
+    font-family: serif;
+    font-size: 1.5rem;
+}
+
+.home-pottamon-figure {
     text-align: center;
     margin: 0;
 }
-.pottamon-image {
+.home-pottamon-image {
     width: 100%;
     height: 100%;
 }
 
-figcaption {
+.home-pottamon-caption {
     display: block;
     padding: 5px;
 }
 
-.container {
+.home-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 240px 480px 240px;
     margin: auto;
-    width: 960px;
     grid-template-rows: auto;
     grid-template-areas:
     "header   header   header"
@@ -35,5 +44,28 @@ figcaption {
     "pottamon6 text ........."
     "......... .... footer";
     background-position: center;
-    background-color: rgba(60, 90, 166, 0.5);
+    background-color: #d9d7de;
+}
+@media (min-width: 991px) {
+    .home-container {
+        grid-template-columns: 240px 480px 240px;
+        width: 960px;
+    }
+}
+@media (max-width: 767px) {
+    .home-container {
+        grid-template-columns: 160px 320px 160px;
+        width: 640px;
+    }
+}
+@media (max-width: 479px) {
+    .home-container {
+        grid-template-columns: 90px 180px 90px;
+        width: 360px;
+    }
+}
+
+.home-footer {
+    grid-area: footer;
+    font-size: 1rem;
 }
