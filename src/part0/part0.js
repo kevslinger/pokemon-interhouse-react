@@ -184,7 +184,7 @@ class Part0 extends React.Component {
                                         </span>
                                         {this.state.showPokemon ?
                                             <span className={"pottamon-holder"}>
-                                                <img className={"pottamon"} src={"wyverni.png"} alt={"Wyverni"}/>
+                                                <img className={"pottamon"} src={"infernawks.png"} alt={"Wyverni"}/>
                                             </span>
                                             : null}
                                         <span className={"spotlight"}/>

@@ -40,7 +40,7 @@ class Homepage extends React.Component {
                     <figcaption>Mlappogriff. Flying/Water. The Mlap Pottamon.<br/><i>Sightings of the Mlappogriff have been known to cause spontaneous cult formation.</i></figcaption>
                 </figure>
                 <figure className={"pottamon-figure"} style={{"gridArea": "pottamon2"}}>
-                    <img className={"pottamon-image"} src={"fledgetrail.png"} alt={"Fledgetrail"}/>
+                    <img className={"pottamon-image"} src={"fledgetrail.png"} alt={"Fledgetrail"} style={{"transform": "scaleX(-1)"}}/>
                     <figcaption>Fledgetrail. Dark/Flying. Undead Horse Pottamon. <br/><i>The Fledgetrail is one of the rarer Pottamon in the Clawla region.
                         Legend says only researchers who have seen death are able to spot it.</i></figcaption>
                 </figure>
@@ -49,7 +49,7 @@ class Homepage extends React.Component {
                     <figcaption>Infernawks. Flying/Fire. Phoenix Pottamon. <br/><i>Making their nests near and around volcanos, baby Infernawks dip their tails in lava to gain power.</i></figcaption>
                 </figure>
                 <figure className={"pottamon-figure"} style={{"gridArea": "pottamon4"}}>
-                    <img className={"pottamon-image"} src={"wyverni.png"} alt={"Wyverni"}/>
+                    <img className={"pottamon-image"} src={"wyverni.png"} alt={"Wyverni"} style={{"transform": "scaleX(-1)"}}/>
                     <figcaption>Wyverni. Dragon/Water. Water Serpent Pottamon.<br/><i>The Wyverni mainly presides near the bottom of dark lakes. Rarely coming up to breathe, it is a prized possession of any Pottamon fisher.</i></figcaption>
                 </figure>
                 <figure className={"pottamon-figure"} style={{"gridArea": "pottamon5"}}>
@@ -57,7 +57,7 @@ class Homepage extends React.Component {
                     <figcaption>Wydraig. Poison/Dragon. idk Squash probably has something for me here.</figcaption>
                 </figure>
                 <figure className={"pottamon-figure"} style={{"gridArea": "pottamon6"}}>
-                    <img className={"pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
+                    <img className={"pottamon-image"} src={"aileroink.png"} alt={"Aileroink"} style={{"transform": "scaleX(-1)"}}/>
                     <figcaption>Aileroink. Ground/Normal???</figcaption>
                 </figure>
                 <p style={{"gridArea": "footer", "fontSize": "14px"}}>Proudly created by Ravenclaw House.</p>

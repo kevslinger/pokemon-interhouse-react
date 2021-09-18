@@ -5,7 +5,7 @@ export const MENUITEMS = [
         cName: 'nav-links'
     },
     {
-        title: 'Introduction Video',
+        title: 'Introduction Animation',
         url: '/intro',
         cName: 'nav-links'
     },
