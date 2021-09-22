@@ -1,4 +1,26 @@
-/* Spotlight the professor will stand in */
+.zubat-game-container {
+    background-color: black;
+}
+@media (min-width: 768px) {
+    .zubat-game-container {
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 767px) {
+    .zubat-game-container {
+        width: 525px;
+        height: 350px;
+    }
+}
+@media (max-width: 479px) {
+    .zubat-game-container {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/* Spotlight to signal the exit */
 .exit {
     position: absolute;
     top: 0;
@@ -19,8 +41,6 @@
 
 .zubat-game-registration-form {
     position: absolute;
-    width: 600px;
-    height: 400px;
     margin: 0;
     padding: 0;
     z-index: 2;
@@ -28,7 +48,141 @@
     background-color: #d1d1d1;
     opacity: 0.5;
 }
+@media (min-width: 768px) {
+    .zubat-game-registration-form {
+        width: 600px;
+        height: 400px;
+    }
+}
+@media (max-width: 767px) {
+    .zubat-game-registration-form {
+        width: 525px;
+        height: 350px;
+    }
+}
+@media (max-width: 479px) {
+    .zubat-game-registration-form {
+        width: 300px;
+        height: 200px;
+    }
+}
 
 .zubat-game-form-label {
     position: relative;
 }
+
+@media (min-width: 480px) {
+    .zubat-game-welcome{
+        font-size: 1em;
+    }
+    .zubat-game-welcome-rules {
+        font-size: 1em;
+    }
+    .zubat-game-form-label {
+        font-size: 1em;
+    }
+}
+@media (max-width: 479px) {
+    .zubat-game-welcome {
+        font-size: 0.6em;
+    }
+    .zubat-game-welcome-rules {
+        font-size: 0.6em;
+    }
+    .zubat-game-form-label {
+        font-size: 0.6em;
+    }
+}
+
+
+
+.zubat-endgame-congrats-h1 {
+    color: white;
+    position: relative;
+    left: 37%;
+    top: 45%;
+}
+
+.zubat-endgame-score-p {
+    color: white;
+    position: relative;
+    /*left: 38%;*/
+    top: 45%;
+    text-align: center;
+}
+
+.zubat-endgame-buttons {
+    width: 25%;
+    text-align: center;
+    left: 40%;
+    top: 45%;
+    margin: auto;
+    position: relative;
+}
+
+
+.zubat-mobile-button-container {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "........ up ........"
+    "left ......... right"
+    "....... down .......";
+    background-position: center;
+}
+@media (max-width: 767px) {
+    .zubat-mobile-button-container {
+        grid-template-columns: 55px 55px 55px;
+        width: 150px;
+        left: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .zubat-mobile-button-container {
+        display: none;
+    }
+}
+
+
+.zubat-mobile-button {
+    /* Center the content */
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+
+.zubat-mobile-button-arrow {
+    /* Transparent background */
+    border-style: solid;
+
+    /* Size */
+    height: 0px;
+    width: 0px;
+}
+
+.zubat-mobile-button-left {
+    /* Edges */
+    border-color: transparent rgba(0, 0, 0, 0.3) transparent transparent;
+    border-width: 8px 8px 8px 0px;
+}
+.zubat-mobile-button-right {
+    /* Edges */
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.3);
+    border-width: 8px 0px 8px 8px;
+}
+.zubat-mobile-button-up {
+    /* Edges */
+    border-color: transparent transparent rgba(0, 0, 0, 0.3);
+    border-width: 0px 8px 8px;
+}
+.zubat-mobile-button-down {
+    /* Edges */
+    border-color: rgba(0, 0, 0, 0.3) transparent transparent;
+    border-width: 8px 8px 0px;
+}
+
+

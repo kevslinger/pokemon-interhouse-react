@@ -64,22 +64,24 @@ class ZubatMaze extends React.Component {
         }
     }
 
-    // Take a step of the environment
-    step = async (event) => {
+    handleKeypress = async (event) => {
         if (this.state.gameLive && !this.state.completed) {
-            // the cave's step returns the correct trainer sprite to use as well as if we hit a zubat or not
-            // TODO: should the cave know about the sprites?
             let action = convertAction(event.keyCode);
-            let maybe_zubat = this.state.cave.step(action);
-            // If the user didn't enter a valid move, keep the current trainer sprite.
-            let trainer_sprite_path = getTrainerSpritePath(action);
-            this.setState({trainerSpritePath: trainer_sprite_path ? trainer_sprite_path: this.state.trainerSpritePath});
-            // If they beat the game.
-            // TODO: What if we have sideways goals?
-            if (this.state.cave.y > this.state.cave.size) {
-                this.setState({completed: true});
-                await this.saveResults();
-            }
+            await this.step(action);
+        }
+    }
+
+    // Take a step of the environment
+    step = async (action) => {
+        let maybe_zubat = this.state.cave.step(action);
+        // If the user didn't enter a valid move, keep the current trainer sprite.
+        let trainer_sprite_path = getTrainerSpritePath(action);
+        this.setState({trainerSpritePath: trainer_sprite_path ? trainer_sprite_path: this.state.trainerSpritePath});
+        // If they beat the game.
+        // TODO: What if we have sideways goals?
+        if (this.state.cave.y >= this.state.cave.size) {
+            this.setState({completed: true});
+            await this.saveResults();
         }
     }
 
@@ -117,22 +119,44 @@ class ZubatMaze extends React.Component {
         this.setState({house: event.target.value});
     }
 
+    handleLeftButton = async () => {
+        if (this.state.gameLive && !this.state.completed) {
+        await this.step(0);
+        }
+    }
+    handleRightButton = async () => {
+        if (this.state.gameLive && !this.state.completed) {
+            await this.step(1);
+        }
+    }
+    handleUpButton = async () => {
+        if (this.state.gameLive && !this.state.completed) {
+            await this.step(2);
+        }
+    }
+    handleDownButton = async () => {
+        if (this.state.gameLive && !this.state.completed) {
+            await this.step(3);
+        }
+    }
+
+
     // Add the navigation listener
     componentDidMount() {
-        document.addEventListener("keydown", this.step);
+        document.addEventListener("keydown", this.handleKeypress);
     }
 
     componentWillUnmount() {
-        document.removeEventListener("keydown", this.step);
+        document.removeEventListener("keydown", this.handleKeypress);
     }
 
     render() {
         return (
-            <div style={{"width": "600px"}}>
+            <div className={"zubat-game-container"}>
                 {!this.state.gameLive ?
                     <form className={"zubat-game-registration-form"} onSubmit={this.beginGame}>
-                        <h1>Welcome to the Poison Gym Challenge!</h1>
-                        <p>Oh no! You're lost in the Dark Cave with no escape rope! Navigate to the exit with the arrow keys
+                        <h1 className={"zubat-game-welcome"}>Welcome to the Poison Gym Challenge!</h1>
+                        <p className={"zubat-game-welcome-rules"}>Oh no! You're lost in the Dark Cave with no escape rope! Navigate to the exit with the arrow keys
                             or WASD. Try to avoid as many Zubats as you can along the way, good luck!</p>
                         <br/>
                         <label className={"zubat-game-form-label"}>{this.state.formUsernameLabel}</label>
@@ -147,19 +171,19 @@ class ZubatMaze extends React.Component {
                     </form>
                 : null }
 
-                <div style={{"height": "400px", "backgroundColor": "black", "position": "relative"}}>
+                <div style={{"width": "100%", "height": "100%", "position": "relative"}}>
                     <img style={{"position": "relative",
-                        "top": `${100 - this.state.cave.y * this.state.percentSize}%`,
-                        "left": `${this.state.cave.x * this.state.percentSize - this.state.percentSize}%`,
+                        "top": `${100 - (this.state.cave.y+1) * this.state.percentSize}%`,
+                        "left": `${(this.state.cave.x) * this.state.percentSize}%`,
                         "height": "10%",
                         "width": "5%",
                         "zIndex": 1}} src={this.state.trainerSpritePath} alt={"YOU"}/>
                     <span className={"exit"}/>
                     {
-                        this.state.cave.zubats.map((item) => (
-                            <img className={"zubat"} key={item}
-                                 style={{"left": `${item.x * this.state.percentSize - this.state.percentSize}%`,
-                                         "top": `${100 - item.y * this.state.percentSize}%`,
+                        this.state.cave.zubats.map((item, idx) => (
+                            <img className={"zubat"} key={idx}
+                                 style={{"left": `${item.x * this.state.percentSize}%`,
+                                         "top": `${100 - (item.y+1) * this.state.percentSize}%`,
                                          }}
                                  src={"snapebat.png"}
                                  alt={"snapebat"}/>
@@ -178,20 +202,38 @@ class ZubatMaze extends React.Component {
                                   }
                               }
                     />
-                    {this.state.cave.y > this.state.cave.size ?
+                    {this.state.completed ?
                         <div>
-                        <h1 style={{"color": "white", "left": "37%", "top": "45%", "position": "relative"}}>CONGRATS</h1>
-                        <p style={{"alignText": "center", "color": "white", "left": "38%", "top": "45%", "position": "relative"}}>
+                        <h1 className={"zubat-endgame-congrats-h1"} >CONGRATS</h1>
+                        <p className={"zubat-endgame-score-p"}>
                             You ran into {this.state.cave.zubatCount} zubat{this.state.cave.zubatCount !== 1? "s" : null}!</p>
-                        <button style={{"width": "125px", "alignText": "center", "left": "40%", "top": "45%", "margin": "auto", "position": "relative"}} onClick={this.reset.bind(this)}>Play Again</button>
+                        <button className={"zubat-endgame-buttons"} onClick={this.reset.bind(this)}>Play Again</button>
                         <br/>
                         <Link to={"/"}>
-                            <button style={{"width": "125px", "alignText": "center", "left": "40%", "top": "45%", "margin": "auto", "position": "relative"}}>Return to Home</button>
+                            <button className={"zubat-endgame-buttons"}>Return to Home</button>
                         </Link>
                         </div>
                     : null}
                 </div>
-                <div className={"Zubat-rules"}>
+                <div className={"zubat-mobile-button-container"}>
+                    <button className={"zubat-mobile-button"} style={{"gridArea": "left"}} onClick={this.handleLeftButton.bind(this)}>
+                        <div className={"zubat-mobile-button-arrow zubat-mobile-button-left"}></div>
+                        Left
+                    </button>
+                    <button className={"zubat-mobile-button"} style={{"gridArea": "right"}} onClick={this.handleRightButton.bind(this)}>
+                        Right
+                        <div className={"zubat-mobile-button-arrow zubat-mobile-button-right"}></div>
+                    </button>
+                    <button className={"zubat-mobile-button"}  style={{"gridArea": "up"}} onClick={this.handleUpButton.bind(this)}>
+                        <div className={"zubat-mobile-button-arrow zubat-mobile-button-up"}></div>
+                        Up
+                    </button>
+                    <button className={"zubat-mobile-button"} style={{"gridArea": "down"}} onClick={this.handleDownButton.bind(this)}>
+                        <div className={"zubat-mobile-button-arrow zubat-mobile-button-down"}></div>
+                        Down
+                    </button>
+                </div>
+                <div className={"zubat-rules"}>
                     <h1>Welcome to the Poison Gym Challenge!</h1>
                     <p>Use the arrow keys or WASD to move. Navigate through the Dark Cave and try to avoid as many zubats as you can!</p>
                 </div>

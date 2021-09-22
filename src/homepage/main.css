@@ -46,7 +46,7 @@
     background-position: center;
     background-color: #d9d7de;
 }
-@media (min-width: 991px) {
+@media (min-width: 768px) {
     .home-container {
         grid-template-columns: 240px 480px 240px;
         width: 960px;

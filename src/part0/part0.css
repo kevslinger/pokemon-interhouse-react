@@ -2,19 +2,19 @@
 .anime-app-root {
     background-color: black;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-app-root {
         width: 600px;
         height: 400px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-app-root {
         width: 525px;
         height: 350px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-app-root {
         width: 300px;
         height: 200px;
@@ -26,19 +26,19 @@
     background-color: #d1d1d1;
     border: 1px solid black;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-opening-scene {
         width: 600px;
         height: 400px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-opening-scene {
         width: 525px;
         height: 350px;
     }
 }
-@media (max-width: 415px) {
+@media (max-width: 479px) {
     .anime-opening-scene {
         width: 300px;
         height: 200px;
@@ -54,17 +54,17 @@
     width: 50%;
     text-align: center;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .pottamon-title {
         font-size: 50px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-pottamon-title {
         font-size: 44px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-pottamon-title {
         font-size: 25px;
     }
@@ -78,7 +78,7 @@
     text-align: left;
     font-family: Pokemon-Emerald, sans-serif;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-new-game {
         width: 590px;
         height: 50px;
@@ -86,7 +86,7 @@
         font-size: 25px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-new-game {
         width: 518px;
         height: 44px;
@@ -94,7 +94,7 @@
         font-size: 22px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-new-game {
         width: 295px;
         height: 25px;
@@ -121,19 +121,19 @@
     background-color: black;
     border: 1px solid black;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-main-scene {
         width: 600px;
         height: 400px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-main-scene {
         width: 525px;
         height: 350px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-main-scene {
         width: 300px;
         height: 200px;
@@ -157,17 +157,17 @@
 }
 
 /* Footer-text is the (click to continue) part that gets appended to the bottom of the typewriter */
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     #anime-footer-text {
         padding-top: 10px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     #anime-footer-text {
         padding-top: 9px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     #anime-footer-text {
         padding-top: 5px;
     }
@@ -192,19 +192,19 @@
 
 /* I think we need to use this holder to be able to position the professor the way we want to */
 /* TODO: Can we get away with just using a span the same way we do for the pottamon? */
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-img-holder {
         width: 600px;
         height: 300px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-img-holder {
         width: 525px;
         height: 263px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-img-holder {
         width: 300px;
         height: 150px;
@@ -216,7 +216,7 @@
     position: fixed;
     z-index: 1;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-professor {
         top: 50px;
         left: 260px;
@@ -224,7 +224,7 @@
         height: 250px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-professor {
         top: 80px;
         left: 250px;
@@ -232,7 +232,7 @@
         height: 175px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-professor {
         top: 45px;
         left: 145px;
@@ -245,19 +245,19 @@
     position: fixed;
     z-index: 2;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-confetti {
         top: 150px;
         left: 250px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-confetti {
         top: 132px;
         left: 219px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-confetti {
         top: 75px;
         left: 125px;
@@ -268,7 +268,7 @@
     position: fixed;
     z-index: 1;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-pottamon {
         top: 140px;
         left: 175px;
@@ -276,7 +276,7 @@
         height: 150px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-pottamon {
         top: 101px;
         left: 132px;
@@ -284,7 +284,7 @@
         height: 154px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-pottamon {
         top: 57px;
         left: 75px;
@@ -300,7 +300,7 @@
     z-index: 0;
     background-color: #ffe99c;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-spotlight {
         top: 250px;
         left: 125px;
@@ -308,7 +308,7 @@
         width: 325px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-spotlight {
         top: 219px;
         left: 110px;
@@ -316,7 +316,7 @@
         width: 285px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-spotlight {
         top: 125px;
         left: 63px;
@@ -328,7 +328,7 @@
 .anime-textbox {
     margin: auto;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-textbox {
         border: 3px solid #d4e4ff;
         padding: 2px;
@@ -336,7 +336,7 @@
         height: 90px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-textbox {
         border: 2px solid #d4e4ff;
         padding: 1px;
@@ -344,7 +344,7 @@
         height: 79px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-textbox {
         border: 2px solid #d4e4ff;
         padding: 1px;
@@ -367,17 +367,17 @@
     margin: 0;
     text-align: left;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .anime-react-typewriter-text {
         font-size: 22px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .anime-react-typewriter-text {
         font-size: 19px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .anime-react-typewriter-text {
         font-size: 11px;
     }

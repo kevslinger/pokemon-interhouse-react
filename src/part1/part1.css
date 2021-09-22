@@ -6,7 +6,7 @@
     font-family: Pokemon-Emerald, sans-serif;
 
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .continue-game {
         width: 590px;
         height: 93px;
@@ -15,7 +15,7 @@
         font-size: 25px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .continue-game {
         width: 518px;
         height: 82px;
@@ -24,7 +24,7 @@
         font-size: 22px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .continue-game {
         width: 295px;
         height: 47px;
@@ -34,17 +34,17 @@
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .continue {
         padding-bottom: 10px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .continue {
         padding-bottom: 9px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .continue {
         padding-bottom: 5px;
     }
@@ -64,33 +64,33 @@
 .column3 {
     text-align: left;
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     .column3 {
         padding-left: 75px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     .column3 {
         padding-left: 66px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     .column3 {
         padding-left: 39px;
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     #top-row {
         padding-top: 10px;
     }
 }
-@media (max-width: 959px) {
+@media (max-width: 767px) {
     #top-row {
         padding-top: 9px;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 479px) {
     #top-row {
         padding-top: 5px;
     }
