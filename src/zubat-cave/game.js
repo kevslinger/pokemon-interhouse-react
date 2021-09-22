@@ -121,7 +121,7 @@ class ZubatMaze extends React.Component {
 
     handleLeftButton = async () => {
         if (this.state.gameLive && !this.state.completed) {
-        await this.step(0);
+            await this.step(0);
         }
     }
     handleRightButton = async () => {
@@ -158,7 +158,6 @@ class ZubatMaze extends React.Component {
                         <h1 className={"zubat-game-welcome"}>Welcome to the Poison Gym Challenge!</h1>
                         <p className={"zubat-game-welcome-rules"}>Oh no! You're lost in the Dark Cave with no escape rope! Navigate to the exit with the arrow keys
                             or WASD. Try to avoid as many Zubats as you can along the way, good luck!</p>
-                        <br/>
                         <label className={"zubat-game-form-label"}>{this.state.formUsernameLabel}</label>
                         <br/>
                         <input className={"zubat-game-form-label"} type={"text"} onChange={this.handleUsernameFormChange.bind(this)}/>
@@ -229,8 +228,8 @@ class ZubatMaze extends React.Component {
                         Up
                     </button>
                     <button className={"zubat-mobile-button"} style={{"gridArea": "down"}} onClick={this.handleDownButton.bind(this)}>
-                        <div className={"zubat-mobile-button-arrow zubat-mobile-button-down"}></div>
                         Down
+                        <div className={"zubat-mobile-button-arrow zubat-mobile-button-down"}></div>
                     </button>
                 </div>
                 <div className={"zubat-rules"}>

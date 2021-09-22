@@ -134,8 +134,8 @@
 }
 @media (max-width: 767px) {
     .zubat-mobile-button-container {
-        grid-template-columns: 55px 55px 55px;
-        width: 150px;
+        grid-template-columns: 60px 60px 60px;
+        width: 180px;
         left: 50%;
     }
 }
