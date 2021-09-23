@@ -1,0 +1,70 @@
+.task1-pottamon-title {
+    color: black;
+    font-family: Pokemon Solid, sans-serif;
+    text-align: center;
+    grid-area: header;
+}
+
+.task1-pottamon-title {
+    font-size: 6vw;
+}
+
+.task1-intro-p-text {
+    font-family: serif;
+    font-size: 1.5rem;
+}
+
+.task1-gym-leader-figure {
+    text-align: center;
+    margin: 0;
+}
+.task1-gym-leader-image {
+    width: 100%;
+    height: 100%;
+}
+
+.task1-gym-leader-caption {
+    display: block;
+    padding: 5px;
+}
+
+.task1-container {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header   header   header"
+    "professor text ........."
+    "......... text   leader1"
+    "......... text ........."
+    "leader2   text ........."
+    "......... text ........."
+    "......... text   leader3"
+    "footer    ....  ........";
+    background-position: center;
+    background-color: #d9d7de;
+}
+@media (min-width: 768px) {
+    .task1-container {
+        grid-template-columns: 240px 480px 240px;
+        width: 960px;
+    }
+}
+@media (max-width: 767px) {
+    .task1-container {
+        grid-template-columns: 160px 320px 160px;
+        width: 640px;
+    }
+}
+@media (max-width: 479px) {
+    .task1-container {
+        grid-template-columns: 90px 180px 90px;
+        width: 360px;
+    }
+}
+
+.task1-footer {
+    grid-area: footer;
+    font-size: 1rem;
+}

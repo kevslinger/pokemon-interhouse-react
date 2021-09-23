@@ -1,26 +1,28 @@
 import React from "react";
-import Homepage from "./homepage/main";
-import Part0 from "./part0/part0";
-import Part1 from "./part1/part1";
+import IntroHomepage from "./intro/introHomepage";
+import IntroAnimation from "./intro/introAnimation";
+import Task1Homepage from "./task1/task1Homepage";
+import Task1Animation from "./task1/task1Animation";
+import Task2Homepage from "./task2/task2Homepage";
 import ZubatMaze from "./zubat-cave/game";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
     return (
         <Switch>
-            <Route exact path={"/"} component={Homepage}></Route>
-            <Route exact path={"/intro"} component={Part0}></Route>
+            <Route exact path={"/"} component={IntroHomepage}/>
+            <Route exact path={"/intro"} component={IntroAnimation}/>
+            <Route exact path={"/part1"} component={Task1Homepage}/>
             <Route exact path={"/gryffindorpart1"}>
-                <Part1 house={"Gryffindor"} time={"2:25:00"} badges={"3"} pottadex={"5"}/>
+                <Task1Animation house={"Gryffindor"} time={"00:05:00"} badges={"0"} pottadex={"0"}/>
             </Route>
             <Route exact path={"/hufflepuffpart1"}>
-                <Part1 house={"Hufflepuff"} time={"5:30:59"} badges={"3"} pottadex={"15"}/>
+                <Task1Animation house={"Hufflepuff"} time={"00:02:59"} badges={"0"} pottadex={"0"}/>
             </Route>
             <Route exact path={"/slytherinpart1"}>
-                <Part1 house={"Slytherin"} time={"7:34:20"} badges={"3"} pottadex={"32"}/>
+                <Task1Animation house={"Slytherin"} time={"00:04:30"} badges={"0"} pottadex={"0"}/>
             </Route>
             <Route exact path={"/snapebat"} component={ZubatMaze}/>
-
         </Switch>
     );
 }

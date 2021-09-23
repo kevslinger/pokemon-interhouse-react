@@ -1,9 +1,9 @@
 import React from "react";
-import "./main.css";
-import Navbar from "./navbar";
+import "./introHomepage.css";
+import Navbar from "../navbar/navbar";
 
 
-class Homepage extends React.Component {
+class IntroHomepage extends React.Component {
     render() {
         return (
           <div>
@@ -63,4 +63,4 @@ class Homepage extends React.Component {
     }
 }
 
-export default Homepage;
+export default IntroHomepage;

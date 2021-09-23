@@ -1,11 +1,11 @@
 @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 @font-face {
   font-family: Pokemon-Emerald;
-  src: url("Pokemon_Pixel_Font_Regular/pokemon_pixel_font.eot");
-  src: url("Pokemon_Pixel_Font_Regular/pokemon_pixel_font.eot?#iefix") format("embedded-opentype"),
-       url("Pokemon_Pixel_Font_Regular/pokemon_pixel_font.woff") format('woff'),
-       url("Pokemon_Pixel_Font_Regular/pokemon_pixel_font.ttf") format("truetype"),
-       url("Pokemon_Pixel_Font_Regular/pokemon_pixel_font.svg#svgFontName") format("svg");
+  src: url("Emerald_Font/pokemon_pixel_font.eot");
+  src: url("Emerald_Font/pokemon_pixel_font.eot?#iefix") format("embedded-opentype"),
+       url("Emerald_Font/pokemon_pixel_font.woff") format('woff'),
+       url("Emerald_Font/pokemon_pixel_font.ttf") format("truetype"),
+       url("Emerald_Font/pokemon_pixel_font.svg#svgFontName") format("svg");
 }
 
 body {

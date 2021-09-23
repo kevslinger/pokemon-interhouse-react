@@ -1,12 +1,12 @@
 import React from 'react';
 import { Delay } from '../utils';
-import './part0.css';
+import './introAnimation.css';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import { DEFAULT_TYPESPEED, BLACK, WHITE, CLICK_TO_CONTINUE } from "../constants";
 import Confetti from 'react-dom-confetti';
 import {Redirect} from "react-router-dom";
 
-class Part0 extends React.Component {
+class IntroAnimation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -188,7 +188,7 @@ class Part0 extends React.Component {
                                             : null}
                                         <span className={"anime-spotlight"}/>
                                     </div>
-                                    <div className={'anime-textbox typewriter-text-wrap'}>
+                                    <div className={'anime-textbox anime-typewriter-text-wrap'}>
                                         <h1 className={'anime-react-typewriter-text'}>
                                             {this.state.text}
                                             <div
@@ -216,4 +216,4 @@ class Part0 extends React.Component {
     }
 }
 
-export default Part0;
+export default IntroAnimation;

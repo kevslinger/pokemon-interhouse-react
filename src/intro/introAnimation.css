@@ -55,7 +55,7 @@
     text-align: center;
 }
 @media (min-width: 768px) {
-    .pottamon-title {
+    .anime-pottamon-title {
         font-size: 50px;
     }
 }
@@ -144,14 +144,14 @@
 .anime-main-scene-transition-enter {
     opacity: 0.04;
 }
-.anime-main-scene-transition-enter.main-scene-transition-enter-active {
+.anime-main-scene-transition-enter.anime-main-scene-transition-enter-active {
     opacity: 2;
     transition: opacity 2s ease-in;
 }
 .anime-main-scene-transition-leave {
     opacity: 1;
 }
-.anime-main-scene-transition-leave.main-scene-transition-exit-active {
+.anime-main-scene-transition-leave.anime-main-scene-transition-exit-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }
@@ -353,7 +353,7 @@
     }
 }
 
-/* Part0 typewriter elements*/
+/* IntroAnimation typewriter elements*/
 .anime-react-typewriter-pointer {
     background-color: white;
     display: inline;
