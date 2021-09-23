@@ -3,7 +3,6 @@ import IntroHomepage from "./intro/introHomepage";
 import IntroAnimation from "./intro/introAnimation";
 import Task1Homepage from "./task1/task1Homepage";
 import Task1Animation from "./task1/task1Animation";
-import Task2Homepage from "./task2/task2Homepage";
 import ZubatMaze from "./zubat-cave/game";
 import { Route, Switch } from "react-router-dom";
 
