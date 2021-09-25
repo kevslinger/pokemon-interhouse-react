@@ -120,7 +120,6 @@
     position: relative;
 }
 
-
 .zubat-mobile-button-container {
     display: grid;
     justify-content: center;
@@ -132,6 +131,11 @@
     "....... down .......";
     background-position: center;
 }
+@media (min-width: 768px) {
+    .zubat-mobile-button-container {
+        display: none;
+    }
+}
 @media (max-width: 767px) {
     .zubat-mobile-button-container {
         grid-template-columns: 60px 60px 60px;
@@ -139,13 +143,6 @@
         left: 50%;
     }
 }
-
-@media (min-width: 768px) {
-    .zubat-mobile-button-container {
-        display: none;
-    }
-}
-
 
 .zubat-mobile-button {
     /* Center the content */

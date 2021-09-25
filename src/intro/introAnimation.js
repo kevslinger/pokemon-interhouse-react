@@ -1,32 +1,36 @@
-import React from 'react';
-import { Delay } from '../utils';
-import './introAnimation.css';
+import React from "react";
+import { Delay } from "../utils";
+import "./introAnimation.css";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import { DEFAULT_TYPESPEED, BLACK, WHITE, CLICK_TO_CONTINUE } from "../constants";
-import Confetti from 'react-dom-confetti';
+import Confetti from "react-dom-confetti";
 import {Redirect} from "react-router-dom";
 
 class IntroAnimation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            // We're going to append to text one character at a time to get the typewriter effect in pokemon starting games.
-            text: '',
+            // We"re going to append to text one character at a time to get the typewriter effect in pokemon starting games.
+            text: "",
             curScript: [],
             // Script for part 0
             part0Script: [
-                'Hello there! Welcome to the world of Pottamon! My name is Squash, but people call me the Pottamon Professor.\n\n',
-                'As you know, our world is inhabited by magical little creatures called Pottamon. This one I have here is an Aileroink!',
-                'Some people keep them as pets, others use them for battles. Team Ravenclaw studies Pottamon to learn more about them and their natural habitat!',
-                'Recently, Team Ravenclaw and I have been focusing our studies on the different element types Pottamon can have. ' +
-                'We believe the secret in these adorable creatures and their powers lies in their connection to the different elements that make up this world!',
-                'What? No, not Hydrogen and Helium, then Lithium, Beryllium, but the Pottamon elements. Rock, Water and Electric, for example.',
-                'Oh, you already knew this? And you’re already part of a team? That’s marvelous! I’d love to speak with your team representative, and hear their research from them!',
-                'What\'s that? You don\'t have a representative yet? Well, could you perhaps choose one, and tell me about it before October 4th so we can get this journey started?',
-                'Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let\'s go!',
+                "Hello there! Welcome to the world of Pottamon! My name is Squash, but people call me the Pottamon Professor.\n\n",
+                "As you know, our world is inhabited by magical little creatures called Pottamon. This one I have here is an Aileroink!",
+                "Some people keep them as pets, others use them for battles. Team Ravenclaw studies Pottamon to learn " +
+                    "more about them and their natural habitat!",
+                "Recently, Team Ravenclaw and I have been focusing our studies on the different element types Pottamon can have. " +
+                    "We believe the secret in these adorable creatures and their powers lies in their connection to the " +
+                    "different elements that make up this world!",
+                "What? No, not Hydrogen and Helium, then Lithium, Beryllium, but the Pottamon elements. Rock, Water and Electric, for example.",
+                "Oh, you already knew this? And you’re already part of a team? That’s marvelous! I’d love to speak " +
+                    "with your team representative, and hear their research from them!",
+                "What's that? You don't have a representative yet? Well, could you perhaps choose one, and tell me " +
+                    "about it before October 4th so we can get this journey started?",
+                "Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let's go!",
             ],
-            footer: CLICK_TO_CONTINUE,//'',
-            // CurrentLine is the state attribute which we'll update as we read off each line
+            footer: CLICK_TO_CONTINUE,//"",
+            // CurrentLine is the state attribute which we"ll update as we read off each line
             currentLine: 0,
             // doneTyping is an attribute we use to handle clicks.
             // The user will click inside the text box to advance to the next line of text.
@@ -75,7 +79,7 @@ class IntroAnimation extends React.Component {
                     cursorColor: WHITE
                 });
         }
-        // If we receive a click but the typing hasn't finished, speed up the typing (1ms between letters)
+        // If we receive a click but the typing hasn"t finished, speed up the typing (1ms between letters)
         // TODO:
         else {
             this.setState({typeSpeed: 1});
@@ -86,8 +90,9 @@ class IntroAnimation extends React.Component {
         const line = this.state.curScript[idx];
 
         if (line) {
+            await this.runAnimationBeforeCallback(idx);
             // text starts at nothing and we add one character to it each time at a speed of typeSpeedDelay (in ms).
-            let text = '';
+            let text = "";
             let typeSpeedDelay = new Delay(this.state.typeSpeed || 1);
             this.setState({typeSpeedDelay});
             for (let char = 0; char < line.length; char++) {
@@ -95,14 +100,13 @@ class IntroAnimation extends React.Component {
                 text += line[char];
                 this.setState({text});
                 // I do this to interact with the clicking mechanic to change this.state.typespeed dynamically.
-                // TODO: it may not be worth it.
                 typeSpeedDelay = new Delay(this.state.typeSpeed || 1);
                 this.setState({typeSpeedDelay: typeSpeedDelay});
             }
             // TODO: make a callback function which each level can inherit
-            await this.runAnimationCallback(idx);
+            await this.runAnimationAfterCallback(idx);
         }
-        // After we're done printing everything, set doneTyping flag to true, revert type speed to default,
+        // After we"re done printing everything, set doneTyping flag to true, revert type speed to default,
         // and change the cursor color to be visible (white)
         this.setState({
             doneTyping: true,
@@ -117,7 +121,10 @@ class IntroAnimation extends React.Component {
         }
     }
 
-    runAnimationCallback = async(currentLevel) => {
+    runAnimationBeforeCallback = async(currentLevel) => {
+
+    }
+    runAnimationAfterCallback = async(currentLevel) => {
         if (currentLevel === 1){
             this.setState({showPokemon: true});
         }
@@ -186,13 +193,13 @@ class IntroAnimation extends React.Component {
                                                 <img className={"anime-pottamon"} src={"aileroink.png"} alt={"Aileroink"}/>
                                             </span>
                                             : null}
-                                        <span className={"anime-spotlight"}/>
+                                        <span className={"anime-professor-spotlight"}/>
                                     </div>
-                                    <div className={'anime-textbox anime-typewriter-text-wrap'}>
-                                        <h1 className={'anime-react-typewriter-text'}>
+                                    <div className={"anime-textbox anime-typewriter-text-wrap"}>
+                                        <h1 className={"anime-react-typewriter-text"}>
                                             {this.state.text}
                                             <div
-                                                className={'anime-react-typewriter-pointer anime-add-cursor-animate'}
+                                                className={"anime-react-typewriter-pointer anime-add-cursor-animate"}
                                                 style={{backgroundColor: this.state.cursorColor}}
                                             ></div>
                                         </h1>
@@ -200,7 +207,7 @@ class IntroAnimation extends React.Component {
                                                                  transitionEnterTimeout={500}
                                                                  transitionLeave={false}>
                                             {this.state.doneTyping && this.state.currentLine < 3 ?
-                                                <h1 className={'anime-react-typewriter-text'} id={'anime-footer-text'}>
+                                                <h1 className={"anime-react-typewriter-text"} id={"anime-footer-text"}>
                                                     {this.state.footer}
                                                 </h1>
                                                 : null}
