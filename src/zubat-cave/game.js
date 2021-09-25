@@ -1,5 +1,5 @@
 import React from "react";
-import CaveWorld from "./CaveWorld";
+import CaveWorld from "./caveWorld";
 import "./game.css";
 import Confetti from "react-dom-confetti";
 import { GoogleSpreadsheet } from "google-spreadsheet";

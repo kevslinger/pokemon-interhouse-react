@@ -23,7 +23,6 @@ class Navbar extends React.Component {
                             <li className={"menu-item"} key={index}><a className={item.cName} href={item.url}><strong>{item.title}</strong></a></li>
                         )
                     }
-
                 </ul>
             </nav>
         )

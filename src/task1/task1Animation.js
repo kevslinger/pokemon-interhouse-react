@@ -2,7 +2,7 @@ import React from "react";
 import "./task1Animation.css";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import IntroAnimation from "../intro/introAnimation";
-import {Delay, arrEquals} from "../utils";
+import {Delay} from "../utils";
 import {HOUSECOLORS} from "../constants";
 import {Redirect} from "react-router-dom";
 import Confetti from "react-dom-confetti";

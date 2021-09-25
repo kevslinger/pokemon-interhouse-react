@@ -37,24 +37,23 @@ class IntroHomepage extends React.Component {
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon2"}}>
                     <img className={"home-pottamon-image"} src={"fledgetrail.png"} alt={"Fledgetrail"}/>
-                    <figcaption className={"home-pottamon-caption"}>Fledgetrail. Dark/Flying. Undead Horse Pottamon. <br/><i>The Fledgetrail is one of the rarer Pottamon in the Clawla region.
-                        Legend says only researchers who have seen death are able to spot it.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Fledgetrail. Ghost/Ground. Undead Horse Pottamon.<br/><i>Rumor has it that only those that have seen death can see a Fledgetrail.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon3"}}>
                     <img className={"home-pottamon-image"} src={"infernawks.png"} alt={"Infernawks"}/>
-                    <figcaption className={"home-pottamon-caption"}>Infernawks. Flying/Fire. Phoenix Pottamon. <br/><i>Making their nests near and around volcanos, baby Infernawks dip their tails in lava to gain power.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Infernawks. Fire/Flying. Phoenix Pottamon.<br/><i>Tears from an Infernawks are known for their healing properties.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon4"}}>
                     <img className={"home-pottamon-image"} src={"wyverni.png"} alt={"Wyverni"}/>
-                    <figcaption className={"home-pottamon-caption"}>Wyverni. Dragon/Water. Water Serpent Pottamon.<br/><i>The Wyverni mainly presides near the bottom of dark lakes. Rarely coming up to breathe, it is a prized possession of any Pottamon fisher.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Wyverni. Fairy/Dark. The Dreameater Pottamon.<br/><i>Wyverni like to enter children's dreams and eat their nightmares.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon5"}}>
                     <img className={"home-pottamon-image"} src={"wydraig.png"} alt={"Wydraig"}/>
-                    <figcaption className={"home-pottamon-caption"}>Wydraig. Poison/Dragon. idk Squash probably has something for me here.</figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Toxaraig. Poison/Dragon. idk Squash probably has something for me here.</figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon6"}}>
                     <img className={"home-pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
-                    <figcaption className={"home-pottamon-caption"}>Aileroink. Ground/Normal???</figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. </figcaption>
                 </figure>
                 <p className={"home-footer"}>Proudly created by Ravenclaw House.</p>
               </div>
