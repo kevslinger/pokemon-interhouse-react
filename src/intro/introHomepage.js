@@ -38,10 +38,10 @@ class IntroHomepage extends React.Component {
                       and Electric, for example.
                     <br/><br/>
                     Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak
-                      with your team representative, and hear their research from them!
+                      with your team representatives, and hear their research from them!
                     <br/><br/>
-                    What’s that? You don’t have a representative yet? Well, could you perhaps choose one, and tell me
-                      about it before October 4th so we can get this journey started?
+                    What’s that? You don’t have a representative yet? Well, could you perhaps choose two, and tell me
+                      about them before October 4th, 11:59pm EDT so we can get this journey started?
                     <br/><br/>
                     Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with
                       Pottamon awaits! Let’s go!

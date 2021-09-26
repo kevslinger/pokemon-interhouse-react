@@ -24,9 +24,9 @@ class IntroAnimation extends React.Component {
                     "different elements that make up this world!",
                 "What? No, not Hydrogen and Helium, then Lithium, Beryllium, but the Pottamon elements. Rock, Water and Electric, for example.",
                 "Oh, you already knew this? And you’re already part of a team? That’s marvelous! I’d love to speak " +
-                    "with your team representative, and hear their research from them!",
-                "What's that? You don't have a representative yet? Well, could you perhaps choose one, and tell me " +
-                    "about it before October 4th so we can get this journey started?",
+                    "with your team representatives, and hear their research from them!",
+                "What's that? You don't have a representative yet? Well, could you perhaps choose two, and tell me " +
+                    "about them before October 4th so we can get this journey started?",
                 "Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with Pottamon awaits! Let's go!",
             ],
             footer: CLICK_TO_CONTINUE,//"",
