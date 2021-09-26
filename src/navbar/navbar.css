@@ -30,9 +30,9 @@
     z-index: 1;
 }
 
-/*.menu-item {*/
-/*    height: 50px;*/
-/*}*/
+.menu-item {
+    height: 50px;
+}
 
 .nav-links {
     color: #ffcb05;
