@@ -21,21 +21,30 @@ class IntroHomepage extends React.Component {
                     <figcaption className={"home-pottamon-caption"}>Hi, I'm Professor Squash!</figcaption>
                 </figure>
                   <p className={"home-intro-p-text"} style={{"gridArea": "text"}}>
-                    Welcome to the world of Pottamon! My name's Squash, and I'm a Pottamon Professor for Team Ravenclaw.
+                    Hello there! Welcome to the world of Pottamon! My name is Squash, but people call me the
+                      Pottamon Professor.
                     <br/><br/>
-                    In an effort to accelerate our Pottamon research, Team Ravenclaw is hosting a challenge for our neighboring research teams to compete in.
-                    Throughout the month, you'll be exploring our home, the Clawla region, meeting new people, and challenging experienced gym leaders to
-                    learn more about the mysteries behind the Pottamon and their elements.
+                    As you know, our world is inhabited by magical little creatures called Pottamon. Look at all the
+                      Pottamon we've been researching over the years!
                     <br/><br/>
-                    But before we begin, let me introduce you to some of the Pottamon you'll be seeing as you venture out into our world.
-                    The Clawla region is famous for its abundance of <strong>Flying</strong> type Pottamon, like this Mlappogriff.
+                    Some people keep them as pets, others use them for battles. Team Ravenclaw studies Pottamon to learn
+                      more about them and their natural habitat!
                     <br/><br/>
-                    While we've focused most of our research on Pottamon in the skies, there are still hundreds of Pottamon yet to be discovered all throughout the region!
-                    That's why we need your help to uncover the mysteries of the Pottamon of different elements.
-                    For this month, Team Ravenclaw's Research Challenge will involve Pottamon with the Rock, Water, Electric, Grass, Psychic, Poison, Fire, and Ground types.
-                    The 8 cities you'll travel to will each have a local expert in one type, called a gym leader.
-                    Your job is to meet the gym leader, learn about their Pottamon, and challenge them to a gym battle!
-                    If you defeat them, you'll earn a Pottamon badge. So the goal for this month is for your team to earn all 8 possible badges!
+                    Recently, Team Ravenclaw and I have been focusing our studies on the different element types
+                      Pottamon can have. We believe the secret in these adorable creatures and their powers lies in
+                      their connection to the different elements that make up this world!
+                    <br/><br/>
+                    What? No, not Hydrogen and Helium, then Lithium, Beryllium, but the Pottamon elements. Rock, Water,
+                      and Electric, for example.
+                    <br/><br/>
+                    Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak
+                      with your team representative, and hear their research from them!
+                    <br/><br/>
+                    What’s that? You don’t have a representative yet? Well, could you perhaps choose one, and tell me
+                      about it before October 4th so we can get this journey started?
+                    <br/><br/>
+                    Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with
+                      Pottamon awaits! Let’s go!
                   </p>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon1"}}>
                     <a href={"mlappogriff.png"} target={"_blank"} rel={"noreferrer"}>
@@ -65,13 +74,13 @@ class IntroHomepage extends React.Component {
                     <a href={"toxadraig.png"} target={"_blank"} rel={"noreferrer"}>
                         <img className={"home-pottamon-image"} src={"toxadraig.png"} alt={"Toxadraig"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon. idk Squash probably has something for me here.</figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon. <strong>TODO</strong></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon6"}}>
                     <a href={"aileroink.png"} target={"_blank"} rel={"noreferrer"}>
                         <img className={"home-pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. </figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. <strong>TODO</strong></figcaption>
                 </figure>
                 <p className={"home-footer"}>Proudly created by Ravenclaw House.</p>
               </div>
