@@ -156,7 +156,7 @@ class ZubatMaze extends React.Component {
                 {!this.state.gameLive ?
                     <form className={"zubat-game-registration-form"} onSubmit={this.beginGame}>
                         <h1 className={"zubat-game-welcome"}>Welcome to the Poison Gym Challenge!</h1>
-                        <p className={"zubat-game-welcome-rules"}>Oh no! You're lost in the Dark Cave with no escape rope! Navigate to the exit with the arrow keys
+                        <p className={"zubat-game-welcome-rules"}>Oh no! You're lost in the Horcrux Cave with no escape rope! Navigate to the exit with the arrow keys
                             or WASD. Try to avoid as many Zubats as you can along the way, good luck!</p>
                         <label className={"zubat-game-form-label"}>{this.state.formUsernameLabel}</label>
                         <br/>
@@ -182,7 +182,7 @@ class ZubatMaze extends React.Component {
                         this.state.cave.zubats.map((item, idx) => (
                             <img className={"zubat"} key={idx}
                                  style={{"left": `${item.x * this.state.percentSize}%`,
-                                         "top": `${100 - (item.y+1) * this.state.percentSize}%`,
+                                         "top": `${100 - (item.y+1) * this.state.percentSize - 3}%`,
                                          }}
                                  src={"snapebat.png"}
                                  alt={"snapebat"}/>

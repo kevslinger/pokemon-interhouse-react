@@ -22,7 +22,7 @@ class Task1Animation extends IntroAnimation {
             "Prof. Squash: If you decide to face the Water gym, you'll " +
                 "need to get to the Seafare Port by way of Rt 13. But be warned, Gym Leader Eldis tends to speak " +
                 "exclusively in dad jokes. I hear her favorite show is dancing with the staryus... ",
-            "Eldis: Ahoy, mateys! Nice to make your aqua-intance! Come meet met at Seafare Port, where the wind is salty, " +
+            "Eldis: Ahoy, mateys! Nice to make your aqua-intance! Come meet me at Seafare Port, where the wind is salty, " +
                 "the streets tide-y, the views are sea-nic, and the - but you already knew all that, if you read the " +
                 "Quibbladex.",
             "You haven't? How dare you approach me with such insolence! You're in deep water now, kid, because I'm going " +
@@ -171,7 +171,7 @@ class Task1Animation extends IntroAnimation {
                                     : null }
                                 <span style={{"opacity": this.state.hideProf ? 0.33 : 1}}
                                       className={"anime-professor-spotlight"} id={`anime-professor-spotlight-version-${this.state.gameVersion}`}/>
-                                <img style={{"opacity": this.state.highlightLeader1 ? 1 : this.state.showLeader1 ? 0.33 : 0}} className={`anime-gym-leader-1 ${this.state.highlightLeader1 ? "anime-highlight-gym-leader" : ""}`} src={"mlap.png"} alt={"Gym Leader Mjenious"}/>
+                                <img style={{"opacity": this.state.highlightLeader1 ? 1 : this.state.showLeader1 ? 0.33 : 0}} className={`anime-gym-leader-1 ${this.state.highlightLeader1 ? "anime-highlight-gym-leader" : ""}`} src={"mj.png"} alt={"Gym Leader Mjenious"}/>
                                 <span style={{"opacity": this.state.showLeader1 ? 1 : 0}} className={"anime-gym-leader-spotlight"}/>
                                 <img style={{"opacity": this.state.highlightLeader2 ? 1 : this.state.showLeader2 ? 0.33 : 0}} className={`anime-gym-leader-2 ${this.state.highlightLeader2 ? "anime-highlight-gym-leader" : ""}`} src={"eldis.png"} alt={"Gym Leader Eldis"}/>
                                 <img style={{"opacity": this.state.highlightLeader3 ? 1 : this.state.showLeader3 ? 0.33 : 0}} className={`anime-gym-leader-3 ${this.state.highlightLeader3 ? "anime-highlight-gym-leader" : ""}`} src={"xancanstand.png"} alt={"Gym Leader XanCanStand"}/>

@@ -118,6 +118,7 @@
     top: 45%;
     margin: auto;
     position: relative;
+    z-index: 3;
 }
 
 .zubat-mobile-button-container {

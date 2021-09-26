@@ -226,18 +226,18 @@
 }
 @media (max-width: 767px) {
     .anime-professor {
-        top: 80px;
+        top: 60px;
         left: 250px;
         width: 110px;
-        height: 175px;
+        height: 200px;
     }
 }
 @media (max-width: 479px) {
     .anime-professor {
-        top: 45px;
+        top: 37px;
         left: 145px;
         width: 63px;
-        height: 100px;
+        height: 110px;
     }
 }
 /* A little flare for when the pottamon pops in */
@@ -278,18 +278,18 @@
 }
 @media (max-width: 767px) {
     .anime-pottamon {
-        top: 101px;
-        left: 132px;
-        width: 132px;
-        height: 154px;
+        top: 130px;
+        left: 160px;
+        width: 105px;
+        height: 120px;
     }
 }
 @media (max-width: 479px) {
     .anime-pottamon {
-        top: 57px;
-        left: 75px;
-        width: 75px;
-        height: 88px;
+        top: 80px;
+        left: 100px;
+        width: 45px;
+        height: 60px;
     }
 }
 /* Spotlight the professor will stand in */
@@ -379,7 +379,7 @@
 }
 @media (max-width: 479px) {
     .anime-react-typewriter-text {
-        font-size: 11px;
+        font-size: 9px;
     }
 }
 

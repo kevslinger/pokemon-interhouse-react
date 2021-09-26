@@ -1,85 +1,91 @@
-.home-pottamon-title {
+.task-pottamon-title {
     color: black;
     font-family: Pokemon Solid, sans-serif;
     text-align: center;
     grid-area: header;
 }
 
-.home-pottamon-title {
-    font-size: 6vw;
-    margin: 20px;
+.task-pottamon-title {
+    font-size: calc(32px + 2vw);
 }
 
-.home-intro-p-text {
+.task-intro-p-text {
     font-family: serif;
     font-size: 1.5rem;
 }
 @media (max-width: 479px){
-    .home-intro-p-text {
+    .task-intro-p-text {
         font-size: 1rem;
     }
 }
 
-.home-pottamon-figure {
+.task-gym-leader-figure {
     text-align: center;
     margin: 0;
 }
-.home-pottamon-image {
+.task-gym-leader-image {
     width: 100%;
     height: 100%;
 }
 @media (max-width: 479px) {
-    .home-pottamon-image {
-        height: 50%;
-    }
-    .home-pottamon-caption {
+    /*.home-pottamon-image {*/
+    /*    height: 50%;*/
+    /*}*/
+    .task-gym-leader-caption {
         font-size: 66%;
     }
 }
 
-.home-pottamon-caption {
+.task-gym-leader-caption {
     display: block;
     padding: 5px;
 }
 
-.home-container {
+.task-container {
     display: grid;
     justify-content: center;
     margin: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "header   header   header"
-    "professor text ........."
-    "......... text pottamon1"
-    "pottamon2 text ........."
-    "......... text pottamon3"
-    "pottamon4 text ........."
-    "......... text pottamon5"
-    "pottamon6 text ........."
-    "......... .... footer";
+    "header  header  header"
+    "figure1  text  figure2"
+    "figure3  text  figure4"
+    "figure5  text  figure6"
+    "figure7  text  figure8"
+    "footerLeft submit footerRight";
     background-position: center;
     background-color: #d9d7de;
 }
 @media (min-width: 768px) {
-    .home-container {
+    .task-container {
         grid-template-columns: 240px 480px 240px;
         width: 960px;
     }
 }
 @media (max-width: 767px) {
-    .home-container {
+    .task-container {
         grid-template-columns: 160px 320px 160px;
         width: 640px;
     }
 }
 @media (max-width: 479px) {
-    .home-container {
+    .task-container {
         grid-template-columns: 90px 180px 90px;
         width: 360px;
     }
 }
 
-.home-footer {
-    grid-area: footer;
+.task-submit-form {
+    display: grid;
+    align-content: center;
+}
+
+.task-footer {
     font-size: 1rem;
+}
+.task-footer-left {
+    grid-area: footerLeft;
+}
+.task-footer-right {
+    grid-area: footerRight;
 }

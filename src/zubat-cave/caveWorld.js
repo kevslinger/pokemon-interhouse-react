@@ -30,8 +30,8 @@ class CaveWorld {
     generateMap() {
         this.x = 1;
         this.y = 0;
-        return MAPS[Math.floor(Math.random() * MAPS.length)];
-        //return MAPS[2];
+        //return MAPS[Math.floor(Math.random() * MAPS.length)];
+        return MAPS[4];
     }
 
     step(action) {
@@ -43,7 +43,7 @@ class CaveWorld {
         this.numSteps += 1;
         // Handle hitting a wall
         if (!this.map[this.y][this.x][action]) {
-            console.log(`Hit a wall at ${this.x}, ${this.y}, action ${action}, map ${this.map[this.x][this.y][action]}`);
+            //console.log(`Hit a wall at ${this.x}, ${this.y}, action ${action}, map ${this.map[this.x][this.y][action]}`);
             return false;
         }
         // TODO: can remove all the checking now since we have walls.
@@ -67,32 +67,6 @@ class CaveWorld {
             default:
                 break;
         }
-        //         if (0 <= this.x - 1) {
-        //             this.x -= 1;
-        //         }
-        //         break;
-        //     case 1:
-        //         if (this.x + 1 < this.size) {
-        //             this.x += 1;
-        //         }
-        //         break;
-        //     case 2:
-        //         if (this.y + 1 < this.size) {
-        //             this.y += 1;
-        //             // TODO: Hardcoded
-        //             // Let the user get through the top of the goal.
-        //         } else if (this.x === 8) {
-        //             this.y += 1;
-        //         }
-        //         break;
-        //     case 3:
-        //         if (this.y - 1 >= 0){
-        //             this.y -= 1;
-        //         }
-        //         break;
-        //     default:
-        //         break;
-        // }
         let maybe_zubat = Math.random() < this.zubat_chance;
         if (maybe_zubat) {
             this.zubatCount += 1;
