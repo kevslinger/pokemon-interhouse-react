@@ -16,11 +16,11 @@ class Task1Animation extends IntroAnimation {
             "...oh? You don’t know where to go? Well, er, I suppose I could give you a map?",
             "No? You would prefer some links to your destinations? Okay, sounds weird, but if that’s what you’d like...",
             "The closest gyms to us feature Rock, Water, and Electric type Pottamon. ",
-            "If you head up Rt 11 to Spinel Town, you’ll hit the Rock gym in no time! The gym leader, MJ, has a " +
+            "If you head up Rt 7 to Spinel Town, you’ll hit the Rock gym in no time! The gym leader, MJ, has a " +
                 "fortitude tougher than diamonds. You'll need to be bold if you want to defeat her! ",
             "MJ: oh I need some words here LMAO",
             "Prof. Squash: If you decide to face the Water gym, you'll " +
-                "need to get to the Seafare Port by way of Rt 13. But be warned, Gym Leader Eldis tends to speak " +
+                "need to get to the Seafare Port by way of Rt 9. But be warned, Gym Leader Eldis tends to speak " +
                 "exclusively in dad jokes. I hear her favorite show is dancing with the staryus... ",
             "Eldis: Ahoy, mateys! Nice to make your aqua-intance! Come meet me at Seafare Port, where the wind is salty, " +
                 "the streets tide-y, the views are sea-nic, and the - but you already knew all that, if you read the " +
@@ -28,8 +28,8 @@ class Task1Animation extends IntroAnimation {
             "You haven't? How dare you approach me with such insolence! You're in deep water now, kid, because I'm going " +
                 "to kick up a storm. Want to prove you're not as shallow as you seem? Well then, accept my challenge!",
             "Prof. Squash: And if you dare, you might chance challenging " +
-                "the electric gym leader off of Rt 15. Mayor of Faraday City, rumor has it that Gym Leader XanCanStand " +
-                "keeps a pack of electric alpacamons... best be careful, I’ve read that petting their fur is enough " +
+                "the electric gym leader off of Rt 11. Mayor of Faraday City, rumor has it that Gym Leader XanCanStand " +
+                "keeps a pack of electric alzapcas... best be careful, I’ve read that petting their fur is enough " +
                 "to give you quite the static shock!",
             "Xan: MWAHAHAHA! My gym's the toughest one yet! This challenge will wipe the floors with you! ECCLETRIXITY! " +
                 "The Type all witches and wizards are weak against!",

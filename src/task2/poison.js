@@ -25,7 +25,7 @@ class WaterGym extends React.Component {
                         the Clawla region's unique zubat variant. The Snapebat, as we call it, likes lurking in dark
                         places and - much like me - is easily irritated by the presence of humans - such as yourselves.
                         Make your way to the exit of
-                        my <Link to={"/snapebat"} target={"_blank"} rel={"noreferrer"}>Horcrux Cave</Link> disturbing
+                        my <Link to={"/snapebat"}>Horcrux Cave</Link> disturbing
                         as few of them as possible and maybe I'll reward you with my badge. If you really
                         impress me, I might even throw in a free antidote to treat the inevitable zubat bites...
                     </p>

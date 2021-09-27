@@ -60,7 +60,7 @@ class Task2Homepage extends React.Component {
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>ShadowOfApollo, the Poison Gym Leader</figcaption>
                     </figure>
-                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"} target={"_blank"} rel={"noreferrer"}>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSe--LiE_b_8VnBo24ZKYtz0dWLv58_fpMCJpwgxTobMlw4v4A/viewform"} target={"_blank"} rel={"noreferrer"}>
                         <button className={"task-submit-button"} >SUBMIT HERE</button>
                     </form>
                     <p className={"task-footer task-footer-left"}>Proudly created by Ravenclaw House.</p>
