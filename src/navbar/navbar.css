@@ -67,6 +67,11 @@
     font-size: 18px;
     opacity: 0;
 }
+@media (max-width: 479px) {
+    .nav-menu {
+        height: 700px;
+    }
+}
 .nav-menu.active {
     opacity: 1;
     background: #3c5aa6;

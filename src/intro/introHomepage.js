@@ -74,15 +74,15 @@ class IntroHomepage extends React.Component {
                     <a href={"toxadraig.png"} target={"_blank"} rel={"noreferrer"}>
                         <img className={"home-pottamon-image"} src={"toxadraig.png"} alt={"Toxadraig"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon. <strong>TODO</strong></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon.<br/><i>Fond of music, Toxadraig come slithering out of their caves upon hearing a delightful tune.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon6"}}>
                     <a href={"aileroink.png"} target={"_blank"} rel={"noreferrer"}>
                         <img className={"home-pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. <strong>TODO</strong></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. <i>Aileroink can track scents from miles away. It usually uses this skill to find gourmet food.</i></figcaption>
                 </figure>
-                <p className={"home-footer"}>Proudly created by Ravenclaw House.</p>
+                <p className={"home-footer"}><br/>Proudly created by Ravenclaw House.</p>
               </div>
           </div>
         );
