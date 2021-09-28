@@ -6,11 +6,15 @@
         width: 600px;
         height: 400px;
     }
+    .zubat-game-mobile-error-container {
+        display: none;
+    }
 }
 @media (max-width: 767px) {
     .zubat-game-container {
         width: 525px;
         height: 350px;
+        display: none;
     }
 }
 @media (max-width: 479px) {

@@ -13,7 +13,7 @@ class Task3Homepage extends React.Component {
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
-                        <a href={"professor_squash.png"} target={"_blank"} rel={"noreferrer"}>
+                        <a href={"professor_squash.png"}>
                             <img className={"task-gym-leader-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                         </a>
                         <figcaption className={"task-gym-leader-caption"}>Hi, I'm Professor Squash!</figcaption>
@@ -42,18 +42,18 @@ class Task3Homepage extends React.Component {
                         how your team did by October 25 at 11:59pm EDT.
                     </p>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure4"}}>
-                        <Link to={"/fire"} target={"_blank"} rel={"noreferrer"}>
+                        <Link to={"/fire"}>
                             <img className={"task-gym-leader-image"} src={"dancing.png"} alt={"Fire Gym Leader Dancing"}/>
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>Dancing, the Fire Gym Leader</figcaption>
                     </figure>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure5"}}>
-                        <Link to={"/ground"} target={"_blank"} rel={"noreferrer"}>
+                        <Link to={"/ground"}>
                             <img className={"task-gym-leader-image"} src={"mlap.png"} alt={"Psychic Gym Leader Mlap"}/>
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>Mlap, the Ground Gym Leader</figcaption>
                     </figure>
-                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"} target={"_blank"} rel={"noreferrer"}>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"}>
                         <button className={"task-submit-button"} >SUBMIT HERE</button>
                     </form>
                     <p className={"task-footer task-footer-right"}>Proudly created by Ravenclaw House.</p>

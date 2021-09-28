@@ -30,8 +30,7 @@ class CaveWorld {
     generateMap() {
         this.x = 1;
         this.y = 0;
-        //return MAPS[Math.floor(Math.random() * MAPS.length)];
-        return MAPS[4];
+        return MAPS[Math.floor(Math.random() * MAPS.length)];
     }
 
     step(action) {

@@ -15,7 +15,7 @@ class IntroHomepage extends React.Component {
                   </Link>
                 {/*<h1 className={"home-pottamon-title"}>PoTTa&#8202;MoN</h1>*/}
                   <figure className={"home-pottamon-figure"} style={{"gridArea": "professor"}}>
-                      <a href={"professor_squash.png"} target={"_blank"} rel={"noreferrer"}>
+                      <a href={"professor_squash.png"}>
                         <img className={"home-pottamon-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                       </a>
                     <figcaption className={"home-pottamon-caption"}>Hi, I'm Professor Squash!</figcaption>
@@ -47,37 +47,37 @@ class IntroHomepage extends React.Component {
                       Pottamon awaits! Let’s go!
                   </p>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon1"}}>
-                    <a href={"mlappogriff.png"} target={"_blank"} rel={"noreferrer"}>
+                    <a href={"mlappogriff.png"}>
                         <img className={"home-pottamon-image"} src={"mlappogriff.png"} alt={"Mlappogriff"}/>
                     </a>
                     <figcaption className={"home-pottamon-caption"}>Mlappogriff. Flying/Water. The Mlap Pottamon.<br/><i>Sightings of the Mlappogriff have been known to cause spontaneous cult formation.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon2"}}>
-                    <a href={"fledgetrail.png"} target={"_blank"} rel={"noreferrer"}>
+                    <a href={"fledgetrail.png"}>
                         <img className={"home-pottamon-image"} src={"fledgetrail.png"} alt={"Fledgetrail"}/>
                     </a>
                     <figcaption className={"home-pottamon-caption"}>Fledgetrail. Ghost/Ground. Undead Horse Pottamon.<br/><i>Rumor has it that only those that have seen death can see a Fledgetrail.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon3"}}>
-                    <a href={"infernawks.png"} target={"_blank"} rel={"noreferrer"}>
+                    <a href={"infernawks.png"}>
                         <img className={"home-pottamon-image"} src={"infernawks.png"} alt={"Infernawks"}/>
                     </a>
                     <figcaption className={"home-pottamon-caption"}>Infernawks. Fire/Flying. Phoenix Pottamon.<br/><i>Tears from an Infernawks are known for their healing properties.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon4"}}>
-                    <a href={"wyverni.png"} target={"_blank"} rel={"noreferrer"}>
+                    <a href={"wyverni.png"}>
                         <img className={"home-pottamon-image"} src={"wyverni.png"} alt={"Wyverni"}/>
                     </a>
                     <figcaption className={"home-pottamon-caption"}>Wyverni. Fairy/Dark. The Dreameater Pottamon.<br/><i>Wyverni like to enter children's dreams and eat their nightmares.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon5"}}>
-                    <a href={"toxadraig.png"} target={"_blank"} rel={"noreferrer"}>
+                    <a href={"toxadraig.png"}>
                         <img className={"home-pottamon-image"} src={"toxadraig.png"} alt={"Toxadraig"}/>
                     </a>
                     <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon.<br/><i>Fond of music, Toxadraig come slithering out of their caves upon hearing a delightful tune.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon6"}}>
-                    <a href={"aileroink.png"} target={"_blank"} rel={"noreferrer"}>
+                    <a href={"aileroink.png"}>
                         <img className={"home-pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
                     </a>
                     <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. <i>Aileroink can track scents from miles away. It usually uses this skill to find gourmet food.</i></figcaption>

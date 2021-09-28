@@ -14,7 +14,7 @@ class Task1Homepage extends React.Component {
                       <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                   </Link>
                   <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
-                      <a href={"professor_squash.png"} target={"_blank"} rel={"noreferrer"}>
+                      <a href={"professor_squash.png"}>
                         <img className={"task-gym-leader-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                       </a>
                     <figcaption className={"task-gym-leader-caption"}>Hi, I'm Professor Squash!</figcaption>
@@ -43,24 +43,24 @@ class Task1Homepage extends React.Component {
                       representatives update me on your badge progress by October 11.
                   </p>
                 <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure4"}}>
-                    <Link to={"/rock"} target={"_blank"} rel={"noreferrer"}>
+                    <Link to={"/rock"}>
                         <img className={"task-gym-leader-image"} src={"mj.png"} alt={"Rock Gym Leader Mjenious"}/>
                     </Link>
                     <figcaption className={"task-gym-leader-caption"}>Mjenious, the Rock Gym Leader</figcaption>
                 </figure>
                 <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure5"}}>
-                    <Link to={"/water"} target={"_blank"} rel={"noreferrer"}>
+                    <Link to={"/water"}>
                         <img className={"task-gym-leader-image"} src={"eldis.png"} alt={"Water Gym Leader Eldis"}/>
                     </Link>
                     <figcaption className={"task-gym-leader-caption"}>Eldis, the Water Gym Leader</figcaption>
                 </figure>
                 <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure8"}}>
-                    <Link to={"/electric"} target={"_blank"} rel={"noreferrer"}>
+                    <Link to={"/electric"}>
                         <img className={"task-gym-leader-image"} src={"xancanstand.png"} alt={"Electric Gym Leader XanCanStand"}/>
                     </Link>
                     <figcaption className={"task-gym-leader-caption"}>XanCanStand, the Electric Gym Leader</figcaption>
                 </figure>
-                  <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSeNqBgtBiczLutFa7Zd-KYPT3ATplKxD4scLlPoR2pjDK5kkw/viewform?usp=sf_link"} target={"_blank"} rel={"noreferrer"}>
+                  <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSeNqBgtBiczLutFa7Zd-KYPT3ATplKxD4scLlPoR2pjDK5kkw/viewform?usp=sf_link"}>
                     <button className={"task-submit-button"} >SUBMIT HERE</button>
                   </form>
                 <p className={"task-footer task-footer-left"}>Proudly created by Ravenclaw House.</p>

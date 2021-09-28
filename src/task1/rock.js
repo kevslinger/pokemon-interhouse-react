@@ -14,7 +14,7 @@ class RockGym extends React.Component {
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
-                        <a href={"mj.png"} target={"_blank"} rel={"noreferrer"}>
+                        <a href={"mj.png"}>
                             <img className={"task-gym-leader-image"} src={"mj.png"} alt={"Mjenious, the Rock Gym Leader"}/>
                         </a>
                         {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}

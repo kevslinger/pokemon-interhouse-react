@@ -14,7 +14,7 @@ class WaterGym extends React.Component {
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
-                        <a href={"dancing.png"} target={"_blank"} rel={"noreferrer"}>
+                        <a href={"dancing.png"}>
                             <img className={"task-gym-leader-image"} src={"dancing.png"} alt={"Dancing, the Fire Gym Leader"}/>
                         </a>
                     </figure>
