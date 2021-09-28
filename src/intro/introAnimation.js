@@ -147,7 +147,7 @@ class IntroAnimation extends React.Component {
     render() {
         return (
             <div ref={this.myRef} className={"anime-app-root"}>
-                {this.state.shouldRedirect ? <Redirect to="/"/> :
+                {this.state.shouldRedirect ? <Redirect to="/home"/> :
                     <div>
                         <ReactCSSTransitionGroup
                             transitionName={"anime-opening-scene-transition"}

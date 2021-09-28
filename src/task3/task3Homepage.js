@@ -9,7 +9,7 @@ class Task3Homepage extends React.Component {
             <div>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/"} style={{"gridArea": "header"}}>
+                    <Link to={"/home"} style={{"gridArea": "header"}}>
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
@@ -53,7 +53,7 @@ class Task3Homepage extends React.Component {
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>Mlap, the Ground Gym Leader</figcaption>
                     </figure>
-                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"}>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"}>
                         <button className={"task-submit-button"} >SUBMIT HERE</button>
                     </form>
                     <p className={"task-footer task-footer-right"}>Proudly created by Ravenclaw House.</p>

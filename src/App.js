@@ -22,8 +22,8 @@ import GroundGym from "./task3/ground";
 function App() {
     return (
         <Switch>
-            <Route exact path={"/"} component={IntroHomepage}/>
-            <Route exact path={"/intro"} component={IntroAnimation}/>
+            <Route exact path={"/"} component={IntroAnimation}/>
+            <Route exact path={"/home"} component={IntroHomepage}/>
             <Route exact path={"/part1"} component={Task1Homepage}/>
             <Route exact path={"/part2"} component={Task2Homepage}/>
             <Route exact path={"/part3"} component={Task3Homepage}/>

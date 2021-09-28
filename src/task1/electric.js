@@ -10,7 +10,7 @@ class ElectricGym extends React.Component {
             <div>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/"} className={"task-pottamon-title"}>
+                    <Link to={"/home"} className={"task-pottamon-title"}>
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>

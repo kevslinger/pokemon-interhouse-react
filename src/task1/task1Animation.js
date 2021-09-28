@@ -18,7 +18,9 @@ class Task1Animation extends IntroAnimation {
             "The closest gyms to us feature Rock, Water, and Electric type Pottamon. ",
             "If you head up Rt 7 to Spinel Town, you’ll hit the Rock gym in no time! The gym leader, MJ, has a " +
                 "fortitude tougher than diamonds. You'll need to be bold if you want to defeat her! ",
-            "MJ: oh I need some words here LMAO",
+            "MJ: Y'all ready to rock and roll? Hope you're ready for your first challenge. To become the Pottamon " +
+                "champion, you'll need to keep your coal and work hard to climb yourself up from rock bottom.",
+            "The only way you can beat me is using one of your own Pottamon. Don't take this challenge for granite!",
             "Prof. Squash: If you decide to face the Water gym, you'll " +
                 "need to get to the Seafare Port by way of Rt 9. But be warned, Gym Leader Eldis tends to speak " +
                 "exclusively in dad jokes. I hear her favorite show is dancing with the staryus... ",
@@ -40,7 +42,7 @@ class Task1Animation extends IntroAnimation {
             `Well then, off you go! Good luck, Team ${this.props.house}!`
         ];
         this.state.gameVersion = 0;
-        this.state.redirectTo = "/";
+        this.state.redirectTo = "/home";
         this.state.house = props.house;
         this.state.time = props.time;
         this.state.pottadex = props.pottadex;
@@ -76,15 +78,15 @@ class Task1Animation extends IntroAnimation {
         if (this.state.gameVersion === 1) {
             if (currentLevel === 4) {
                 this.setState({showLeader1: true, highlightLeader1: true});
-            } else if (currentLevel === 6) {
+            } else if (currentLevel === 7) {
                 this.setState({hideProf: false, showLeader2: true, highlightLeader2: true, highlightLeader1: false});
-            } else if (currentLevel === 9) {
+            } else if (currentLevel === 10) {
                 this.setState({hideProf: false, showLeader3: true, highlightLeader3: true, highlightLeader2: false});
-            } else if (currentLevel === 5 || currentLevel === 7 || currentLevel === 10) {
+            } else if (currentLevel === 5 || currentLevel === 8 || currentLevel === 11) {
                 this.setState({
                     hideProf: true,
                 });
-            } else if (currentLevel === 12) {
+            } else if (currentLevel === 13) {
                 this.setState({highlightLeader3: false, hideProf: false});
             }
         }

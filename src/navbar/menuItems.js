@@ -1,12 +1,12 @@
 export const MENUITEMS = [
     {
         title: 'Home',
-        url: '/',
+        url: '/home',
         cName: 'nav-links'
     },
     {
         title: 'Introduction Animation',
-        url: '/intro',
+        url: '/',
         cName: 'nav-links'
     },
     {

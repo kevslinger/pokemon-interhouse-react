@@ -123,26 +123,26 @@ class ZubatMaze extends React.Component {
         this.setState({house: event.target.value});
     }
 
-    handleLeftButton = async () => {
-        if (this.state.gameLive && !this.state.completed) {
-            await this.step(0);
-        }
-    }
-    handleRightButton = async () => {
-        if (this.state.gameLive && !this.state.completed) {
-            await this.step(1);
-        }
-    }
-    handleUpButton = async () => {
-        if (this.state.gameLive && !this.state.completed) {
-            await this.step(2);
-        }
-    }
-    handleDownButton = async () => {
-        if (this.state.gameLive && !this.state.completed) {
-            await this.step(3);
-        }
-    }
+    // handleLeftButton = async () => {
+    //     if (this.state.gameLive && !this.state.completed) {
+    //         await this.step(0);
+    //     }
+    // }
+    // handleRightButton = async () => {
+    //     if (this.state.gameLive && !this.state.completed) {
+    //         await this.step(1);
+    //     }
+    // }
+    // handleUpButton = async () => {
+    //     if (this.state.gameLive && !this.state.completed) {
+    //         await this.step(2);
+    //     }
+    // }
+    // handleDownButton = async () => {
+    //     if (this.state.gameLive && !this.state.completed) {
+    //         await this.step(3);
+    //     }
+    // }
 
 
     // Add the navigation listener
@@ -219,7 +219,7 @@ class ZubatMaze extends React.Component {
                                 You ran into {this.state.cave.zubatCount} zubat{this.state.cave.zubatCount !== 1? "s" : null}!</p>
                             <button className={"zubat-endgame-buttons"} onClick={this.reset.bind(this)}>Play Again</button>
                             <br/>
-                            <Link to={"/"}>
+                            <Link to={"/home"}>
                                 <button className={"zubat-endgame-buttons"}>Return to Home</button>
                             </Link>
                             </div>
@@ -245,7 +245,7 @@ class ZubatMaze extends React.Component {
                     {/*</div>*/}
                     <div className={"zubat-rules"}>
                         <h1>Welcome to the Poison Gym Challenge!</h1>
-                        <p>Use the arrow keys or WASD to move. Navigate through the Dark Cave and try to avoid as many zubats as you can!</p>
+                        <p>Use the arrow keys or WASD to move. Navigate through the Horcrux Cave and try to avoid as many zubats as you can!</p>
                     </div>
                 </div>
             </div>

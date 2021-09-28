@@ -3,12 +3,13 @@ import { MAPS } from "./mapGenerator";
 /* Gridworld environment with random Snapebat appearances and several different maze configurations to select from */
 class CaveWorld {
     constructor () {
-        this.size = 10; // NxN grid
+
         this.zubat_chance = 0.1; // Chance of running into a zubat
         this.map = this.generateMap();
+        this.size = this.map.length; // NxN grid
         // TODO: Make random starting position?
-        // this.x = 0;
-        // this.y = 0;
+        this.x = 1;
+        this.y = 0;
         // Left Right Up Down
         this.actions = [0, 1, 2, 3];
         this.numSteps = 0;
@@ -22,14 +23,12 @@ class CaveWorld {
         this.zubatCount = 0;
         this.zubats = [];
         this.numSteps = 0;
-        this.x = 0;
+        this.x = 1;
         this.y = 0;
         this.map = this.generateMap();
     }
 
     generateMap() {
-        this.x = 1;
-        this.y = 0;
         return MAPS[Math.floor(Math.random() * MAPS.length)];
     }
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { MENUITEMS } from "./menuItems";
 import "./navbar.css";
-import {Link} from "react-router-dom";
 
 class Navbar extends React.Component {
     state = {
@@ -34,8 +33,8 @@ class Navbar extends React.Component {
                 </div>
                 <ul className={'nav-menu-top'}>
                     <li className={"navbar-logo-container"}>
-                            <img className={"navbar-logo"} src={"pottamon_logo.png"}/>
-                            <a className={"navbar-title"} href={"/"}>PoTTa&#8202;MoN</a>
+                            <img className={"navbar-logo"} src={"pottamon_logo.png"} alt={"pottamon-logo"}/>
+                            <a className={"navbar-title"} href={"/home"}>PoTTa&#8202;MoN</a>
                     </li>
                     {
                         MENUITEMS.slice(0, Math.floor((this.state.width-450)/100)).map((item, index) =>

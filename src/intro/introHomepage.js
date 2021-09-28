@@ -10,7 +10,7 @@ class IntroHomepage extends React.Component {
           <div>
               <Navbar/>
               <div style={{"position": "relative"}} className={"home-container"}>
-                  <Link to={"/"} className={"home-pottamon-title"}>
+                  <Link to={"/home"} className={"home-pottamon-title"}>
                       <h1 className={"home-pottamon-title"}>PoTTa&#8202;MoN</h1>
                   </Link>
                 {/*<h1 className={"home-pottamon-title"}>PoTTa&#8202;MoN</h1>*/}

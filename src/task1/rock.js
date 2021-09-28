@@ -10,7 +10,7 @@ class RockGym extends React.Component {
             <div>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/"} className={"task-pottamon-title"}>
+                    <Link to={"/home"} className={"task-pottamon-title"}>
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
@@ -30,7 +30,7 @@ class RockGym extends React.Component {
                         To beat me and earn the Mineral Badge, I’m asking you to design your own Pottamon! Every
                         Pottamon has a name, a drawing, one or two Pokemon types, a species, and a Pottadex description
                         of no more than two sentences. Stuck or need some inspiration? Check out
-                        our <Link to={"/"}>homepage</Link> for some example Pottamon Team Ravenclaw has been researching.
+                        our <Link to={"/home"}>homepage</Link> for some example Pottamon Team Ravenclaw has been researching.
                         <br/><br/>
                         Pottamon are not only our battle and training partners, they’re also our friends. So make sure
                         you come up with a good one! You can’t be a Pottamon master till you’ve got a Pottamon of your

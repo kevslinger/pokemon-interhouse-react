@@ -10,14 +10,13 @@ class WaterGym extends React.Component {
             <div>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/"} className={"task-pottamon-title"}>
+                    <Link to={"/home"} className={"task-pottamon-title"}>
                         <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
                         <a href={"eldis.png"}>
                             <img className={"task-gym-leader-image"} src={"eldis.png"} alt={"Eldis, the Water Gym Leader"}/>
                         </a>
-                        {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Ahoy, mateys, nice to make your <i>aqua</i>intance! Welcome to Seafare Port, where the wind is
