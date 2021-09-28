@@ -20,7 +20,21 @@ class RockGym extends React.Component {
                         {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
-
+                        Y’all ready to rock and roll? Hey! I’m the stone-faced gym leader MJ, and I hope y’all are
+                        ready for your first challenge! <i>takes a clean bite out of a pome-
+                        <strong>granite</strong></i> Took your sweet time getting here, Professor Squash said I should
+                        have expected you days ago, you had me quarried sick. Well anyways, back to the script, to be
+                        the Pottamon champion you need to remember to always keep your <i>coal</i> and work hard to climb
+                        yourself up from rock bottom. But before you can be the champion you’ll need to finish my challenge.
+                        <br/><br/>
+                        To beat me and earn the Mineral Badge, I’m asking you to design your own Pottamon! Every
+                        Pottamon has a name, a drawing, one or two Pokemon types, a species, and a Pottadex description
+                        of no more than two sentences. Stuck or need some inspiration? Check out
+                        our <Link to={"/"}>homepage</Link> for some example Pottamon Team Ravenclaw has been researching.
+                        <br/><br/>
+                        Pottamon are not only our battle and training partners, they’re also our friends. So make sure
+                        you come up with a good one! You can’t be a Pottamon master till you’ve got a Pottamon of your
+                        own. Duh!
                     </p>
                 </div>
             </div>

@@ -70,7 +70,20 @@
 }
 @media (max-width: 479px) {
     .task-container {
-        grid-template-columns: 90px 180px 90px;
+        /*grid-template-columns: 90px 180px 90px;*/
+        grid-template-columns: 180px 180px;
+        grid-template-areas:
+        "header  header"
+        "figure1  text"
+        "figure2  text"
+        "figure3  text"
+        "figure4  text"
+        "figure5  text"
+        "figure6  text"
+        "figure7  text"
+        "figure8  text"
+        "footerLeft submit"
+        "footerRight .....";
         width: 360px;
     }
 }

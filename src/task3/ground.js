@@ -27,7 +27,7 @@ class WaterGym extends React.Component {
                         gotten all the other 7 badges, it's quite impressive. But can you defeat me? Well, we'll find
                         out soon enough.
                         <br/><br/>
-                        Once upon a time, Tapu Fiti Cavern was not such a a desert, but was home to one of the biggest
+                        Once upon a time, Tapu Fiti Oasis was not such a desert, but was home to one of the biggest
                         forests in the world. But alas, some travelers invaded the land and destroyed everything. They
                         left in search of new lands soon after, and I stayed here, trying desperately to restore the
                         forest to its former glory. It took me 300 years to grow all the plants seen around you, and

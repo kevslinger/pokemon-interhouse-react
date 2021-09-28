@@ -31,7 +31,7 @@ class Task3Homepage extends React.Component {
                         actually <i>dances</i> on the fire, how intense! You'll need to be passionate if you want to
                         to take home the Exothermic badge.
                         <br/><br/>
-                        And finally, way down south through the desert Route 25 takes you to the Tapu Fiti Cavern and
+                        And finally, way down south through the desert Route 25 takes you to the Tapu Fiti Oasis and
                         the Ground gym. It’s the only thing out in those wastes, and you certainly won’t miss it; it’ll
                         be the first spot of green you’ll see after all those miles of travel. I dunno why so many
                         people live out there in that little commune but the <strike>worshippers</strike> gym members

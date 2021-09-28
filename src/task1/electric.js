@@ -28,7 +28,7 @@ class ElectricGym extends React.Component {
                         challenge, we want to hear from witches and wizards who spent their first 11 years in the modern
                         muggle world during this digital age. We want to know, from their perspective, about all the
                         things in the Wizarding world that have helped them acclimate and adjust to being unplugged.
-                        What spells, potions, and arcane artifacts have taken the place of their smartphones and tablets
+                        What spells, potions, and arcane artifacts have taken the place of their phones and tablets
                         and internet (and light bulbs and refrigerators and A/C and cars and . . .)?
                         <br/><br/>
                         I’ll need an interview from one or more of these students, with four total examples for specific

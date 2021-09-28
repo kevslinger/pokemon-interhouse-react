@@ -10,7 +10,8 @@ class Navbar extends React.Component {
     }
 
     updateDimensions = () => {
-        this.setState({ width: window.innerWidth});
+        this.setState({width: document.documentElement.clientWidth});
+        // this.setState({ width: window.innerWidth});
     };
     componentDidMount() {
         this.updateDimensions();

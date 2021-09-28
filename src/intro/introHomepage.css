@@ -30,7 +30,7 @@
 }
 @media (max-width: 479px) {
     .home-pottamon-image {
-        height: 50%;
+        height: 80%;
     }
     .home-pottamon-caption {
         font-size: 66%;
@@ -74,7 +74,22 @@
 }
 @media (max-width: 479px) {
     .home-container {
-        grid-template-columns: 90px 180px 90px;
+        grid-template-columns: 180px 180px;
+        grid-template-areas:
+        "header   header"
+        "professor text"
+        "pottamon1 text"
+        "......... text"
+        "pottamon2 text"
+        "......... text"
+        "pottamon3 text"
+        "......... text"
+        "pottamon4 text"
+        "......... text"
+        "pottamon5 text"
+        "......... text"
+        "pottamon6 text"
+        "....... footer";
         width: 360px;
     }
 }

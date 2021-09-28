@@ -83,6 +83,11 @@
     width: 100px;
     height: 50px;
 }
+@media (max-width: 479px) {
+    .menu-item-top {
+        display: none;
+    }
+}
 
 .nav-links {
     color: #ffcb05;
@@ -96,7 +101,7 @@
     height: 100%;
     display: table;
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .nav-links {
         font-size: 1em;
     }
