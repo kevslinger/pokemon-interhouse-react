@@ -58,7 +58,7 @@
     display: none;
     flex-direction: column;
     width: 20%;
-    height: 400px;
+    height: 560px;
     position: absolute;
     top: 70px;
     left: 80%;
@@ -69,11 +69,7 @@
     font-size: 18px;
     z-index: 1;
 }
-@media (max-width: 479px) {
-    .nav-menu {
-        height: 700px;
-    }
-}
+
 .nav-menu.active {
     display: flex;
     opacity: 1;
@@ -84,7 +80,7 @@
 }
 
 .menu-item {
-    height: 50px;
+    height: 40px;
 }
 .menu-item-top {
     width: 100px;

@@ -20,7 +20,6 @@
     }
 }
 
-
 #anime-professor-version-2 {
     transition: opacity 200ms ease-in;
 }
@@ -53,26 +52,26 @@
 }
 @media (min-width: 768px) {
     .anime-gym-leader-1-v2 {
-        top: 100px;
-        left: 230px;
-        width: 133px;
-        height: 190px;
+        top: 80px;
+        left: 225px;
+        width: 155px;
+        height: 230px;
     }
 }
 @media (max-width: 767px) {
     .anime-gym-leader-1-v2 {
-        top: 95px;
-        left: 201px;
-        width: 116px;
-        height: 157px;
+        top: 75px;
+        left: 207px;
+        width: 125px;
+        height: 195px;
     }
 }
 @media (max-width: 479px) {
     .anime-gym-leader-1-v2 {
-        top: 50px;
-        left: 115px;
-        width: 67px;
-        height: 95px;
+        top: 44px;
+        left: 120px;
+        width: 70px;
+        height: 110px;
     }
 }
 
@@ -83,26 +82,26 @@
 }
 @media (min-width: 768px) {
     .anime-gym-leader-2-v2 {
-        top: 75px;
-        left: 310px;
-        width: 150px;
-        height: 210px;
+        top: 55px;
+        left: 325px;
+        width: 165px;
+        height: 250px;
     }
 }
 @media (max-width: 767px) {
     .anime-gym-leader-2-v2 {
-        top: 67px;
-        left: 280px;
-        width: 131px;
-        height: 184px;
+        top: 51px;
+        left: 287px;
+        width: 140px;
+        height: 215px;
     }
 }
 @media (max-width: 479px) {
     .anime-gym-leader-2-v2 {
-        top: 38px;
-        left: 160px;
+        top: 35px;
+        left: 170px;
         width: 75px;
-        height: 105px;
+        height: 115px;
     }
 }
 
@@ -110,32 +109,31 @@
     position: fixed;
     z-index: 1;
     transition: opacity 3s ease-in;
-    transform: rotateY(180deg);
 }
 
 @media (min-width: 768px) {
     .anime-gym-leader-3-v2 {
-        top: -25px;
-        left: 380px;
-        width: 220px;
-        height: 340px;
+        top: 75px;
+        left: 415px;
+        width: 195px;
+        height: 205px;
     }
 }
 @media (max-width: 767px) {
     .anime-gym-leader-3-v2 {
-        top: -22px;
-        left: 339px;
-        width: 192px;
-        height: 297px;
+        top: 65px;
+        left: 360px;
+        width: 170px;
+        height: 180px;
     }
 }
 @media (max-width: 479px) {
     .anime-gym-leader-3-v2 {
-        top: -12px;
-        left: 193px;
-        width: 110px;
-        height: 170px;
-        /* TODO: some weird thing where on mobile, Xan's feet are behind the spotlight??? */
+        top: 40px;
+        left: 215px;
+        width: 80px;
+        height: 100px;
+        /* TODO */
         z-index: 3;
     }
 }
