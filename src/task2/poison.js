@@ -20,7 +20,7 @@ class WaterGym extends React.Component {
                         {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
-                        So, you've made it all the way to Ethelene Center and wish to challenge me for the Toxin badge.
+                        So, you've made it all the way to the Ethelene Center and wish to challenge me for the Toxin badge.
                         Congratulations are in order, I suppose. My gym specialises in poison type Pottamon, for example
                         the Clawla region's unique zubat variant. The Snapebat, as we call it, likes lurking in dark
                         places and - much like me - is easily irritated by the presence of humans - such as yourselves.

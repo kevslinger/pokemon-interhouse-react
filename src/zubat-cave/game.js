@@ -105,6 +105,7 @@ class ZubatMaze extends React.Component {
                     TIMESTAMP: Date().toLocaleString(),
                     USERNAME: this.state.username,
                     HOUSE: capitalize(this.state.house),
+                    "MAP": this.state.cave.map_id,
                     "ZUBATS": this.state.cave.zubatCount,
                     "STEPS": this.state.cave.numSteps,
                     "COMPLETED?": this.state.completed,
@@ -163,6 +164,10 @@ class ZubatMaze extends React.Component {
                         on a computer, please send a reddit PM to u/Professor_Squash so we can address this issue. Thanks!
                     </p>
                 </div>
+                <div className={"zubat-scoreboard-container"}>
+                    <h1 className={"zubat-game-name"}>HORCRUX CAVE ESCAPE</h1>
+                    <h1 className={"zubat-scoreboard"}>SCORE: {this.state.cave.zubatCount}</h1>
+                </div>
                 <div className={"zubat-game-container"}>
                     {!this.state.gameLive ?
                         <form className={"zubat-game-registration-form"} onSubmit={this.beginGame}>
@@ -180,14 +185,14 @@ class ZubatMaze extends React.Component {
                             <input className={"zubat-game-form-label"} type={"submit"} style={{"width": "25%", "marginTop": "10px"}} value={"Play!"}/>
                         </form>
                     : null }
-
                     <div style={{"width": "100%", "height": "100%", "position": "relative"}}>
                         <img style={{"position": "relative",
                             "top": `${100 - (this.state.cave.y+1) * this.state.percentSize}%`,
                             "left": `${(this.state.cave.x) * this.state.percentSize}%`,
                             "height": "10%",
                             "width": "5%",
-                            "zIndex": 1}} src={this.state.trainerSpritePath} alt={"YOU"}/>
+                            "zIndex": 1,
+                            "opacity": this.state.completed ? 0 : 1}} src={this.state.trainerSpritePath} alt={"YOU"}/>
                         <span className={"exit"}/>
                         {
                             this.state.cave.zubats.map((item, idx) => (
@@ -225,6 +230,7 @@ class ZubatMaze extends React.Component {
                             </div>
                         : null}
                     </div>
+
                     {/*<div className={"zubat-mobile-button-container"}>*/}
                     {/*    <button className={"zubat-mobile-button"} style={{"gridArea": "left"}} onClick={this.handleLeftButton.bind(this)}>*/}
                     {/*        <div className={"zubat-mobile-button-arrow zubat-mobile-button-left"}></div>*/}

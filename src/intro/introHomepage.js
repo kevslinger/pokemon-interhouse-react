@@ -50,7 +50,7 @@ class IntroHomepage extends React.Component {
                     <a href={"mlappogriff.png"}>
                         <img className={"home-pottamon-image"} src={"mlappogriff.png"} alt={"Mlappogriff"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Mlappogriff. Flying/Water. The Mlap Pottamon.<br/><i>Sightings of the Mlappogriff have been known to cause spontaneous cult formation.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Mlappogriff. Flying/Water. Mlap Pottamon.<br/><i>Sightings of the Mlappogriff have been known to cause spontaneous cult formation.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon2"}}>
                     <a href={"fledgetrail.png"}>
@@ -68,21 +68,21 @@ class IntroHomepage extends React.Component {
                     <a href={"wyverni.png"}>
                         <img className={"home-pottamon-image"} src={"wyverni.png"} alt={"Wyverni"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Wyverni. Fairy/Dark. The Dreameater Pottamon.<br/><i>Wyverni like to enter children's dreams and eat their nightmares.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Wyverni. Fairy/Dark. Dreameater Pottamon.<br/><i>Wyverni like to enter children's dreams and eat their nightmares.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon5"}}>
                     <a href={"toxadraig.png"}>
                         <img className={"home-pottamon-image"} src={"toxadraig.png"} alt={"Toxadraig"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon.<br/><i>Fond of music, Toxadraig come slithering out of their caves upon hearing a delightful tune.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Toxadraig. Poison/Dragon. Charmed Serpent Pottamon.<br/><i>Fond of music, Toxadraig come slithering out of their caves upon hearing a delightful tune.</i></figcaption>
                 </figure>
                 <figure className={"home-pottamon-figure"} style={{"gridArea": "pottamon6"}}>
                     <a href={"aileroink.png"}>
                         <img className={"home-pottamon-image"} src={"aileroink.png"} alt={"Aileroink"}/>
                     </a>
-                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. <i>Aileroink can track scents from miles away. It usually uses this skill to find gourmet food.</i></figcaption>
+                    <figcaption className={"home-pottamon-caption"}>Aileroink. Dark/Electric. Foraging Guide Pottamon.<br/><i>Aileroink can track scents from miles away. It usually uses this skill to find gourmet food.</i></figcaption>
                 </figure>
-                <p className={"home-footer"}><br/>Proudly created by Ravenclaw House.</p>
+                <p className={"home-footer"}><br/><br/><br/>Proudly created by Ravenclaw House.</p>
               </div>
           </div>
         );

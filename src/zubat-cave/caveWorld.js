@@ -3,8 +3,8 @@ import { MAPS } from "./mapGenerator";
 /* Gridworld environment with random Snapebat appearances and several different maze configurations to select from */
 class CaveWorld {
     constructor () {
-
-        this.zubat_chance = 0.1; // Chance of running into a zubat
+        this.zubat_chance = 0.15; // Chance of running into a zubat
+        this.map_id = -1; // Placeholder until we generate map.
         this.map = this.generateMap();
         this.size = this.map.length; // NxN grid
         // TODO: Make random starting position?
@@ -29,7 +29,9 @@ class CaveWorld {
     }
 
     generateMap() {
-        return MAPS[Math.floor(Math.random() * MAPS.length)];
+        let rand = Math.floor(Math.random() * MAPS.length)
+        this.map_id = rand + 3;
+        return MAPS[rand];
     }
 
     step(action) {

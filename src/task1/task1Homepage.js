@@ -63,7 +63,7 @@ class Task1Homepage extends React.Component {
                   <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSeNqBgtBiczLutFa7Zd-KYPT3ATplKxD4scLlPoR2pjDK5kkw/viewform?usp=sf_link"}>
                     <button className={"task-submit-button"}>SUBMIT HERE</button>
                   </form>
-                <p className={"task-footer task-footer-left"}>Proudly created by Ravenclaw House.</p>
+                <p className={"task-footer task-footer-left"}><br/><br/>Proudly created by Ravenclaw House.</p>
               </div>
           </div>
         );

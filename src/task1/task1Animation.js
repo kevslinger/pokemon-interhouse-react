@@ -33,7 +33,7 @@ class Task1Animation extends IntroAnimation {
                 "the electric gym leader off of Rt 11. Mayor of Faraday City, rumor has it that Gym Leader XanCanStand " +
                 "keeps a pack of electric alzapcas... best be careful, I’ve read that petting their fur is enough " +
                 "to give you quite the static shock!",
-            "Xan: MWAHAHAHA! My gym's the toughest one yet! This challenge will wipe the floors with you! ECCLETRIXITY! " +
+            "Xan: MWAHAHAHA! My gym's the toughest one yet! This challenge will overload your circuit boards! ECCLETRIXITY! " +
                 "The Type all witches and wizards are weak against!",
             "Your only hope is to interview any muggleborns you may have in your class. Now! Get amped! It's challenge time!",
             "Prof. Squash: Now then, do you have what it takes to defeat the gym leaders and claim your badges? I don't mind " +

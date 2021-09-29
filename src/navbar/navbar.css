@@ -55,18 +55,19 @@
 }
 .nav-menu {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 20%;
     height: 400px;
     position: absolute;
     top: 70px;
-    left: 120%;
+    left: 80%;
     transition: all 0.5s ease;
     padding: 0;
     margin: 0;
-    font-size: 18px;
     opacity: 0;
+    font-size: 18px;
+    z-index: 1;
 }
 @media (max-width: 479px) {
     .nav-menu {
@@ -74,12 +75,12 @@
     }
 }
 .nav-menu.active {
+    display: flex;
     opacity: 1;
     background: #3c5aa6;
     left: 80%;
     top: 70px;
     transition: all 0.5s ease;
-    z-index: 1;
 }
 
 .menu-item {
@@ -112,11 +113,7 @@
         font-size: 1em;
     }
 }
-/*@media (max-width: 959px) {*/
-/*    .nav-links {*/
-/*        font-size: 0.75em;*/
-/*    }*/
-/*}*/
+
 @media (max-width: 479px) {
     .nav-links {
         font-size: 0.6em;
