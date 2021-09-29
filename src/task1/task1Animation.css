@@ -143,14 +143,13 @@
     }
 }
 
-
-.anime-gym-leader-1 {
+.anime-gym-leader-1-v1 {
     position: fixed;
     z-index: 1;
     transition: opacity 3s ease-in;
 }
 @media (min-width: 768px) {
-    .anime-gym-leader-1 {
+    .anime-gym-leader-1-v1 {
         top: 100px;
         left: 230px;
         width: 133px;
@@ -158,7 +157,7 @@
     }
 }
 @media (max-width: 767px) {
-    .anime-gym-leader-1 {
+    .anime-gym-leader-1-v1 {
         top: 95px;
         left: 201px;
         width: 116px;
@@ -166,7 +165,7 @@
     }
 }
 @media (max-width: 479px) {
-    .anime-gym-leader-1 {
+    .anime-gym-leader-1-v1 {
         top: 50px;
         left: 115px;
         width: 67px;
@@ -174,13 +173,13 @@
     }
 }
 
-.anime-gym-leader-2 {
+.anime-gym-leader-2-v1 {
     position: fixed;
     z-index: 1;
     transition: opacity 3s ease-in;
 }
 @media (min-width: 768px) {
-    .anime-gym-leader-2 {
+    .anime-gym-leader-2-v1 {
         top: 75px;
         left: 310px;
         width: 150px;
@@ -188,7 +187,7 @@
     }
 }
 @media (max-width: 767px) {
-    .anime-gym-leader-2 {
+    .anime-gym-leader-2-v1 {
         top: 67px;
         left: 280px;
         width: 131px;
@@ -196,7 +195,7 @@
     }
 }
 @media (max-width: 479px) {
-    .anime-gym-leader-2 {
+    .anime-gym-leader-2-v1 {
         top: 38px;
         left: 160px;
         width: 75px;
@@ -204,7 +203,7 @@
     }
 }
 
-.anime-gym-leader-3 {
+.anime-gym-leader-3-v1 {
     position: fixed;
     z-index: 1;
     transition: opacity 3s ease-in;
@@ -212,7 +211,7 @@
 }
 
 @media (min-width: 768px) {
-    .anime-gym-leader-3 {
+    .anime-gym-leader-3-v1 {
         top: -25px;
         left: 380px;
         width: 220px;
@@ -220,7 +219,7 @@
     }
 }
 @media (max-width: 767px) {
-    .anime-gym-leader-3 {
+    .anime-gym-leader-3-v1 {
         top: -22px;
         left: 339px;
         width: 192px;
@@ -228,11 +227,13 @@
     }
 }
 @media (max-width: 479px) {
-    .anime-gym-leader-3 {
+    .anime-gym-leader-3-v1 {
         top: -12px;
         left: 193px;
         width: 110px;
         height: 170px;
+        /* Todo: some weight thing with xan's feet being behind the spotlight on mobile */
+        z-index: 3;
     }
 }
 

@@ -48,6 +48,9 @@ class Task1Animation extends IntroAnimation {
         this.state.pottadex = props.pottadex;
         this.state.badges = props.badges;
         this.state.hideProf = false;
+        this.state.leader1Path = "mj.png";
+        this.state.leader2Path = "eldis.png";
+        this.state.leader3Path = "xancanstand.png";
         this.state.showLeader1 = false;
         this.state.showLeader2 = false;
         this.state.showLeader3 = false;
@@ -173,10 +176,16 @@ class Task1Animation extends IntroAnimation {
                                     : null }
                                 <span style={{"opacity": this.state.hideProf ? 0.33 : 1}}
                                       className={"anime-professor-spotlight"} id={`anime-professor-spotlight-version-${this.state.gameVersion}`}/>
-                                <img style={{"opacity": this.state.highlightLeader1 ? 1 : this.state.showLeader1 ? 0.33 : 0}} className={`anime-gym-leader-1 ${this.state.highlightLeader1 ? "anime-highlight-gym-leader" : ""}`} src={"mj.png"} alt={"Gym Leader Mjenious"}/>
+                                <img style={{"opacity": this.state.highlightLeader1 ? 1 : this.state.showLeader1 ? 0.33 : 0}}
+                                     className={`anime-gym-leader-1-v${this.state.gameVersion} ${this.state.highlightLeader1 ? "anime-highlight-gym-leader" : ""}`}
+                                     src={this.state.leader1Path} alt={"Gym Leader"}/>
                                 <span style={{"opacity": this.state.showLeader1 ? 1 : 0}} className={"anime-gym-leader-spotlight"}/>
-                                <img style={{"opacity": this.state.highlightLeader2 ? 1 : this.state.showLeader2 ? 0.33 : 0}} className={`anime-gym-leader-2 ${this.state.highlightLeader2 ? "anime-highlight-gym-leader" : ""}`} src={"eldis.png"} alt={"Gym Leader Eldis"}/>
-                                <img style={{"opacity": this.state.highlightLeader3 ? 1 : this.state.showLeader3 ? 0.33 : 0}} className={`anime-gym-leader-3 ${this.state.highlightLeader3 ? "anime-highlight-gym-leader" : ""}`} src={"xancanstand.png"} alt={"Gym Leader XanCanStand"}/>
+                                <img style={{"opacity": this.state.highlightLeader2 ? 1 : this.state.showLeader2 ? 0.33 : 0}}
+                                     className={`anime-gym-leader-2-v${this.state.gameVersion} ${this.state.highlightLeader2 ? "anime-highlight-gym-leader" : ""}`}
+                                     src={this.state.leader2Path} alt={"Gym Leader"}/>
+                                <img style={{"opacity": this.state.highlightLeader3 ? 1 : this.state.showLeader3 ? 0.33 : 0}}
+                                     className={`anime-gym-leader-3-v${this.state.gameVersion} ${this.state.highlightLeader3 ? "anime-highlight-gym-leader" : ""}`}
+                                     src={this.state.leader3Path} alt={"Gym Leader"}/>
                             </div>
                                 <div ref={this.myRef} className={"anime-textbox anime-typewriter-text-wrap"}>
                                 <h1 className={"anime-react-typewriter-text"}>

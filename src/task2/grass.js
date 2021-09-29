@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 class WaterGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#A7DB8D"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>
@@ -17,7 +17,6 @@ class WaterGym extends React.Component {
                         <a href={"spludgiexx.png"}>
                             <img className={"task-gym-leader-image"} src={"spludgiexx.png"} alt={"Spludgie, the Water Gym Leader"}/>
                         </a>
-                        {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Pssst. Hey, hey you. Psssssssst. I’m looking for some really good tea leaves? Have any good

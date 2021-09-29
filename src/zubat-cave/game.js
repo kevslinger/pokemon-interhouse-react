@@ -164,10 +164,6 @@ class ZubatMaze extends React.Component {
                         on a computer, please send a reddit PM to u/Professor_Squash so we can address this issue. Thanks!
                     </p>
                 </div>
-                <div className={"zubat-scoreboard-container"}>
-                    <h1 className={"zubat-game-name"}>HORCRUX CAVE ESCAPE</h1>
-                    <h1 className={"zubat-scoreboard"}>SCORE: {this.state.cave.zubatCount}</h1>
-                </div>
                 <div className={"zubat-game-container"}>
                     {!this.state.gameLive ?
                         <form className={"zubat-game-registration-form"} onSubmit={this.beginGame}>
@@ -217,6 +213,7 @@ class ZubatMaze extends React.Component {
                                       }
                                   }
                         />
+
                         {this.state.completed ?
                             <div>
                             <h1 className={"zubat-endgame-congrats-h1"} >CONGRATS</h1>
@@ -229,6 +226,10 @@ class ZubatMaze extends React.Component {
                             </Link>
                             </div>
                         : null}
+                    </div>
+                    <div className={"zubat-scoreboard-container"}>
+                        <h1 className={"zubat-game-name"}>HORCRUX CAVE ESCAPE</h1>
+                        <h1 className={"zubat-scoreboard"}>SCORE: {this.state.cave.zubatCount}</h1>
                     </div>
 
                     {/*<div className={"zubat-mobile-button-container"}>*/}

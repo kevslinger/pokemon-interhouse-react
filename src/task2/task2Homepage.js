@@ -20,7 +20,7 @@ class Task2Homepage extends React.Component {
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Hello again! How goes the quest to become the greatest team of Pottamon masters the world has
-                        ever seen? And how about the work on learning more of these magical creatures and the elements
+                        ever seen? And how about the work on learning more about these magical creatures and the elements
                         they harness? I’m certainly impressed with the reports I’ve been receiving, you are advancing
                         our course of study with Pottamon types tremendously!
                         <br/><br/>

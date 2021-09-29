@@ -1,11 +1,12 @@
 .zubat-scoreboard-container {
     background-color: black;
     display: flex;
-    border: 1px dashed red;
+    /*border: 1px dashed #A040A0;*/
+    border: 1px dashed #49a359;
 }
 
 .zubat-scoreboard {
-    color: red;
+    color: #49a359;
     font-family: Pokemon-Emerald, sans-serif;
     margin: 0;
     display: flex;
@@ -14,7 +15,7 @@
     justify-content: flex-end;
 }
 .zubat-game-name {
-    color: red;
+    color: #49a359;
     font-family: Pokemon-Emerald, sans-serif;
     margin: 0;
     display: flex;

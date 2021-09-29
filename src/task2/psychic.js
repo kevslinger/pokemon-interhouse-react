@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 class PsychicGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#FA92B2"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>
@@ -17,7 +17,6 @@ class PsychicGym extends React.Component {
                         <a href={"ra.png"}>
                             <img className={"task-gym-leader-image"} src={"ra.png"} alt={"Ra's, the Psychic Gym Leader"}/>
                         </a>
-                        {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         They say you can learn a lot about someone by their humor... SHOW ME YOURS!!!!

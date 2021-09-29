@@ -27,10 +27,18 @@
     width: 100%;
     height: 100%;
 }
+
+@media (max-width: 767px) {
+    .task-gym-leader-image {
+        height: 100%;
+        width: 100%;
+    }
+}
 @media (max-width: 479px) {
-    /*.home-pottamon-image {*/
-    /*    height: 50%;*/
-    /*}*/
+    .task-gym-leader-image {
+        height: 100%;
+        width: 100%;
+    }
     .task-gym-leader-caption {
         font-size: 66%;
     }
@@ -55,6 +63,7 @@
     "footerLeft submit footerRight";
     background-position: center;
     background-color: #d9d7de;
+    /*border: 1px solid black;*/
 }
 @media (min-width: 768px) {
     .task-container {
@@ -64,14 +73,8 @@
 }
 @media (max-width: 767px) {
     .task-container {
-        grid-template-columns: 160px 320px 160px;
-        width: 640px;
-    }
-}
-@media (max-width: 479px) {
-    .task-container {
-        /*grid-template-columns: 90px 180px 90px;*/
-        grid-template-columns: 180px 180px;
+        /*grid-template-columns: 160px 320px 160px;*/
+        grid-template-columns: 320px 320px;
         grid-template-areas:
         "header  header"
         "figure1  text"
@@ -84,6 +87,13 @@
         "figure8  text"
         "footerLeft submit"
         "footerRight .....";
+        width: 640px;
+    }
+}
+@media (max-width: 479px) {
+    .task-container {
+        grid-template-columns: 180px 180px;
+
         width: 360px;
     }
 }

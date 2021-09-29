@@ -4,10 +4,10 @@ import Navbar from "../navbar/navbar";
 import {Link} from "react-router-dom";
 
 
-class WaterGym extends React.Component {
+class GroundGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#EBD69D"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>
@@ -17,7 +17,6 @@ class WaterGym extends React.Component {
                         <a href={"mlap.png"}>
                             <img className={"task-gym-leader-image"} src={"mlap.png"} alt={"Mlap, the Ground Gym Leader"}/>
                         </a>
-                        {/*<figcaption className={"task1-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Forgive me, I didn't see you there! I was just reading
@@ -47,4 +46,4 @@ class WaterGym extends React.Component {
     }
 }
 
-export default WaterGym;
+export default GroundGym;

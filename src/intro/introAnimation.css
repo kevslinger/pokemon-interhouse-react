@@ -23,7 +23,7 @@
 
 /* This is the box that holds the "New Game" Button and defines the gameboy space */
 .anime-opening-scene {
-    background-color: #d1d1d1;
+    background-color: #d9d7de;
     border: 1px solid black;
 }
 @media (min-width: 768px) {

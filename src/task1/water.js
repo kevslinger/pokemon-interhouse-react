@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 class WaterGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#9DB7F5"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>

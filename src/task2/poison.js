@@ -7,7 +7,7 @@ import Navbar from "../navbar/navbar";
 class WaterGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#C183C1"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>
@@ -17,7 +17,6 @@ class WaterGym extends React.Component {
                         <a href={"shadow.png"}>
                             <img className={"task-gym-leader-image"} src={"shadow.png"} alt={"Shadow, the Poison Gym Leader"}/>
                         </a>
-                        {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         So, you've made it all the way to the Ethelene Center and wish to challenge me for the Toxin badge.

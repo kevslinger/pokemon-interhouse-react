@@ -7,7 +7,7 @@ import Navbar from "../navbar/navbar";
 class WaterGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#F5AC78"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>

@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 class RockGym extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#D1C17D"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} className={"task-pottamon-title"}>
@@ -17,7 +17,6 @@ class RockGym extends React.Component {
                         <a href={"mj.png"}>
                             <img className={"task-gym-leader-image"} src={"mj.png"} alt={"Mjenious, the Rock Gym Leader"}/>
                         </a>
-                        {/*<figcaption className={"task-gym-leader-caption"}>Hi, I'm Eldis!</figcaption>*/}
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Y’all ready to rock and roll? Hey! I’m the stone-faced gym leader MJ, and I hope y’all are
