@@ -20,11 +20,10 @@ class ZubatMaze extends React.Component {
             formHouseLabel: "House:",
             // Is true after the user submits their username and house
             gameLive: false,
-            // Environment: TODO: do we need to make this a state?
+            // Environment:
             cave: cave,
             // Percent of HTML to make one move
             percentSize: 100 / cave.size,
-            // TODO: Should you get penalized every time
             // True after the user has completed the game
             completed: false,
             // We change between 4 trainer sprites as it moves!
@@ -79,14 +78,10 @@ class ZubatMaze extends React.Component {
         let trainer_sprite_path = getTrainerSpritePath(action);
         this.setState({trainerSpritePath: trainer_sprite_path ? trainer_sprite_path: this.state.trainerSpritePath});
         // If they beat the game.
-        // TODO: What if we have sideways goals?
         if (this.state.cave.y >= this.state.cave.size) {
             this.setState({completed: true});
             await this.saveResults();
         }
-        // if (maybe_zubat){
-        //     await this.saveResults();
-        // }
     }
 
     reset = () => {
@@ -124,28 +119,6 @@ class ZubatMaze extends React.Component {
     handleHouseFormChange(event) {
         this.setState({house: event.target.value});
     }
-
-    // handleLeftButton = async () => {
-    //     if (this.state.gameLive && !this.state.completed) {
-    //         await this.step(0);
-    //     }
-    // }
-    // handleRightButton = async () => {
-    //     if (this.state.gameLive && !this.state.completed) {
-    //         await this.step(1);
-    //     }
-    // }
-    // handleUpButton = async () => {
-    //     if (this.state.gameLive && !this.state.completed) {
-    //         await this.step(2);
-    //     }
-    // }
-    // handleDownButton = async () => {
-    //     if (this.state.gameLive && !this.state.completed) {
-    //         await this.step(3);
-    //     }
-    // }
-
 
     // Add the navigation listener
     componentDidMount() {
@@ -232,25 +205,6 @@ class ZubatMaze extends React.Component {
                         <h1 className={"zubat-game-name"}>HORCRUX CAVE ESCAPE</h1>
                         <h1 className={"zubat-scoreboard"}>SNAPEBATS ENCOUNTERED: {this.state.cave.zubatCount}</h1>
                     </div>
-
-                    {/*<div className={"zubat-mobile-button-container"}>*/}
-                    {/*    <button className={"zubat-mobile-button"} style={{"gridArea": "left"}} onClick={this.handleLeftButton.bind(this)}>*/}
-                    {/*        <div className={"zubat-mobile-button-arrow zubat-mobile-button-left"}></div>*/}
-                    {/*        Left*/}
-                    {/*    </button>*/}
-                    {/*    <button className={"zubat-mobile-button"} style={{"gridArea": "right"}} onClick={this.handleRightButton.bind(this)}>*/}
-                    {/*        Right*/}
-                    {/*        <div className={"zubat-mobile-button-arrow zubat-mobile-button-right"}></div>*/}
-                    {/*    </button>*/}
-                    {/*    <button className={"zubat-mobile-button"}  style={{"gridArea": "up"}} onClick={this.handleUpButton.bind(this)}>*/}
-                    {/*        <div className={"zubat-mobile-button-arrow zubat-mobile-button-up"}></div>*/}
-                    {/*        Up*/}
-                    {/*    </button>*/}
-                    {/*    <button className={"zubat-mobile-button"} style={{"gridArea": "down"}} onClick={this.handleDownButton.bind(this)}>*/}
-                    {/*        Down*/}
-                    {/*        <div className={"zubat-mobile-button-arrow zubat-mobile-button-down"}></div>*/}
-                    {/*    </button>*/}
-                    {/*</div>*/}
                     <div className={"zubat-rules"}>
                         <h1>Welcome to the Poison Gym Challenge!</h1>
                         <p>Use the arrow keys or WASD to move. Navigate through the Horcrux Cave and try to avoid as many zubats as you can!</p>

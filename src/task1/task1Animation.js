@@ -179,13 +179,14 @@ class Task1Animation extends IntroAnimation {
                                 <img style={{"opacity": this.state.highlightLeader1 ? 1 : this.state.showLeader1 ? 0.33 : 0}}
                                      className={`anime-gym-leader-1-v${this.state.gameVersion} ${this.state.highlightLeader1 ? "anime-highlight-gym-leader" : ""}`}
                                      src={this.state.leader1Path} alt={"Gym Leader"}/>
-                                <span style={{"opacity": this.state.showLeader1 ? 1 : 0}} className={"anime-gym-leader-spotlight"}/>
+
                                 <img style={{"opacity": this.state.highlightLeader2 ? 1 : this.state.showLeader2 ? 0.33 : 0}}
                                      className={`anime-gym-leader-2-v${this.state.gameVersion} ${this.state.highlightLeader2 ? "anime-highlight-gym-leader" : ""}`}
                                      src={this.state.leader2Path} alt={"Gym Leader"}/>
                                 <img style={{"opacity": this.state.highlightLeader3 ? 1 : this.state.showLeader3 ? 0.33 : 0}}
                                      className={`anime-gym-leader-3-v${this.state.gameVersion} ${this.state.highlightLeader3 ? "anime-highlight-gym-leader" : ""}`}
                                      src={this.state.leader3Path} alt={"Gym Leader"}/>
+                                <span style={{"opacity": this.state.showLeader1 ? 1 : 0}} className={"anime-gym-leader-spotlight"}/>
                             </div>
                                 <div ref={this.myRef} className={"anime-textbox anime-typewriter-text-wrap"}>
                                 <h1 className={"anime-react-typewriter-text"}>

@@ -31,7 +31,7 @@ class CaveWorld {
 
     generateMap() {
         let rand = Math.floor(Math.random() * MAPS.length)
-        this.map_id = rand + 3;
+        this.map_id = rand + 1;
         return MAPS[rand];
     }
 

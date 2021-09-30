@@ -90,6 +90,12 @@
     .menu-item-top {
         display: none;
     }
+    .nav-menu {
+        height: 420px;
+    }
+    .menu-item {
+        height: 30px;
+    }
 }
 
 .nav-links {
