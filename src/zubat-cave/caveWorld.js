@@ -3,7 +3,7 @@ import { MAPS } from "./mapGenerator";
 /* Gridworld environment with random Snapebat appearances and several different maze configurations to select from */
 class CaveWorld {
     constructor () {
-        this.zubat_chance = 0.15; // Chance of running into a zubat
+        this.zubat_chance = 0.2; // Chance of running into a zubat
         this.map_id = -1; // Placeholder until we generate map.
         this.map = this.generateMap();
         this.size = this.map.length; // NxN grid
@@ -13,6 +13,7 @@ class CaveWorld {
         // Left Right Up Down
         this.actions = [0, 1, 2, 3];
         this.numSteps = 0;
+        this.keyPresses = 0;
         // Count of zubats and the list of their locations
         this.zubatCount = 0;
         this.zubats = [];
@@ -35,18 +36,18 @@ class CaveWorld {
     }
 
     step(action) {
-        //console.log(`action is ${action}, x,y is ${this.x}, ${this.y}`);
         // Handle invalid action/keystroke
         if (!this.actions.includes(action)){
             return false;
         }
-        this.numSteps += 1;
+        // A keypress includes running into a wall.
+        this.keyPresses += 1;
         // Handle hitting a wall
         if (!this.map[this.y][this.x][action]) {
-            //console.log(`Hit a wall at ${this.x}, ${this.y}, action ${action}, map ${this.map[this.x][this.y][action]}`);
             return false;
         }
-        // TODO: can remove all the checking now since we have walls.
+        // A step is counted as an action movement
+        this.numSteps += 1;
         switch (action) {
             // Left
             case 0:

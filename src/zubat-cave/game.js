@@ -108,6 +108,7 @@ class ZubatMaze extends React.Component {
                     "MAP": this.state.cave.map_id,
                     "ZUBATS": this.state.cave.zubatCount,
                     "STEPS": this.state.cave.numSteps,
+                    "KEYPRESSES": this.state.cave.keyPresses,
                     "COMPLETED?": this.state.completed,
                 });
         } catch (e) {
@@ -229,7 +230,7 @@ class ZubatMaze extends React.Component {
                     </div>
                     <div className={"zubat-scoreboard-container"}>
                         <h1 className={"zubat-game-name"}>HORCRUX CAVE ESCAPE</h1>
-                        <h1 className={"zubat-scoreboard"}>SCORE: {this.state.cave.zubatCount}</h1>
+                        <h1 className={"zubat-scoreboard"}>SNAPEBATS ENCOUNTERED: {this.state.cave.zubatCount}</h1>
                     </div>
 
                     {/*<div className={"zubat-mobile-button-container"}>*/}

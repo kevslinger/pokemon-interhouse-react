@@ -7,13 +7,12 @@ import {Link} from "react-router-dom";
 class IntroHomepage extends React.Component {
     render() {
         return (
-          <div>
+          <div style={{"backgroundColor": "#3c5aa6"}}>
               <Navbar/>
               <div style={{"position": "relative"}} className={"home-container"}>
                   <Link to={"/home"} className={"home-pottamon-title"}>
                       <h1 className={"home-pottamon-title"}>PoTTa&#8202;MoN</h1>
                   </Link>
-                {/*<h1 className={"home-pottamon-title"}>PoTTa&#8202;MoN</h1>*/}
                   <figure className={"home-pottamon-figure"} style={{"gridArea": "professor"}}>
                       <a href={"professor_squash.png"}>
                         <img className={"home-pottamon-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
@@ -40,8 +39,8 @@ class IntroHomepage extends React.Component {
                     Oh, you already knew this? And you’re already part of a team? That’s marvellous! I’d love to speak
                       with your team representatives, and hear their research from them!
                     <br/><br/>
-                    What’s that? You don’t have a representative yet? Well, could you perhaps choose two, and tell me
-                      about them before October 4th, 11:59pm EDT so we can get this journey started?
+                    What’s that? You don’t have a representative yet? Well, could you perhaps choose two, and tell me,
+                      u/Professor_Squash, about them before October 4th, 11:59pm EDT so we can get this journey started?
                     <br/><br/>
                     Get ready, your very own Pottamon legend is about to unfold! A world of dreams and adventures with
                       Pottamon awaits! Let’s go!

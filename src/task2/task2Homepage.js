@@ -6,7 +6,7 @@ import Navbar from "../navbar/navbar";
 class Task2Homepage extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#3c5aa6"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} style={{"gridArea": "header"}}>
@@ -16,7 +16,7 @@ class Task2Homepage extends React.Component {
                         <a href={"professor_squash.png"} target={"_blank"} rel={"noreferrer"}>
                             <img className={"task-gym-leader-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                         </a>
-                        <figcaption className={"task-gym-leader-caption"}>Hi, I'm Professor Squash!</figcaption>
+                        <figcaption className={"task-gym-leader-caption"}>3 badges down, 5 to go!</figcaption>
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Hello again! How goes the quest to become the greatest team of Pottamon masters the world has
@@ -26,7 +26,7 @@ class Task2Homepage extends React.Component {
                         <br/><br/>
                         I think it’s time you moved onto some of the other gyms in our area, to challenge their leaders
                         and get even closer to gaining mastery of your calling. Head up north by Route 14 to Virens Loch
-                        where the Grass gym is. Spludgiexx, the Grass Gym Leader, will put you through your paces, as
+                        where the Grass gym is. Spludgie, the Grass Gym Leader, will put you through your paces, as
                         well as treat you to some of the finest restaurants and food stalls in town!
                         <br/><br/>
                         There is a Psychic gym off Route 16 in Zimbardo Village. The gym leader there... well, he will

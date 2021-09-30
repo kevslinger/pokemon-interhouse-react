@@ -6,7 +6,7 @@ import Navbar from "../navbar/navbar";
 class Task3Homepage extends React.Component {
     render() {
         return (
-            <div>
+            <div style={{"backgroundColor": "#3c5aa6"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
                     <Link to={"/home"} style={{"gridArea": "header"}}>
@@ -16,7 +16,7 @@ class Task3Homepage extends React.Component {
                         <a href={"professor_squash.png"}>
                             <img className={"task-gym-leader-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                         </a>
-                        <figcaption className={"task-gym-leader-caption"}>Hi, I'm Professor Squash!</figcaption>
+                        <figcaption className={"task-gym-leader-caption"}>What does it feel like to be nearly a Pottamon master?</figcaption>
                     </figure>
                     <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                         Welcome back!
@@ -28,14 +28,14 @@ class Task3Homepage extends React.Component {
                         <br/><br/>
                         Head out east using Route 23 to get to Sencha Springs, a piping hot tourist destination with one
                         of the most renowned gyms of this region, the Fire gym. A little Pidgey told me its leader
-                        actually <i>dances</i> on the fire, how intense! You'll need to be passionate if you want to
+                        loves dancing on fire, how intense! You'll need to be passionate if you want to
                         to take home the Exothermic badge.
                         <br/><br/>
                         And finally, way down south through the desert Route 25 takes you to the Tapu Fiti Oasis and
                         the Ground gym. It’s the only thing out in those wastes, and you certainly won’t miss it; it’ll
                         be the first spot of green you’ll see after all those miles of travel. I dunno why so many
                         people live out there in that little commune but the <strike>worshippers</strike> gym members
-                        certainly seem happy, and the gym leader is very welcoming indeed.
+                        certainly seem happy, and Mlap, their gym leader, is very welcoming indeed.
                         Good luck with her challenge, and with returning here afterwards!
                         <br/><br/>
                         The end of your goal is within your grasp! Representatives, please get back here and let me know

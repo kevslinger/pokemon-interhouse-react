@@ -68,10 +68,10 @@
 }
 @media (max-width: 479px) {
     .anime-gym-leader-1-v3 {
-        top: 44px;
-        left: 120px;
-        width: 70px;
-        height: 110px;
+        top: 32px;
+        left: 135px;
+        width: 75px;
+        height: 115px;
     }
 }
 
@@ -98,43 +98,9 @@
 }
 @media (max-width: 479px) {
     .anime-gym-leader-2-v3 {
-        top: 35px;
-        left: 170px;
-        width: 75px;
-        height: 115px;
-    }
-}
-
-.anime-gym-leader-3-v3 {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    transition: opacity 3s ease-in;
-}
-
-@media (min-width: 768px) {
-    .anime-gym-leader-3-v3 {
-        top: 75px;
-        left: 415px;
-        width: 195px;
-        height: 205px;
-    }
-}
-@media (max-width: 767px) {
-    .anime-gym-leader-3-v3 {
-        top: 65px;
-        left: 360px;
-        width: 170px;
-        height: 180px;
-    }
-}
-@media (max-width: 479px) {
-    .anime-gym-leader-3-v3 {
-        top: 40px;
-        left: 215px;
-        width: 80px;
+        top: 45px;
+        left: 210px;
+        width: 65px;
         height: 100px;
-        /* TODO */
-        z-index: 3;
     }
 }

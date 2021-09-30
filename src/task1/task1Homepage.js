@@ -7,7 +7,7 @@ import Navbar from "../navbar/navbar";
 class Task1Homepage extends React.Component {
     render() {
         return (
-          <div>
+          <div style={{"backgroundColor": "#3c5aa6"}}>
               <Navbar/>
               <div style={{"position": "relative"}} className={"task-container"}>
                   <Link to={"/home"} className={"task-pottamon-title"}>
@@ -17,7 +17,7 @@ class Task1Homepage extends React.Component {
                       <a href={"professor_squash.png"}>
                         <img className={"task-gym-leader-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                       </a>
-                    <figcaption className={"task-gym-leader-caption"}>Hi, I'm Professor Squash!</figcaption>
+                    <figcaption className={"task-gym-leader-caption"}>Ready for your first challenge?</figcaption>
                 </figure>
                   <p className={"task-intro-p-text"} style={{"gridArea": "text"}}>
                       Welcome, intrepid explorers, to the first steps of your Pottamon journey! Let’s get you started on
@@ -27,20 +27,20 @@ class Task1Homepage extends React.Component {
                       some links to your destinations? Okay, sounds weird but if that’s what you’d like... (kids these
                       days don’t know how to appreciate the novelty in doing things themselves). Ahem, excuse me.
                       <br/><br/>
-                      The closest gyms to us would be of the Rock, Water, and Electric varieties. If you head up Rt 7
+                      The closest gyms to us would be of the Rock, Water, and Electric varieties. If you head up Route 7
                       you’ll hit the Rock gym in no time! The gym leader, MJ, has a fortitude tougher than diamonds.
                       You’ll need to be bold if you want to defeat her!
                       <br/><br/>
-                      If you decide to face the Water gym, you’ll need only to go down the coast along Rt 9 to Seafare
+                      If you decide to face the Water gym, you’ll need only to go down the coast along Route 9 to Seafare
                       Port. But be warned, she tends to speak exclusively in dad jokes. I hear her favorite show is
                       Galavantula, though I'm trying to get her hooked on Dancing with the Staryus...
                       <br/><br/>
-                      And if you dare, you might chance challenging the electric gym leader off of Rt 11 in Faraday City.
+                      And if you dare, you might chance challenging the electric gym leader off of Route 11 in Faraday City.
                       Rumor has it that the gym leader keeps a pack of electric alzapcas... best to be careful, I’ve
                       read that petting their fur is enough to give you quite the static shock!
                       <br/><br/>
                       Good luck to all of Team Gryffindor, Team-Hufflepuff and Team Slytherin! Be sure to have your
-                      representatives update me on your badge progress by October 11.
+                      representatives update me on your badge progress by October 11, 11:59pm EDT.
                   </p>
                 <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure4"}}>
                     <Link to={"/rock"}>
