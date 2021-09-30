@@ -30,7 +30,7 @@ class Task2Animation extends Task1Animation {
                 "especially eager young researchers.",
             "Well, that doesn't matter. Let's see if you can escape my cave. Good luck... Oh, and don't let the snapebats bite.",
             `Prof. Squash: Thanks for all your help so far! We've learned a lot about the ${this.props.pottamon} since ` +
-                "you discovered it!",
+                "you discovered it, and I'm looking forward to hear your next research update by October 18th.",
             `Well don't just stand there, Team ${props.house}! Go! Run! Earn more badges!`
         ];
         this.state.house = props.house;

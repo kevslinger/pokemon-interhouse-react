@@ -30,7 +30,7 @@ class Task1Animation extends IntroAnimation {
             "You haven't? How dare you approach me with such insolence! You're in deep water now, kid, because I'm going " +
                 "to kick up a storm. Want to prove you're not as shallow as you seem? Well then, accept my challenge!",
             "Prof. Squash: And if you dare, you might chance challenging " +
-                "the electric gym leader off of Rt 11. Mayor of Faraday City, rumor has it that Gym Leader XanCanStand " +
+                "the Electric gym leader off of Rt 11. Mayor of Faraday City, rumor has it that Gym Leader XanCanStand " +
                 "keeps a pack of electric alzapcas... best be careful, I’ve read that petting their fur is enough " +
                 "to give you quite the static shock!",
             "Xan: MWAHAHAHA! My gym's the toughest one yet! This challenge will overload your circuit boards! ECCLETRIXITY! " +
