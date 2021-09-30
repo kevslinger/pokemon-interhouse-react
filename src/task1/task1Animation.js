@@ -23,7 +23,7 @@ class Task1Animation extends IntroAnimation {
             "The only way you can beat me is using one of your own Pottamon. Don't take this challenge for granite!",
             "Prof. Squash: If you decide to face the Water gym, you'll " +
                 "need to get to the Seafare Port by way of Rt 9. But be warned, Gym Leader Eldis tends to speak " +
-                "exclusively in dad jokes. I hear her favorite show is dancing with the staryus... ",
+                "exclusively in dad jokes. I hear her favorite show is Galavantula... ",
             "Eldis: Ahoy, mateys! Nice to make your aqua-intance! Come meet me at Seafare Port, where the wind is salty, " +
                 "the streets tide-y, the views are sea-nic, and the - but you already knew all that, if you read the " +
                 "Quibbladex.",
@@ -113,7 +113,7 @@ class Task1Animation extends IntroAnimation {
                     transitionLeaveTimeout = {2000}>
                     {this.state.showOpening ?
                         <div className={"anime-opening-scene"}>
-                            <h1 className={"anime-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                            <img className={"anime-pottamon-title"} src={"pottamon_text_title.png"} alt={"Pottamon"}/>
                             <button className={"anime-continue-game"}
                                     onClick={this.continueGame.bind(this)}>
                                 <div className={"anime-column"}>

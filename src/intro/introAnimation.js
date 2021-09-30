@@ -155,7 +155,7 @@ class IntroAnimation extends React.Component {
                             transitionLeaveTimeout={2000}>
                             {this.state.showOpening ?
                                 <div className={"anime-opening-scene"}>
-                                    <h1 className={"anime-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                                    <img className={"anime-pottamon-title"} src={"pottamon_text_title.png"} alt={"Pottamon"}/>
                                     <button className={"anime-new-game"}
                                             onClick={this.startGame.bind(this)}>
                                         NEW GAME

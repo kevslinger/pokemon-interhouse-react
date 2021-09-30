@@ -1,12 +1,23 @@
-.home-pottamon-title {
-    color: black;
-    font-family: Pokemon Solid, sans-serif;
-    text-align: center;
+.home-pottamon-wand {
+    width: 420px;
+    height: 360px;
+    display: grid;
     grid-area: header;
+    margin: auto;
+    align-content: center;
 }
+@media (max-width: 767px){
+    .home-pottamon-wand {
+        width: 320px;
+        height: 375px;
+    }
+}
+@media (max-width: 479px){
+    .home-pottamon-wand {
+        width: 210px;
+        height: 180px;
 
-.home-pottamon-title {
-    font-size: calc(32px + 2vw);
+    }
 }
 
 .home-intro-p-text {
@@ -47,7 +58,7 @@
     margin: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "header   header   header"
+    "........ header ........"
     "professor text ........."
     "......... text pottamon1"
     "pottamon2 text ........."

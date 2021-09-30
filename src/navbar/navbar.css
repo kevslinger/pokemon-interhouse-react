@@ -10,10 +10,9 @@
     display: grid;
     grid-template-areas: "icon text";
     grid-template-columns: 50px 200px;
-    width: 250px;
+    width: 200px;
     height: 50px;
     text-align: left;
-    vertical-align: middle;
     z-index: 99;
 }
 .navbar-logo {
@@ -38,9 +37,10 @@
     display: grid;
     font-family: Pokemon Solid, sans-serif;
     font-size: 2em;
-    width: 200px;
+    width: 150px;
+    height: 50px;
     grid-area: text;
-    padding-top: 5px;
+
 }
 
 .nav-menu-top {
@@ -109,11 +109,6 @@
     width: 100%;
     height: 100%;
     display: table;
-}
-@media (max-width: 479px) {
-    .nav-links {
-        font-size: 1em;
-    }
 }
 
 @media (max-width: 479px) {

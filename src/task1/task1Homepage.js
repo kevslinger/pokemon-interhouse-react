@@ -10,8 +10,8 @@ class Task1Homepage extends React.Component {
           <div style={{"backgroundColor": "#3c5aa6"}}>
               <Navbar/>
               <div style={{"position": "relative"}} className={"task-container"}>
-                  <Link to={"/home"} className={"task-pottamon-title"}>
-                      <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                  <Link to={"/home"} className={"task-pottamon-wand"}>
+                      <img className={"task-pottamon-wand"} src={"pottamon_wand_logo.png"} alt={"Pottamon!"}/>
                   </Link>
                   <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
                       <a href={"professor_squash.png"}>
@@ -40,7 +40,8 @@ class Task1Homepage extends React.Component {
                       read that petting their fur is enough to give you quite the static shock!
                       <br/><br/>
                       Good luck to all of Team Gryffindor, Team-Hufflepuff and Team Slytherin! Be sure to have your
-                      representatives update me on your badge progress by October 11, 11:59pm EDT.
+                      representatives update me on your badge progress
+                      by <a href={"https://www.timeanddate.com/countdown/generic?iso=20211011T235959&p0=179&msg=Gotta+Catch+%27Em+All%3A+Challenge+%231+Countdown&font=cursive"} target={"_blank"} rel={"noreferrer"}>October 11, 11:59pm EDT</a>.
                   </p>
                 <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure4"}}>
                     <Link to={"/rock"}>

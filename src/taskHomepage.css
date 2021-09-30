@@ -1,13 +1,41 @@
-.task-pottamon-title {
-    color: black;
-    font-family: Pokemon Solid, sans-serif;
-    text-align: center;
+.task-pottamon-wand {
+    width: 420px;
+    height: 360px;
+    display: grid;
     grid-area: header;
+    margin: auto;
+    align-content: center;
+}
+.task-pottamon-logo {
+    width: 450px;
+    height: 150px;
+    display: grid;
+    grid-area: header;
+    margin: auto;
+    align-content: center;
+}
+@media (max-width: 767px){
+    .task-pottamon-wand {
+        width: 320px;
+        height: 375px;
+    }
+    .task-pottamon-logo {
+        width: 320px;
+        height: 107px;
+    }
+}
+@media (max-width: 479px){
+    .task-pottamon-wand {
+        width: 210px;
+        height: 180px;
+    }
+    .task-pottamon-logo {
+        width: 210px;
+        height: 70px;
+    }
 }
 
-.task-pottamon-title {
-    font-size: calc(32px + 2vw);
-}
+
 
 .task-intro-p-text {
     font-family: serif;
@@ -93,7 +121,6 @@
 @media (max-width: 479px) {
     .task-container {
         grid-template-columns: 180px 180px;
-
         width: 360px;
     }
 }

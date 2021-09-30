@@ -10,8 +10,8 @@ class IntroHomepage extends React.Component {
           <div style={{"backgroundColor": "#3c5aa6"}}>
               <Navbar/>
               <div style={{"position": "relative"}} className={"home-container"}>
-                  <Link to={"/home"} className={"home-pottamon-title"}>
-                      <h1 className={"home-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                  <Link to={"/home"} className={"home-pottamon-wand"}>
+                      <img className={"home-pottamon-wand"} src={"pottamon_wand_logo.png"} alt={"pottamon!"}/>
                   </Link>
                   <figure className={"home-pottamon-figure"} style={{"gridArea": "professor"}}>
                       <a href={"professor_squash.png"}>

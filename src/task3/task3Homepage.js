@@ -9,8 +9,8 @@ class Task3Homepage extends React.Component {
             <div style={{"backgroundColor": "#3c5aa6"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/home"} style={{"gridArea": "header"}}>
-                        <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                    <Link to={"/home"} className={"task-pottamon-wand"}>
+                        <img className={"task-pottamon-wand"} src={"pottamon_wand_logo.png"} alt={"Pottamon!"}/>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
                         <a href={"professor_squash.png"}>
@@ -39,7 +39,8 @@ class Task3Homepage extends React.Component {
                         Good luck with her challenge, and with returning here afterwards!
                         <br/><br/>
                         The end of your goal is within your grasp! Representatives, please get back here and let me know
-                        how your team did by October 25 at 11:59pm EDT.
+                        how your team did
+                        by <a href={"https://www.timeanddate.com/countdown/generic?p0=179&iso=20211025T115959&year=2021&month=10&day=25&hour=11&min=59&sec=59&msg=Gotta%20Catch%20%27Em%20All%3a%20Challenge%20%233%20Countdown"} target={"_blank"} rel={"noreferrer"}>October 25 at 11:59pm EDT</a>.
                     </p>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure4"}}>
                         <Link to={"/fire"}>

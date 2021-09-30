@@ -10,8 +10,8 @@ class PsychicGym extends React.Component {
             <div style={{"backgroundColor": "#FA92B2"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/home"} className={"task-pottamon-title"}>
-                        <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                    <Link to={"/home"} className={"task-pottamon-logo"}>
+                        <img className={"task-pottamon-logo"} src={"pottamon_text_title.png"} alt={"Pottamon!"}/>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
                         <a href={"ra.png"}>

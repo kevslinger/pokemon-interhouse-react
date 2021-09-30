@@ -10,8 +10,8 @@ class GroundGym extends React.Component {
             <div style={{"backgroundColor": "#EBD69D"}}>
                 <Navbar/>
                 <div style={{"position": "relative"}} className={"task-container"}>
-                    <Link to={"/home"} className={"task-pottamon-title"}>
-                        <h1 className={"task-pottamon-title"}>PoTTa&#8202;MoN</h1>
+                    <Link to={"/home"} className={"task-pottamon-logo"}>
+                        <img className={"task-pottamon-logo"} src={"pottamon_text_title.png"} alt={"Pottamon!"}/>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
                         <a href={"mlap.png"}>
@@ -37,7 +37,7 @@ class GroundGym extends React.Component {
                         <br/><br/>
                         You can either plant seeds or you could use a repotted plant. You must share a picture and
                         let us know what you've planted. I wish
-                        you the best of luck!! Oh, these glasses? My good friend, Eldis gave them to me!! Aren't they
+                        you the best of luck!! Oh, these glasses? My good friend, <Link to={"/water"}>Eldis</Link> gave them to me!! Aren't they
                         gorgeous?
                     </p>
                 </div>
