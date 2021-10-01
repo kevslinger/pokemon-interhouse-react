@@ -40,6 +40,9 @@ class GroundGym extends React.Component {
                         you the best of luck!! Oh, these glasses? My good friend, <Link to={"/water"}>Eldis</Link> gave them to me!! Aren't they
                         gorgeous?
                     </p>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"}>
+                        <button className={"task-submit-button"} >SUBMIT HERE</button>
+                    </form>
                 </div>
             </div>
         );

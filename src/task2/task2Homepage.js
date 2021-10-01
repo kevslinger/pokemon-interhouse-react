@@ -13,7 +13,7 @@ class Task2Homepage extends React.Component {
                         <img className={"task-pottamon-wand"} src={"pottamon_wand_logo.png"} alt={"Pottamon!"}/>
                     </Link>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure1"}}>
-                        <a href={"professor_squash.png"} target={"_blank"} rel={"noreferrer"}>
+                        <a href={"professor_squash.png"}>
                             <img className={"task-gym-leader-image"} src={"professor_squash.png"} alt={"Professor Squash"}/>
                         </a>
                         <figcaption className={"task-gym-leader-caption"}>3 badges down, 5 to go!</figcaption>
@@ -43,19 +43,19 @@ class Task2Homepage extends React.Component {
                         See you then!
                     </p>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure4"}}>
-                        <Link to={"/grass"} target={"_blank"} rel={"noreferrer"}>
+                        <Link to={"/grass"}>
                             <img className={"task-gym-leader-image"} src={"spludgiexx.png"} alt={"Grass Gym Leader Spludgie"}/>
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>Spludgie, the Grass Gym Leader</figcaption>
                     </figure>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure5"}}>
-                        <Link to={"/psychic"} target={"_blank"} rel={"noreferrer"}>
+                        <Link to={"/psychic"}>
                             <img className={"task-gym-leader-image"} src={"ra.png"} alt={"Psychic Gym Leader Ra's"}/>
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>Ra's, the Psychic Gym Leader</figcaption>
                     </figure>
                     <figure className={"task-gym-leader-figure"} style={{"gridArea": "figure8"}}>
-                        <Link to={"/poison"} target={"_blank"} rel={"noreferrer"}>
+                        <Link to={"/poison"}>
                             <img className={"task-gym-leader-image"} src={"shadow.png"} alt={"Poison Gym Leader ShadowOfApollo"}/>
                         </Link>
                         <figcaption className={"task-gym-leader-caption"}>ShadowOfApollo, the Poison Gym Leader</figcaption>

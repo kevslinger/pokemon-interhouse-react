@@ -31,8 +31,10 @@ class WaterGym extends React.Component {
                         Pottamon, its name, describe/illustrate its habitat, any cool distinguishing markings, its
                         favorite kind of tea, and any special moves it might have! And if you happen to find tea leaves
                         on your nature walk... you know where to find me.
-
                     </p>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSe--LiE_b_8VnBo24ZKYtz0dWLv58_fpMCJpwgxTobMlw4v4A/viewform"}>
+                        <button className={"task-submit-button"} >SUBMIT HERE</button>
+                    </form>
                 </div>
             </div>
         );

@@ -39,6 +39,9 @@ class WaterGym extends React.Component {
                         But before that I need a dance partner! Oh, are you sweating already? Cause we’re just gettin’
                         started!
                     </p>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSfc3AviP1O4XSK4PxgiL3NDb670gaXTZAs6QGtzVDiYGITtUg/viewform?usp=sf_link"}>
+                        <button className={"task-submit-button"} >SUBMIT HERE</button>
+                    </form>
                 </div>
             </div>
         );

@@ -39,6 +39,9 @@ class ElectricGym extends React.Component {
                         <br/><br/>
                         Now! Get amped! It’s challenge time!
                     </p>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSeNqBgtBiczLutFa7Zd-KYPT3ATplKxD4scLlPoR2pjDK5kkw/viewform?usp=sf_link"}>
+                        <button className={"task-submit-button"}>SUBMIT HERE</button>
+                    </form>
                 </div>
             </div>
         );

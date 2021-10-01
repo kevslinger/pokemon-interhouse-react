@@ -30,11 +30,12 @@ class PsychicGym extends React.Component {
                         The final ha ha can be about whatever you want. Then it's up to the audience to decide which of
                         you challengers had the heartiest haha the chuckle of champions!! Don’t laugh this off, it's
                         time for our BATTLE!
-
-                    </p>
-                    <p className={"task-intro-p-text"} style={{"gridArea": "submit"}}>
+                        <br/><br/>
                         *: Jokes searchable via google search will be disqualified
                     </p>
+                    <form className={"task-submit-form"} style={{"gridArea": "submit"}} method={"get"} target={"_blank"} rel={"noreferrer"} action={"https://docs.google.com/forms/d/e/1FAIpQLSe--LiE_b_8VnBo24ZKYtz0dWLv58_fpMCJpwgxTobMlw4v4A/viewform"}>
+                        <button className={"task-submit-button"} >SUBMIT HERE</button>
+                    </form>
                 </div>
             </div>
         );
