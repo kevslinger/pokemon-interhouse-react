@@ -6,10 +6,8 @@ import { GoogleSpreadsheet } from "google-spreadsheet";
 import { capitalize } from "../utils";
 import {Link} from "react-router-dom";
 
+// Safari is bad and the zubat game doesn't work for it so we need to disable.
 var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
-console.log("sfar");
-console.log(isSafari);
-console.log("sfar");
 
 class ZubatMaze extends React.Component {
     constructor(props) {

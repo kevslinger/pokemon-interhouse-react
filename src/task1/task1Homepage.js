@@ -23,9 +23,10 @@ class Task1Homepage extends React.Component {
                       Welcome, intrepid explorers, to the first steps of your Pottamon journey! Let’s get you started on
                       your path to becoming the next Pottamon Master!
                       <br/><br/>
-                      ...oh? You don’t know where to go? Well, er, I suppose I could give you a map? No? You would prefer
-                      some links to your destinations? Okay, sounds weird but if that’s what you’d like... (kids these
-                      days don’t know how to appreciate the novelty in doing things themselves). Ahem, excuse me.
+                      ...oh? You don’t know where to go? Well, er, I suppose I could give you a <a href={"https://i.imgur.com/yy1fPhf.png"} target={"_blank"} rel={"noreferrer"}>map</a>?
+                      No? You would prefer some links to your destinations? Okay, sounds weird but if that’s what you’d
+                      like... (kids these days don’t know how to appreciate the novelty in doing things themselves).
+                      Ahem, excuse me.
                       <br/><br/>
                       The closest gyms to us would be of the Rock, Water, and Electric varieties. If you head up Route 7
                       you’ll hit the Rock gym in no time! The gym leader, MJ, has a fortitude tougher than diamonds.
