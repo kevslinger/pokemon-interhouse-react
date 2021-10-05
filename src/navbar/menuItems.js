@@ -9,26 +9,26 @@ export const MENUITEMS = [
         url: '/intro',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Gyms 1-3 Homepage',
-    //     url: '/part1',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Rock Gym',
-    //     url: '/rock',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Water Gym',
-    //     url: '/water',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Electric Gym',
-    //     url: '/electric',
-    //     cName: 'nav-links'
-    // },
+    {
+        title: 'Gyms 1-3 Homepage',
+        url: '/part1',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Rock Gym',
+        url: '/rock',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Water Gym',
+        url: '/water',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Electric Gym',
+        url: '/electric',
+        cName: 'nav-links'
+    },
     // {
     //     title: 'Gyms 4-6 Homepage',
     //     url: '/part2',
