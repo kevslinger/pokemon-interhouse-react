@@ -29,31 +29,31 @@ export const MENUITEMS = [
         url: '/electric',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Gyms 4-6 Homepage',
-    //     url: '/part2',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Grass Gym',
-    //     url: '/grass',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Psychic Gym',
-    //     url: '/psychic',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Poison Gym',
-    //     url: '/poison',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Horcrux Cave',
-    //     url: '/snapebat',
-    //     cName: 'nav-links'
-    // },
+    {
+        title: 'Gyms 4-6 Homepage',
+        url: '/part2',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Grass Gym',
+        url: '/grass',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Psychic Gym',
+        url: '/psychic',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Poison Gym',
+        url: '/poison',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Horcrux Cave',
+        url: '/snapebat',
+        cName: 'nav-links'
+    },
     // {
     //     title: 'Gyms 7-8 Homepage',
     //     url: '/part3',

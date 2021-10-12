@@ -1,0 +1,206 @@
+#anime-professor-spotlight-version-2 {
+    transition: opacity 200ms ease-in;
+}
+@media (min-width: 768px) {
+    #anime-professor-spotlight-version-2 {
+        width: 160px;
+        left: 50px;
+    }
+}
+@media (max-width: 767px) {
+    #anime-professor-spotlight-version-2 {
+        width: 110px;
+        left: 44px;
+    }
+}
+@media (max-width: 479px) {
+    #anime-professor-spotlight-version-2 {
+        width: 65px;
+        left: 25px;
+    }
+}
+
+#anime-professor-version-2 {
+    transition: opacity 200ms ease-in;
+}
+@media (min-width: 768px) {
+    #anime-professor-version-2 {
+        left: 50px;
+    }
+}
+@media (max-width: 767px) {
+    #anime-professor-version-2 {
+        top: 45px;
+        left: 30px;
+        width: 144px;
+        height: 219px;
+    }
+}
+@media (max-width: 479px) {
+    #anime-professor-version-2 {
+        top: 25px;
+        left: 17px;
+        width: 82px;
+        height: 125px;
+    }
+}
+
+.anime-gym-leader-1-v2 {
+    position: fixed;
+    z-index: 1;
+    transition: opacity 3s ease-in;
+}
+@media (min-width: 768px) {
+    .anime-gym-leader-1-v2 {
+        top: 80px;
+        left: 225px;
+        width: 155px;
+        height: 230px;
+    }
+}
+@media (max-width: 767px) {
+    .anime-gym-leader-1-v2 {
+        top: 75px;
+        left: 207px;
+        width: 125px;
+        height: 195px;
+    }
+}
+@media (max-width: 479px) {
+    .anime-gym-leader-1-v2 {
+        top: 44px;
+        left: 120px;
+        width: 70px;
+        height: 110px;
+    }
+}
+
+.anime-gym-leader-2-v2 {
+    position: fixed;
+    z-index: 1;
+    transition: opacity 3s ease-in;
+}
+@media (min-width: 768px) {
+    .anime-gym-leader-2-v2 {
+        top: 55px;
+        left: 325px;
+        width: 165px;
+        height: 250px;
+    }
+}
+@media (max-width: 767px) {
+    .anime-gym-leader-2-v2 {
+        top: 51px;
+        left: 287px;
+        width: 140px;
+        height: 215px;
+    }
+}
+@media (max-width: 479px) {
+    .anime-gym-leader-2-v2 {
+        top: 35px;
+        left: 170px;
+        width: 75px;
+        height: 115px;
+    }
+}
+
+.anime-gym-leader-3-v2 {
+    position: fixed;
+    z-index: 1;
+    transition: opacity 3s ease-in;
+}
+
+@media (min-width: 768px) {
+    .anime-gym-leader-3-v2 {
+        top: 75px;
+        left: 415px;
+        width: 195px;
+        height: 205px;
+    }
+}
+@media (max-width: 767px) {
+    .anime-gym-leader-3-v2 {
+        top: 65px;
+        left: 360px;
+        width: 170px;
+        height: 180px;
+    }
+}
+@media (max-width: 479px) {
+    .anime-gym-leader-3-v2 {
+        top: 40px;
+        left: 215px;
+        width: 80px;
+        height: 100px;
+        /* TODO */
+        z-index: 3;
+    }
+}
+
+.anime-Gryffindor-pottamon {
+    position: fixed;
+    top: 10px;
+    left: 125px;
+    height: 150px;
+    width: 150px;
+    transition: opacity 2s ease-in;
+}
+.anime-Hufflepuff-pottamon {
+    position: fixed;
+    top: -5px;
+    left: 150px;
+    height: 175px;
+    width: 175px;
+    transition: opacity 2s ease-in;
+}
+.anime-Slytherin-pottamon {
+    position: fixed;
+    top: 175px;
+    left: 120px;
+    height: 100px;
+    width: 90px;
+    transition: opacity 2s ease-in;
+    z-index: 3;
+}
+
+@media (max-width: 767px) {
+    .anime-Gryffindor-pottamon {
+        top: 7px;
+        left: 100px;
+        height: 125px;
+        width: 125px;
+    }
+    .anime-Hufflepuff-pottamon {
+        top: 0;
+        left: 120px;
+        height: 140px;
+        width: 140px;
+    }
+    .anime-Slytherin-pottamon {
+        top: 160px;
+        left: 90px;
+        height: 80px;
+        width: 65px;
+    }
+}
+@media (max-width: 479px) {
+    .anime-Gryffindor-pottamon {
+        top: 5px;
+        left: 60px;
+        height: 75px;
+        width: 75px;
+    }
+    .anime-Hufflepuff-pottamon {
+        top: 0;
+        left: 75px;
+        height: 80px;
+        width: 80px;
+    }
+    .anime-Slytherin-pottamon {
+        top: 97px;
+        left: 52px;
+        height: 40px;
+        width: 35px;
+    }
+}

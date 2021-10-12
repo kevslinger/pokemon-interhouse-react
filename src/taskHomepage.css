@@ -56,17 +56,7 @@
     height: 100%;
 }
 
-@media (max-width: 767px) {
-    .task-gym-leader-image {
-        height: 100%;
-        width: 100%;
-    }
-}
 @media (max-width: 479px) {
-    .task-gym-leader-image {
-        height: 100%;
-        width: 100%;
-    }
     .task-gym-leader-caption {
         font-size: 66%;
     }
@@ -88,7 +78,7 @@
     "figure3  text  figure4"
     "figure5  text  figure6"
     "figure7  text  figure8"
-    "........ meta ........"
+    ".......  meta  ......."
     "footerLeft submit footerRight";
     background-position: center;
     background-color: #d9d7de;
@@ -102,7 +92,6 @@
 }
 @media (max-width: 767px) {
     .task-container {
-        /*grid-template-columns: 160px 320px 160px;*/
         grid-template-columns: 320px 320px;
         grid-template-areas:
         "header  header"
@@ -114,7 +103,7 @@
         "figure6  text"
         "figure7  text"
         "figure8  text"
-        "........ meta"
+        ".......  meta"
         "footerLeft submit"
         "footerRight .....";
         width: 640px;

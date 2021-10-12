@@ -48,6 +48,9 @@ class Task1Animation extends IntroAnimation {
         this.state.pottadex = props.pottadex;
         this.state.badges = props.badges;
         this.state.hideProf = false;
+        this.state.housePottamon = ""; // For use in task 2 animation (smoge)
+        this.state.hideHousePottamon = false;
+        this.state.showHousePottamon = false; // For use in task 2 animation (smoge)
         this.state.leader1Path = "mj.png";
         this.state.leader2Path = "eldis.png";
         this.state.leader3Path = "xancanstand.png";
@@ -152,7 +155,11 @@ class Task1Animation extends IntroAnimation {
                         <div className={"anime-main-scene"} onClick={this.handleClick}>
                             <div className={"anime-img-holder"}>
                                 <img style={{"opacity": this.state.hideProf ? 0.33 : 1}}
-                                     className={"anime-professor"} id={`anime-professor-version-${this.state.gameVersion}`} src={"professor_squash.png"} alt="Professor Squash"/>
+                                     className={"anime-professor"} id={`anime-professor-version-${this.state.gameVersion}`} src={"professor_squash.png"} alt={"Professor Squash"}/>
+                                { this.state.gameVersion === 2 ?
+                                <img style={{"opacity": this.state.showHousePottamon ? this.state.hideHousePottamon ? 0.33 : 1 : 0}}
+                                     className={`anime-${this.state.house}-pottamon`} src={`${this.state.pottamon}.png`} alt={"pottamon"}/>
+                                : null}
                                 <span className={"anime-confetti"}>
                                     <Confetti active={this.state.showPokemon}
                                               config={
