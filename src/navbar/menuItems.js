@@ -54,19 +54,19 @@ export const MENUITEMS = [
         url: '/snapebat',
         cName: 'nav-links'
     },
-    // {
-    //     title: 'Gyms 7-8 Homepage',
-    //     url: '/part3',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Fire Gym',
-    //     url: '/fire',
-    //     cName: 'nav-links'
-    // },
-    // {
-    //     title: 'Ground Gym',
-    //     url: '/ground',
-    //     cName: 'nav-links'
-    // }
+    {
+        title: 'Gyms 7-8 Homepage',
+        url: '/part3',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Fire Gym',
+        url: '/fire',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Ground Gym',
+        url: '/ground',
+        cName: 'nav-links'
+    }
 ];

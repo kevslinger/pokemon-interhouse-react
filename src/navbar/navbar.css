@@ -58,7 +58,7 @@
     display: none;
     flex-direction: column;
     width: 20%;
-    height: 440px;
+    height: 560px;
     position: absolute;
     top: 70px;
     left: 80%;
@@ -91,7 +91,7 @@
         display: none;
     }
     .nav-menu {
-        height: 330px;
+        height: 420px;
     }
     .menu-item {
         height: 30px;
